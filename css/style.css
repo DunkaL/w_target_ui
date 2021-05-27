@@ -663,16 +663,11 @@ img {
 .main {
   float: right;
   width: 1010px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100%;
   padding-bottom: 4.1rem;
 }
 
 .main__content {
   background: #fff;
-  min-height: 100%;
   padding: 3.2rem;
   border-radius: .8rem;
 }
