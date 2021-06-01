@@ -907,7 +907,7 @@ img {
 .form__input {
   font-family: Inter, sans-serif;
   width: 100%;
-  padding: 8px 16px;
+  padding: 9px 16px;
   border-radius: 8px;
   border: 1px solid rgba(14,14,14,0.2);
 }
@@ -929,8 +929,8 @@ img {
 }
 
 .form__select {
-  padding-left: 14px;
-  padding-right: 14px;
+  line-height: 1;
+  padding: 11px 33px 11px 14px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -962,7 +962,7 @@ img {
 }
 
 .form__group .form__input {
-  padding-right: 40px;
+  padding-right: 35px;
 }
 
 .form__group .form__textarea {
@@ -982,7 +982,7 @@ img {
   font-size: 13px;
   font-weight: 500;
   position: absolute;
-  right: 7px;
+  right: 8px;
   bottom: 0;
   height: 100%;
 }
