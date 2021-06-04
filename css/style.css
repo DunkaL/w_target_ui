@@ -786,8 +786,12 @@ img {
   padding: 6px 10px;
   font-size: 14px;
   font-weight: 600;
-  color: #FC3F1D;
+  color: rgba(14,14,14,0.35);
   margin-left: 8px;
+}
+
+.button--cancellation:hover {
+  color: #FC3F1D;
 }
 
 .list {
