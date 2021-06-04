@@ -361,33 +361,24 @@ img {
   display: flex;
 }
 
+.flex--space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex--ai-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .col {
   padding: 0 9px;
 }
 
 .w-100 {
   width: 100%;
-}
-
-.grids-40-5 {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 40.5%;
-  flex: 0 0 40.5%;
-  max-width: 40.5%;
-}
-
-.grids-30-6 {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 30.6%;
-  flex: 0 0 30.6%;
-  max-width: 30.6%;
-}
-
-.grids-28-8 {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 28.888888%;
-  flex: 0 0 28.888888%;
-  max-width: 28.888888%;
 }
 
 .grids-1 {
@@ -759,6 +750,32 @@ img {
   background: #e8e1d9;
 }
 
+.button--mailbox {
+  background: #F3ECE4;
+  font-weight: 500;
+  padding: 11px 16px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.button--mailbox::before {
+  background: url("../img/mailbox.png") no-repeat center/cover;
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.button--mailbox:hover {
+  background: #e8e1d9;
+}
+
 .button--cancellation {
   background: inherit;
   padding: 6px 10px;
@@ -907,7 +924,7 @@ img {
 .form__input {
   font-family: Inter, sans-serif;
   width: 100%;
-  padding: 9px 16px;
+  padding: 8px 16px;
   border-radius: 8px;
   border: 1px solid rgba(14,14,14,0.2);
 }
@@ -1109,6 +1126,45 @@ img {
   fill: #FC3F1D;
 }
 
+.input {
+  font-family: Inter, sans-serif;
+  width: auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(14,14,14,0.2);
+}
+
+.input[disabled] {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search__input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.search__btn {
+  background: #fff;
+  padding: 0 13px;
+  border: 1px solid rgba(14,14,14,0.2);
+  border-left: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.search__btn:hover svg>path {
+  fill-opacity: 1;
+  fill: #128C7E;
+}
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1221,6 +1277,114 @@ img {
 
 .tabs__content-pane.action {
   display: block;
+}
+
+.table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table__head .table-row__cell {
+  font-weight: 500;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.table-item .table-row__cell {
+  padding: 12px 0;
+  border-top: 1px solid rgba(14,14,14,0.15);
+}
+
+.table-item--active .table__title {
+  color: #128C7E;
+}
+
+.table-item--active .table__btnOpen {
+  opacity: 1;
+  color: #128C7E;
+  pointer-events: auto;
+}
+
+.table-item--active .table__btnOpen-icon path {
+  fill: #128C7E;
+}
+
+.table-row {
+  display: table-row;
+  position: relative;
+}
+
+.table-row__cell {
+  display: table-cell;
+  min-width: 120px;
+  vertical-align: top;
+  position: relative;
+}
+
+.table-row__cell:not(:last-child) {
+  padding-right: 32px;
+}
+
+.table-row__cell-right {
+  text-align: right;
+}
+
+.table__status {
+  display: inline-block;
+  padding: 9px 12px;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 56px;
+}
+
+.table__status--draft {
+  background: rgba(14,14,14,0.1);
+}
+
+.table__status--process {
+  background: #F3ECE4;
+}
+
+.table__status--expectation {
+  background: #F3ECE4;
+}
+
+.table__status--sentby {
+  background: rgba(37,211,102,0.2);
+}
+
+.table__desc {
+  font-size: 14px;
+  color: rgba(14,14,14,0.5);
+}
+
+.table__desc-img {
+  height: 15px;
+  width: 15px;
+  margin: 0;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+.table__btnOpen {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.table__btnOpen-text {
+  font-size: 14px;
+}
+
+.table__btnOpen-icon {
+  margin-left: 8px;
+}
+
+.table__btnfilter {
+  background: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 0;
 }
 
 @media only screen and (max-width: 1024px) {
