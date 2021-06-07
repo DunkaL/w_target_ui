@@ -819,10 +819,11 @@ img {
 
 .list__item-indicator {
   display: inline-block;
+  min-width: 8px;
   width: 8px;
+  min-height: 8px;
   height: 8px;
   border-radius: 100%;
-  margin: 2px;
   margin-right: 8px;
 }
 
@@ -839,7 +840,19 @@ img {
 }
 
 .list__item-title {
-  margin-bottom: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.list__item-title__text {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
   color: rgba(14,14,14,0.5);
 }
 
@@ -852,7 +865,7 @@ img {
   background: rgba(14,14,14,0.05);
 }
 
-.list__item:hover .list__item-title {
+.list__item:hover .list__item-title__text {
   color: #0E0E0E;
 }
 
@@ -874,7 +887,7 @@ img {
   pointer-events: none;
 }
 
-.list__item--active .list__item-title {
+.list__item--active .list__item-title__text {
   color: #0E0E0E;
 }
 
@@ -955,8 +968,8 @@ img {
 }
 
 .form__select {
-  line-height: 1;
-  padding: 11px 33px 11px 14px;
+  cursor: pointer;
+  padding: 9px 33px 9px 14px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1276,8 +1289,12 @@ img {
 }
 
 .tabs__link--action {
-  color: #0E0E0E;
   background: rgba(14,14,14,0.05);
+  color: #0E0E0E;
+}
+
+.tabs__link:hover {
+  background: #ececec;
 }
 
 .tabs__content-pane {
@@ -1301,21 +1318,41 @@ img {
 }
 
 .table-item .table-row__cell {
-  padding: 12px 0;
   border-top: 1px solid rgba(14,14,14,0.15);
 }
 
-.table-item--active .table__title {
+.table-item__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.table-item__title-text {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.table-item__title-btn {
+  margin-left: 8px;
+}
+
+.table-item:hover .table-item__title {
   color: #128C7E;
 }
 
-.table-item--active .table__btnOpen {
+.table-item:hover .table__btnOpen {
   opacity: 1;
   color: #128C7E;
   pointer-events: auto;
 }
 
-.table-item--active .table__btnOpen-icon path {
+.table-item:hover .table__btnOpen-icon path {
   fill: #128C7E;
 }
 
@@ -1332,16 +1369,19 @@ img {
 }
 
 .table-row__cell:not(:last-child) {
-  padding-right: 32px;
+  padding-right: 25px;
 }
 
 .table-row__cell-right {
   text-align: right;
 }
 
+.table-row__inner {
+  padding: 18px 0;
+}
+
 .table__status {
-  display: inline-block;
-  padding: 9px 12px;
+  padding: 7px 12px;
   font-size: 14px;
   line-height: 1;
   border-radius: 56px;
@@ -1377,6 +1417,15 @@ img {
 }
 
 .table__btnOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   opacity: 0.35;
   pointer-events: none;
 }
@@ -1386,7 +1435,7 @@ img {
 }
 
 .table__btnOpen-icon {
-  margin-left: 8px;
+  margin-left: 5px;
 }
 
 .table__btnfilter {
@@ -1394,6 +1443,10 @@ img {
   font-weight: 500;
   line-height: 1.5;
   padding: 0;
+}
+
+.table__btnfilter-icon {
+  margin-left: 4px;
 }
 
 @media only screen and (max-width: 1024px) {
