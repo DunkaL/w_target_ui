@@ -114,7 +114,7 @@
                     <nav class="sidebar__content">
                         <ol class="sidebar__list">
                             <li>
-                                <a href="/templates.html" class="sidebar__link">
+                                <a href="/templates.html" class="sidebar__link sidebar__link--active">
                                     <div class="sidebar__link-img">
                                         <img src="img/writing-hand.png" alt="Шаблоны">
                                     </div>
@@ -138,7 +138,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#Рассылки" class="sidebar__link sidebar__link--active">
+                                <a href="#Рассылки" class="sidebar__link">
                                     <div class="sidebar__link-img">
                                         <img src="img/love-letter.png" alt="Рассылки">
                                     </div>
@@ -197,13 +197,12 @@
                             </li>
                         </ol>
                     </nav>
-                </div>
-                
-                <main class="main">
+                </div>                <main class="main">
                     <div class="main__content">
+                        
                         <h2 class="main__header">Рассылки</h2>
-                
-                        <div class="flex flex--space-between" style="margin-bottom: 24px;">
+                        
+                        <div class="flex flex--space-between" style="margin-bottom: 21px;">
                             <form class="search">
                                 <input class="input search__input" type="search" placeholder="Поиск">
                                 <button type="submit" class="button search__btn">
@@ -214,278 +213,495 @@
                             </form>
                             <button class="button button--mailbox">Создать</button>
                         </div>
-                
+                        
                         <div class="table">
                             <div class="table-row table__head">
                                 <div class="table-row__cell" style="width:36%;">
-                                    <button class="button table__btnfilter">
+                                    <button class="button table__head-btn_filter">
                                         Дата 
-                                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="table__head-btn_filter-icon" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.22865 0.671387L0.286652 1.61472L4.99999 6.32805L9.71399 1.61472L8.77132 0.671387L4.99999 4.44272L1.22865 0.671387Z" fill="#0E0E0E" fill-opacity="0.35"/>
                                         </svg>
                                     </button>
                                 </div>
-                                <div class="table-row__cell table-row__cell-right" style="width:14%;">Получатели</div>
+                                <div class="table-row__cell table-row__cell-right" style="width:12%;">Получатели</div>
                                 <div class="table-row__cell" style="width:15%;">Статус</div>
                                 <div class="table-row__cell table-row__cell-right" style="width:13%;">Прочитано</div>
                                 <div class="table-row__cell table-row__cell-right" style="width:13%;">Отвечено</div>
                                 <div class="table-row__cell"></div>
                             </div>
-                
-                            <div class="table-row table-item">
-                                <div class="table-row__cell">
-                                    <p>Розыгрыш iPhone 12 Pro Max</p>
-                                    <div class="table__desc">
-                                        <p>Изменено 20 мая в 23:25</p>
-                                        <p class="flex flex--ai-center">
-                                            <img class="table__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> <span>Виктор Довжик</span>
-                                        </p>
+                        
+                        
+                            <a href="#Розыгрыш iPhone 12 Pro Max" class="table-row table-item">
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                        
+                                            <div class="table-item__title">
+                                                <div class="table-item__title-text">Розыгрыш iPhone 12 Pro Max</div>
+                                                <button class="button table-item__title-btn">
+                                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33333 2.6665V1.99984C9.33333 1.64622 9.19286 1.30708 8.94281 1.05703C8.69276 0.80698 8.35362 0.666504 8 0.666504H4C3.64638 0.666504 3.30724 0.80698 3.05719 1.05703C2.80714 1.30708 2.66667 1.64622 2.66667 1.99984V2.6665H0.666667C0.489856 2.6665 0.320286 2.73674 0.195262 2.86177C0.0702379 2.98679 0 3.15636 0 3.33317C0 3.50998 0.0702379 3.67955 0.195262 3.80457C0.320286 3.9296 0.489856 3.99984 0.666667 3.99984H1.33333V11.3332C1.33333 11.8636 1.54405 12.3723 1.91912 12.7474C2.29419 13.1225 2.8029 13.3332 3.33333 13.3332H8.66667C9.1971 13.3332 9.70581 13.1225 10.0809 12.7474C10.456 12.3723 10.6667 11.8636 10.6667 11.3332V3.99984H11.3333C11.5101 3.99984 11.6797 3.9296 11.8047 3.80457C11.9298 3.67955 12 3.50998 12 3.33317C12 3.15636 11.9298 2.98679 11.8047 2.86177C11.6797 2.73674 11.5101 2.6665 11.3333 2.6665H9.33333ZM8 1.99984H4V2.6665H8V1.99984ZM9.33333 3.99984H2.66667V11.3332C2.66667 11.51 2.7369 11.6796 2.86193 11.8046C2.98695 11.9296 3.15652 11.9998 3.33333 11.9998H8.66667C8.84348 11.9998 9.01305 11.9296 9.13807 11.8046C9.26309 11.6796 9.33333 11.51 9.33333 11.3332V3.99984Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                        <path d="M4 5.33301H5.33333V10.6663H4V5.33301Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                        <path d="M6.66668 5.33301H8.00001V10.6663H6.66668V5.33301Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="table-item__desc">
+                                                <p>Изменено 20 мая в 23:25</p>
+                                                <div class="flex flex--ai-center">
+                                                    <img class="table-item__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> 
+                                                    <span>Виктор Довжик</span>
+                                                </div>
+                                            </div> 
+                        
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    –
-                                </div>
-                                <div class="table-row__cell">
-                                    <div class="table__status table__status--draft">
-                                        Черновик
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="-">-</div>
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    89,3%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    25,1%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    <a href="#" class="table__btnOpen"> <!--table__btnOpen--active-->
-                                        <span class="table__btnOpen-text">Открыть</span>
-                                        <svg class="table__btnOpen-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
-                                        </svg>     
-                                    </a>
-                                </div>
-                            </div>
-                
-                            <div class="table-row table-item">
-                                <div class="table-row__cell">
-                                    <p>Розыгрыш iPhone 12 Pro Max</p>
-                                    <div class="table__desc">
-                                        <p>Отправлено 17 мая в 12:30</p>
-                                        <p class="flex flex--ai-center">
-                                            <img class="table__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> <span>Виктор Довжик</span>
-                                        </p>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <span class="table-item__status table-item__status--draft">Черновик</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    152 / 2581
-                                </div>
-                                <div class="table-row__cell">
-                                    <div class="table__status table__status--process">
-                                        В процессе
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="89,3%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">89,3%</div>
+                                                <div class="table-item__checkbox_hover-hover">140</div>
+                                            </div>
+                                        </div>   
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    89,3%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    25,1%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    <a href="#" class="table__btnOpen"> <!--table__btnOpen--active-->
-                                        <span class="table__btnOpen-text">Открыть</span>
-                                        <svg class="table__btnOpen-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
-                                        </svg>     
-                                    </a>
-                                </div>
-                            </div>
-                
-                            <div class="table-row table-item">
-                                <div class="table-row__cell">
-                                    <p>Розыгрыш iPhone 12 Pro Max</p>
-                                    <div class="table__desc">
-                                        <p>Запланировано на 17 мая в 12:30</p>
-                                        <p class="flex flex--ai-center">
-                                            <img class="table__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> <span>Виктор Довжик</span>
-                                        </p>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="25,1%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">25,1%</div>
+                                                <div class="table-item__checkbox_hover-hover">35</div>
+                                            </div>
+                                        </div>  
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    0 / 2581
-                                </div>
-                                <div class="table-row__cell">
-                                    <div class="table__status table__status--expectation">
-                                        Ожидание
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__btn_open">
+                                                <span class="table-item__btn_open-text">Открыть</span>
+                                                <svg class="table-item__btn_open-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
+                                                </svg>     
+                                            </div>
+                                        </div>  
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    89,3%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    25,1%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    <a href="#" class="table__btnOpen"> <!--table__btnOpen--active-->
-                                        <span class="table__btnOpen-text">Открыть</span>
-                                        <svg class="table__btnOpen-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
-                                        </svg>     
-                                    </a>
-                                </div>
-                            </div>
-                
-                            <div class="table-row table-item">
-                                <div class="table-row__cell">
-                                    <p>Розыгрыш iPhone 12 Pro Max</p>
-                                    <div class="table__desc">
-                                        <p>Отправлено 17 мая в 12:30</p>
-                                        <p class="flex flex--ai-center">
-                                            <img class="table__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> <span>Виктор Довжик</span>
-                                        </p>
+                        
+                            </a>
+                        
+                            <a href="#Розыгрыш iPhone 12 Pro Max2" class="table-row table-item">
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__title">
+                                                <div class="table-item__title-text">
+                                                    Розыгрыш iPhone 12 Pro Max
+                                                </div>
+                                                <button class="button table-item__title-btn">
+                                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect x="6" width="4" height="12" fill="#C4C4C4"/>
+                                                        <rect width="4" height="12" fill="#C4C4C4"/>
+                                                    </svg> 
+                                                </button>
+                                            </div>
+                                            <div class="table-item__desc">
+                                                <p>Отправлено 17 мая в 12:30</p>
+                                                <div class="flex flex--ai-center">
+                                                    <img class="table-item__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> 
+                                                    <span>Виктор Довжик</span>
+                                                </div>
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    12 864
-                                </div>
-                                <div class="table-row__cell">
-                                    <div class="table__status table__status--sentby">
-                                        Отправлено
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="152 / 2581">152 / 2581</div>
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    89,3%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    25,1%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    <a href="#" class="table__btnOpen"> <!--table__btnOpen--active-->
-                                        <span class="table__btnOpen-text">Открыть</span>
-                                        <svg class="table__btnOpen-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
-                                        </svg>     
-                                    </a>
-                                </div>
-                            </div>
-                
-                            <div class="table-row table-item table-item--active">
-                                <div class="table-row__cell">
-                                    <p class="table__title">Розыгрыш iPhone 12 Pro Max 
-                                        <a href="#">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33333 2.6665V1.99984C9.33333 1.64622 9.19286 1.30708 8.94281 1.05703C8.69276 0.80698 8.35362 0.666504 8 0.666504H4C3.64638 0.666504 3.30724 0.80698 3.05719 1.05703C2.80714 1.30708 2.66667 1.64622 2.66667 1.99984V2.6665H0.666667C0.489856 2.6665 0.320286 2.73674 0.195262 2.86177C0.0702379 2.98679 0 3.15636 0 3.33317C0 3.50998 0.0702379 3.67955 0.195262 3.80457C0.320286 3.9296 0.489856 3.99984 0.666667 3.99984H1.33333V11.3332C1.33333 11.8636 1.54405 12.3723 1.91912 12.7474C2.29419 13.1225 2.8029 13.3332 3.33333 13.3332H8.66667C9.1971 13.3332 9.70581 13.1225 10.0809 12.7474C10.456 12.3723 10.6667 11.8636 10.6667 11.3332V3.99984H11.3333C11.5101 3.99984 11.6797 3.9296 11.8047 3.80457C11.9298 3.67955 12 3.50998 12 3.33317C12 3.15636 11.9298 2.98679 11.8047 2.86177C11.6797 2.73674 11.5101 2.6665 11.3333 2.6665H9.33333ZM8 1.99984H4V2.6665H8V1.99984ZM9.33333 3.99984H2.66667V11.3332C2.66667 11.51 2.7369 11.6796 2.86193 11.8046C2.98695 11.9296 3.15652 11.9998 3.33333 11.9998H8.66667C8.84348 11.9998 9.01305 11.9296 9.13807 11.8046C9.26309 11.6796 9.33333 11.51 9.33333 11.3332V3.99984Z" fill="#0E0E0E" fill-opacity="0.35"/>
-                                                <path d="M4 5.33301H5.33333V10.6663H4V5.33301Z" fill="#0E0E0E" fill-opacity="0.35"/>
-                                                <path d="M6.66668 5.33301H8.00001V10.6663H6.66668V5.33301Z" fill="#0E0E0E" fill-opacity="0.35"/>
-                                            </svg>
-                                        </a>
-                                    </p>
-                                    <div class="table__desc">
-                                        <p>Отправлено 17 мая в 12:30</p>
-                                        <p class="flex flex--ai-center">
-                                            <img class="table__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> <span>Виктор Довжик</span>
-                                        </p>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <span class="table-item__status table-item__status--process">В процессе</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    869
-                                </div>
-                                <div class="table-row__cell">
-                                    <div class="table__status table__status--sentby">
-                                        Отправлено
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="89,3%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">89,3%</div>
+                                                <div class="table-item__checkbox_hover-hover">140</div>
+                                            </div>
+                                        </div>   
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    89,3%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    25,1%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    <a href="#" class="table__btnOpen"> <!--table__btnOpen--active-->
-                                        <span class="table__btnOpen-text">Открыть</span>
-                                        <svg class="table__btnOpen-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
-                                        </svg>     
-                                    </a>
-                                </div>
-                            </div>
-                
-                            <div class="table-row table-item">
-                                <div class="table-row__cell">
-                                    <p>Розыгрыш iPhone 12 Pro Max</p>
-                                    <div class="table__desc">
-                                        <p>Отправлено 17 мая в 12:30</p>
-                                        <p class="flex flex--ai-center">
-                                            <img class="table__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> <span>Виктор Довжик</span>
-                                        </p>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="25,1%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">25,1%</div>
+                                                <div class="table-item__checkbox_hover-hover">35</div>
+                                            </div>
+                                        </div>  
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    869
-                                </div>
-                                <div class="table-row__cell">
-                                    <div class="table__status table__status--sentby">
-                                        Отправлено
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__btn_open">
+                                                <span class="table-item__btn_open-text">Открыть</span>
+                                                <svg class="table-item__btn_open-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
+                                                </svg>     
+                                            </div>
+                                        </div>  
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    89,3%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    25,1%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    <a href="#" class="table__btnOpen"> <!--table__btnOpen--active-->
-                                        <span class="table__btnOpen-text">Открыть</span>
-                                        <svg class="table__btnOpen-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
-                                        </svg>     
-                                    </a>
-                                </div>
-                            </div>
-                
-                            <div class="table-row table-item table-item--active">
-                                <div class="table-row__cell">
-                                    <p class="table__title">Розыгрыш iPhone 12 Pro Max 
-                                        <a href="#">
-                                            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="6" width="4" height="12" fill="#C4C4C4"/>
-                                                <rect width="4" height="12" fill="#C4C4C4"/>
-                                            </svg> 
-                                        </a>
-                                    </p>
-                                    <div class="table__desc">
-                                        <p>Отправлено 17 мая в 12:30</p>
-                                        <p class="flex flex--ai-center">
-                                            <img class="table__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> <span>Виктор Довжик</span>
-                                        </p>
+                        
+                            </a>
+                        
+                            <a href="#Розыгрыш iPhone 12 Pro Max3" class="table-row table-item">
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__title">
+                                                <div class="table-item__title-text">
+                                                    Розыгрыш iPhone 12 Pro Max
+                                                </div>
+                                                <button class="button table-item__title-btn">
+                                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33333 2.6665V1.99984C9.33333 1.64622 9.19286 1.30708 8.94281 1.05703C8.69276 0.80698 8.35362 0.666504 8 0.666504H4C3.64638 0.666504 3.30724 0.80698 3.05719 1.05703C2.80714 1.30708 2.66667 1.64622 2.66667 1.99984V2.6665H0.666667C0.489856 2.6665 0.320286 2.73674 0.195262 2.86177C0.0702379 2.98679 0 3.15636 0 3.33317C0 3.50998 0.0702379 3.67955 0.195262 3.80457C0.320286 3.9296 0.489856 3.99984 0.666667 3.99984H1.33333V11.3332C1.33333 11.8636 1.54405 12.3723 1.91912 12.7474C2.29419 13.1225 2.8029 13.3332 3.33333 13.3332H8.66667C9.1971 13.3332 9.70581 13.1225 10.0809 12.7474C10.456 12.3723 10.6667 11.8636 10.6667 11.3332V3.99984H11.3333C11.5101 3.99984 11.6797 3.9296 11.8047 3.80457C11.9298 3.67955 12 3.50998 12 3.33317C12 3.15636 11.9298 2.98679 11.8047 2.86177C11.6797 2.73674 11.5101 2.6665 11.3333 2.6665H9.33333ZM8 1.99984H4V2.6665H8V1.99984ZM9.33333 3.99984H2.66667V11.3332C2.66667 11.51 2.7369 11.6796 2.86193 11.8046C2.98695 11.9296 3.15652 11.9998 3.33333 11.9998H8.66667C8.84348 11.9998 9.01305 11.9296 9.13807 11.8046C9.26309 11.6796 9.33333 11.51 9.33333 11.3332V3.99984Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                        <path d="M4 5.33301H5.33333V10.6663H4V5.33301Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                        <path d="M6.66668 5.33301H8.00001V10.6663H6.66668V5.33301Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="table-item__desc">
+                                                <p>Запланировано на 17 мая в 12:30</p>
+                                                <div class="flex flex--ai-center">
+                                                    <img class="table-item__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> 
+                                                    <span>Виктор Довжик</span>
+                                                </div>
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    869
-                                </div>
-                                <div class="table-row__cell">
-                                    <div class="table__status table__status--process">
-                                        В процессе
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="0 / 2581">0 / 2581</div>
                                     </div>
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    89,3%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    25,1%
-                                </div>
-                                <div class="table-row__cell table-row__cell-right">
-                                    <a href="#" class="table__btnOpen">
-                                        <span class="table__btnOpen-text">Открыть</span>
-                                        <svg class="table__btnOpen-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
-                                        </svg>     
-                                    </a>
-                                </div>
-                            </div>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <span class="table-item__status table-item__status--expectation">Ожидание</span>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="89,3%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">89,3%</div>
+                                                <div class="table-item__checkbox_hover-hover">140</div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="25,1%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">25,1%</div>
+                                                <div class="table-item__checkbox_hover-hover">35</div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__btn_open">
+                                                <span class="table-item__btn_open-text">Открыть</span>
+                                                <svg class="table-item__btn_open-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
+                                                </svg>     
+                                            </div>
+                                        </div>  
+                                    </div>
+                        
+                            </a>
+                        
+                            <a href="#Розыгрыш iPhone 12 Pro Max4" class="table-row table-item">
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__title">
+                                                <div class="table-item__title-text">
+                                                    Розыгрыш iPhone 12 Pro Max
+                                                </div>
+                                                <button class="button table-item__title-btn">
+                                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33333 2.6665V1.99984C9.33333 1.64622 9.19286 1.30708 8.94281 1.05703C8.69276 0.80698 8.35362 0.666504 8 0.666504H4C3.64638 0.666504 3.30724 0.80698 3.05719 1.05703C2.80714 1.30708 2.66667 1.64622 2.66667 1.99984V2.6665H0.666667C0.489856 2.6665 0.320286 2.73674 0.195262 2.86177C0.0702379 2.98679 0 3.15636 0 3.33317C0 3.50998 0.0702379 3.67955 0.195262 3.80457C0.320286 3.9296 0.489856 3.99984 0.666667 3.99984H1.33333V11.3332C1.33333 11.8636 1.54405 12.3723 1.91912 12.7474C2.29419 13.1225 2.8029 13.3332 3.33333 13.3332H8.66667C9.1971 13.3332 9.70581 13.1225 10.0809 12.7474C10.456 12.3723 10.6667 11.8636 10.6667 11.3332V3.99984H11.3333C11.5101 3.99984 11.6797 3.9296 11.8047 3.80457C11.9298 3.67955 12 3.50998 12 3.33317C12 3.15636 11.9298 2.98679 11.8047 2.86177C11.6797 2.73674 11.5101 2.6665 11.3333 2.6665H9.33333ZM8 1.99984H4V2.6665H8V1.99984ZM9.33333 3.99984H2.66667V11.3332C2.66667 11.51 2.7369 11.6796 2.86193 11.8046C2.98695 11.9296 3.15652 11.9998 3.33333 11.9998H8.66667C8.84348 11.9998 9.01305 11.9296 9.13807 11.8046C9.26309 11.6796 9.33333 11.51 9.33333 11.3332V3.99984Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                        <path d="M4 5.33301H5.33333V10.6663H4V5.33301Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                        <path d="M6.66668 5.33301H8.00001V10.6663H6.66668V5.33301Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="table-item__desc">
+                                                <p>Отправлено 17 мая в 12:30</p>
+                                                <div class="flex flex--ai-center">
+                                                    <img class="table-item__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> 
+                                                    <span>Виктор Довжик</span>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="12 864">12 864</div>
+                                    </div>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <span class="table-item__status table-item__status--sentby">Отправлено</span>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="89,3%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">89,3%</div>
+                                                <div class="table-item__checkbox_hover-hover">140</div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="25,1%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">25,1%</div>
+                                                <div class="table-item__checkbox_hover-hover">35</div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__btn_open">
+                                                <span class="table-item__btn_open-text">Открыть</span>
+                                                <svg class="table-item__btn_open-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
+                                                </svg>     
+                                            </div>
+                                        </div>  
+                                    </div>
+                        
+                            </a>
+                            
+                            <a href="#Розыгрыш iPhone 12 Pro Max5" class="table-row table-item">
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__title">
+                                                <div class="table-item__title-text">
+                                                    Розыгрыш iPhone 12 Pro Max
+                                                </div>
+                                                <button class="button table-item__title-btn">
+                                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33333 2.6665V1.99984C9.33333 1.64622 9.19286 1.30708 8.94281 1.05703C8.69276 0.80698 8.35362 0.666504 8 0.666504H4C3.64638 0.666504 3.30724 0.80698 3.05719 1.05703C2.80714 1.30708 2.66667 1.64622 2.66667 1.99984V2.6665H0.666667C0.489856 2.6665 0.320286 2.73674 0.195262 2.86177C0.0702379 2.98679 0 3.15636 0 3.33317C0 3.50998 0.0702379 3.67955 0.195262 3.80457C0.320286 3.9296 0.489856 3.99984 0.666667 3.99984H1.33333V11.3332C1.33333 11.8636 1.54405 12.3723 1.91912 12.7474C2.29419 13.1225 2.8029 13.3332 3.33333 13.3332H8.66667C9.1971 13.3332 9.70581 13.1225 10.0809 12.7474C10.456 12.3723 10.6667 11.8636 10.6667 11.3332V3.99984H11.3333C11.5101 3.99984 11.6797 3.9296 11.8047 3.80457C11.9298 3.67955 12 3.50998 12 3.33317C12 3.15636 11.9298 2.98679 11.8047 2.86177C11.6797 2.73674 11.5101 2.6665 11.3333 2.6665H9.33333ZM8 1.99984H4V2.6665H8V1.99984ZM9.33333 3.99984H2.66667V11.3332C2.66667 11.51 2.7369 11.6796 2.86193 11.8046C2.98695 11.9296 3.15652 11.9998 3.33333 11.9998H8.66667C8.84348 11.9998 9.01305 11.9296 9.13807 11.8046C9.26309 11.6796 9.33333 11.51 9.33333 11.3332V3.99984Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                        <path d="M4 5.33301H5.33333V10.6663H4V5.33301Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                        <path d="M6.66668 5.33301H8.00001V10.6663H6.66668V5.33301Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="table-item__desc">
+                                                <p>Отправлено 17 мая в 12:30</p>
+                                                <div class="flex flex--ai-center">
+                                                    <img class="table-item__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> 
+                                                    <span>Виктор Довжик</span>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="869">869</div>
+                                    </div>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <span class="table-item__status table-item__status--sentby">Отправлено</span>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="89,3%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">89,3%</div>
+                                                <div class="table-item__checkbox_hover-hover">140</div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="25,1%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">25,1%</div>
+                                                <div class="table-item__checkbox_hover-hover">35</div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__btn_open">
+                                                <span class="table-item__btn_open-text">Открыть</span>
+                                                <svg class="table-item__btn_open-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
+                                                </svg>     
+                                            </div>
+                                        </div>  
+                                    </div>
+                        
+                            </a>
+                        
+                            <a href="#Розыгрыш iPhone 12 Pro Max6" class="table-row table-item">
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__title">
+                                                <div class="table-item__title-text">
+                                                    Розыгрыш iPhone 12 Pro Max
+                                                </div>
+                                                <button class="button table-item__title-btn">
+                                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33333 2.6665V1.99984C9.33333 1.64622 9.19286 1.30708 8.94281 1.05703C8.69276 0.80698 8.35362 0.666504 8 0.666504H4C3.64638 0.666504 3.30724 0.80698 3.05719 1.05703C2.80714 1.30708 2.66667 1.64622 2.66667 1.99984V2.6665H0.666667C0.489856 2.6665 0.320286 2.73674 0.195262 2.86177C0.0702379 2.98679 0 3.15636 0 3.33317C0 3.50998 0.0702379 3.67955 0.195262 3.80457C0.320286 3.9296 0.489856 3.99984 0.666667 3.99984H1.33333V11.3332C1.33333 11.8636 1.54405 12.3723 1.91912 12.7474C2.29419 13.1225 2.8029 13.3332 3.33333 13.3332H8.66667C9.1971 13.3332 9.70581 13.1225 10.0809 12.7474C10.456 12.3723 10.6667 11.8636 10.6667 11.3332V3.99984H11.3333C11.5101 3.99984 11.6797 3.9296 11.8047 3.80457C11.9298 3.67955 12 3.50998 12 3.33317C12 3.15636 11.9298 2.98679 11.8047 2.86177C11.6797 2.73674 11.5101 2.6665 11.3333 2.6665H9.33333ZM8 1.99984H4V2.6665H8V1.99984ZM9.33333 3.99984H2.66667V11.3332C2.66667 11.51 2.7369 11.6796 2.86193 11.8046C2.98695 11.9296 3.15652 11.9998 3.33333 11.9998H8.66667C8.84348 11.9998 9.01305 11.9296 9.13807 11.8046C9.26309 11.6796 9.33333 11.51 9.33333 11.3332V3.99984Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                        <path d="M4 5.33301H5.33333V10.6663H4V5.33301Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                        <path d="M6.66668 5.33301H8.00001V10.6663H6.66668V5.33301Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="table-item__desc">
+                                                <p>Отправлено 17 мая в 12:30</p>
+                                                <div class="flex flex--ai-center">
+                                                    <img class="table-item__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> 
+                                                    <span>Виктор Довжик</span>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="869">869</div>
+                                    </div>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <span class="table-item__status table-item__status--sentby">Отправлено</span>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="89,3%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">89,3%</div>
+                                                <div class="table-item__checkbox_hover-hover">140</div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="25,1%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">25,1%</div>
+                                                <div class="table-item__checkbox_hover-hover">35</div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__btn_open">
+                                                <span class="table-item__btn_open-text">Открыть</span>
+                                                <svg class="table-item__btn_open-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
+                                                </svg>     
+                                            </div>
+                                        </div>  
+                                    </div>
+                        
+                            </a>
+                        
+                            <a href="#Розыгрыш iPhone 12 Pro Max7" class="table-row table-item">
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__title">
+                                                <div class="table-item__title-text">
+                                                    Розыгрыш iPhone 12 Pro Max
+                                                </div>
+                                                <button class="button table-item__title-btn">
+                                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect x="6" width="4" height="12" fill="#C4C4C4"/>
+                                                        <rect width="4" height="12" fill="#C4C4C4"/>
+                                                    </svg> 
+                                                </button>
+                                            </div>
+                                            <div class="table-item__desc">
+                                                <p>Отправлено 17 мая в 12:30</p>
+                                                <div class="flex flex--ai-center">
+                                                    <img class="table-item__desc-img" src="img/profile-pic.jpg" alt="Виктор Довжик"> 
+                                                    <span>Виктор Довжик</span>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="10 / 869">10 / 869</div>
+                                    </div>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <span class="table-item__status table-item__status--process">В процессе</span>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="89,3%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">89,3%</div>
+                                                <div class="table-item__checkbox_hover-hover">140</div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                        
+                                    <div class="table-row__cell table-row__cell-right">
+                                        <div class="table-row__inner" title="25,1%">
+                                            <div class="table-item__checkbox_hover">
+                                                <div class="table-item__checkbox_hover-no_hover">25,1%</div>
+                                                <div class="table-item__checkbox_hover-hover">35</div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                        
+                                    <div class="table-row__cell">
+                                        <div class="table-row__inner">
+                                            <div class="table-item__btn_open">
+                                                <span class="table-item__btn_open-text">Открыть</span>
+                                                <svg class="table-item__btn_open-icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00014C0 4.86753 0.0526784 4.74036 0.146447 4.64659C0.240215 4.55282 0.367392 4.50014 0.5 4.50014H12.293L9.146 1.35414C9.05211 1.26026 8.99937 1.13292 8.99937 1.00014C8.99937 0.867368 9.05211 0.74003 9.146 0.646143C9.23989 0.552257 9.36722 0.499512 9.5 0.499512C9.63278 0.499512 9.76011 0.552257 9.854 0.646143L13.854 4.64614C13.9006 4.69259 13.9375 4.74776 13.9627 4.80851C13.9879 4.86926 14.0009 4.93438 14.0009 5.00014C14.0009 5.06591 13.9879 5.13103 13.9627 5.19178C13.9375 5.25252 13.9006 5.3077 13.854 5.35414L9.854 9.35414C9.76011 9.44803 9.63278 9.50077 9.5 9.50077C9.36722 9.50077 9.23989 9.44803 9.146 9.35414C9.05211 9.26026 8.99937 9.13292 8.99937 9.00014C8.99937 8.86737 9.05211 8.74003 9.146 8.64614L12.293 5.50014H0.5C0.367392 5.50014 0.240215 5.44746 0.146447 5.3537C0.0526784 5.25993 0 5.13275 0 5.00014Z" fill="#0E0E0E"/>
+                                                </svg>     
+                                            </div>
+                                        </div>  
+                                    </div>
+                        
+                            </a>
+                        
                         </div>
-                
+                        
+                        
                     </div>
                 </main>
             </div>
