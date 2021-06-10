@@ -601,6 +601,7 @@ img {
   margin: 0;
   height: 33px;
   width: 33px;
+  left: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
