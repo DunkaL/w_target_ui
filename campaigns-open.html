@@ -200,16 +200,36 @@
                 </div>                <main class="main">
                     <div class="main__content">
                         
-                        <div class="flex flex--space-between flex--ai-center">
+                        <div class="flex flex--space-between flex--ai-center main__header-indent">
                             <div class="flex flex--ai-center">
-                                <button>Назад</button>
-                                <h2 class="main__header">Розыгрыш iPhone 12 Pro Max</h2>
-                                <div>В процессе</div>
-                                <div>17 мая в 12:30</div>
+                                <div>
+                                    <a href="#" class="button button--back">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.246 4.25007V5.75007H3.62503L6.05728 8.18232L4.99603 9.24282L0.754028 5.00007L4.99603 0.757324L6.05728 1.81782L3.62503 4.25007H13.246Z" fill="rgba(14, 14, 14, 0.5)"/>
+                                        </svg>
+                                        <div>Назад</div>
+                                    </a>
+                                </div>
+                        
+                                <h2 class="main__title" style="margin-right: 16px;">Розыгрыш iPhone 12 Pro Max</h2>
+                        
+                                <div style="margin-right: 18px;">
+                                    <span class="status status--process">В процессе</span>
+                                </div>
+                        
+                                <div style="color: rgba(14, 14, 14, 0.5);">17 мая в 12:30</div>
                             </div>
                         
-                            <button>Остановить</button>
+                            <!-- <button>
+                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="6" width="4" height="12" fill="#C4C4C4"/>
+                                    <rect width="4" height="12" fill="#C4C4C4"/>
+                                </svg>
+                                Остановить
+                            </button> -->
                         </div>
+                        
+                        
                         
                         <ul class="tabs">
                             <li class="tabs__item">
@@ -225,7 +245,28 @@
                         
                         <div class="tabs__content">
                             <div class="tabs__content-pane action" id="Preview">
-                                sssss
+                                <div class="gray-block flex flex--jc-center">
+                                    <!-- временно -->
+                                    <div>
+                                        <div class="pagination" style="margin-bottom: 24px;">
+                                            <ul class="pagination__list">
+                                                <li class="pagination__item pagination__item--active">
+                                                    <a class="pagination__link pagination__link-icon" href="#">
+                                                        <img src="img/full-moon-face.svg" alt="1">
+                                                    </a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link pagination__link-icon" href="#">
+                                                        <img src="img/new-moon-face.svg" alt="1">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div style="width:360px; height: 518px; overflow: hidden;">
+                                            <img src="img/phone.png" alt="phone">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tabs__content-pane" id="Analytics">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores asperiores nostrum repudiandae odio facere minima vel labore! Odio autem et nulla doloremque eveniet sapiente deleniti! Eaque odit aspernatur totam?
