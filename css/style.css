@@ -587,9 +587,10 @@ img {
 
 .profile {
   background: #128C7E;
+  display: table;
   position: relative;
-  height: 32px;
-  width: 32px;
+  height: 33px;
+  width: 33px;
   margin-left: 32px;
   border-radius: 50%;
   overflow: hidden;
@@ -598,24 +599,20 @@ img {
 .profile__img {
   position: absolute;
   margin: 0;
-  height: 32px;
-  width: 32px;
+  height: 33px;
+  width: 33px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .profile__initials {
-  position: absolute;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 6px;
   font-weight: 900;
   font-size: 14px;
-  line-height: 0.9;
   color: #F8F8F8;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 .sidebar {
