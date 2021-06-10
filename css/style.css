@@ -1081,7 +1081,7 @@ img {
   color: #128C7E;
 }
 
-.form__group__icon--textarea {
+.form__group__icon-textarea {
   background: #fff;
   font-weight: 500;
   font-size: 13px;
@@ -1090,10 +1090,11 @@ img {
   bottom: 1px;
   height: 31px;
   padding-left: 4px;
+  white-space: nowrap;
   color: rgba(14,14,14,0.35);
 }
 
-.form__group__icon--textarea:hover {
+.form__group__icon-textarea:hover {
   color: #128C7E;
 }
 
