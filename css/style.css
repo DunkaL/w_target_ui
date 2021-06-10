@@ -1058,7 +1058,6 @@ img {
 }
 
 .form__group__icon {
-  background: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1074,10 +1073,14 @@ img {
   right: 13px;
   bottom: 0;
   height: 100%;
+}
+
+.form__group__icon .button {
+  background: inherit;
   color: rgba(14,14,14,0.35);
 }
 
-.form__group__icon:hover {
+.form__group__icon .button:hover {
   color: #128C7E;
 }
 
