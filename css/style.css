@@ -1632,7 +1632,9 @@ img {
 
 .divause-iPhone__contact-check_mark img {
   width: 11px;
+  min-width: 11px;
   height: 11px;
+  min-height: 11px;
 }
 
 .divause-iPhone__notification {
