@@ -1603,9 +1603,16 @@ img {
   margin-right: 5px;
 }
 
+.divause-iPhone__contact-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .divause-iPhone__contact-text {
   font-size: 11.5px;
-  line-height: 1;
+  line-height: 1.6;
   font-weight: 500;
   overflow: hidden;
   white-space: nowrap;
@@ -1621,10 +1628,11 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.divause-iPhone__contact-check_mark img {
   width: 11px;
-  min-width: 11px;
   height: 11px;
-  min-height: 10px;
 }
 
 .divause-iPhone__notification {
@@ -1672,7 +1680,7 @@ img {
 
 .divause-iPhone__message-tail_out {
   position: absolute;
-  left: -7px;
+  left: -6px;
   bottom: 4px;
   z-index: 100;
   display: block;
