@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index,follow">
+        <meta name="description" content="Сборка для верстки сайта">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Данные Open Graph -->
+        <meta property="og:title" content="Заголовок здесь"/>
+        <meta property="og:description" content="Описание здесь"/>
+        <meta property="og:image" content="https://.../image250X250.png"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://"/>
+        
+        <!-- Google -->
+        <meta property="business:contact_data:email" content="email"/>
+        <meta property="business:contact_data:phone_number" content="phone"/>
+        <meta property="business:contact_data:website" content="http://"/>
+        
+        <!-- Google Plus -->
+        <meta itemprop="name" content="Название сайта"/>
+        <meta itemprop="description" content="Описание сайта"/>
+        <meta itemprop="image" content="https://.../image250X250.png"/>
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content="Название страницы">
+        <meta name="twitter:description" content="Описание"/>
+        <meta name="twitter:image:src" content="https://.../image250X250.png"/>
+        <meta name="twitter:domain" content="website.com"/>
+        
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.min.css">
+        
+        <title>w-target AP | components-phone</title>        <!-- <script>
+            function loadFont(a, b, c, d) {
+                function e() {
+                    if (!window.FontFace) return !1;
+                    var a = new FontFace("t", 'url("data:application/font-woff2,") format("woff2")', {}),
+                        b = a.load();
+                    try {
+                        b.then(null, function () {})
+                    } catch (c) {}
+                    return "loading" === a.status
+                }
+                var f = navigator.userAgent,
+                    g = !window.addEventListener || f.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/) && !f
+                    .match(/Chrome/);
+                if (!g) {
+                    var h = {};
+                    try {
+                        h = localStorage || {}
+                    } catch (i) {}
+                    var j = "x-font-" + a,
+                        k = j + "url",
+                        l = j + "css",
+                        m = h[k],
+                        n = h[l],
+                        o = document.createElement("style");
+                    if (o.rel = "stylesheet", document.head.appendChild(o), !n || m !== b && m !== c) {
+                        var p = c && e() ? c : b,
+                            q = new XMLHttpRequest;
+                        q.open("GET", p), q.onload = function () {
+                            q.status >= 200 && q.status < 400 && (h[k] = p, h[l] = q.responseText, d || (o.textContent =
+                                q.responseText))
+                        }, q.send()
+                    } else o.textContent = n
+                }
+            }
+            loadFont('Comfortaa', 'font/fonts.woff.css', 'font/fonts.woff2.css');
+        </script>
+        <style>body{font-family: Comfortaa, sans-serif;}</style> -->
+    </head>
+    <body>
+        <div style="position: relative;height: 100%;"> <!-- width: 1397px; -->
+            <header class="header">
+                <div class="page-header header__container">
+                    <a href="/">
+                        <img src="img/Logo.svg" alt="logo">
+                    </a>
+                    <ul class="header__nav">
+                        <li class="header__nav-item">
+                            <span class="rub">
+                                0 
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.97959 7.61932C9.65005 7.61932 11.1785 6.14773 11.1785 4.01705C11.1785 1.96023 9.68414 0.363636 6.97959 0.363636H2.59323V5.88636H0.883001V7.61932H2.59323V8.48295H0.883001V10.2159H2.59323V12H4.6955V10.2159H7.24664V8.48295H4.6955V7.61932H6.97959ZM4.6955 5.88636V2.11364H6.97959C8.39437 2.11364 9.07618 2.94318 9.0705 4.03409C9.07618 5.14773 8.40573 5.88636 6.93414 5.88636H4.6955Z" fill="#F6522E"/>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="header__nav-item">
+                            <button class="button button--border">Оплатить</button>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="unicorn" href="#">
+                                <img class="unicorn__img" src="img/unicorn.png" alt="unicorn">
+                                <div class="unicorn__count">
+                                    <span>3</span>
+                                </div> <!-- unicorn__count--hide -->
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="profile" href="#">
+                                <div class="profile__initials">VD</div>
+                                <div class="profile__img" style="background-image: url(img/profile-pic.jpg);"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>               <div class="page-layout">
+                <div class="sidebar">
+                    <nav class="sidebar__content">
+                        <ol class="sidebar__list">
+                            <li>
+                                <a href="/templates.html" class="sidebar__link sidebar__link--active">
+                                    <div class="sidebar__link-img">
+                                        <img src="img/writing-hand.png" alt="Шаблоны">
+                                    </div>
+                                    <span class="sidebar__link-text">Шаблоны</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Интеграции" class="sidebar__link">
+                                    <div class="sidebar__link-img">
+                                        <img src="img/robot.png" alt="Интеграции">
+                                    </div>
+                                    <span class="sidebar__link-text">Интеграции</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#wtQR" class="sidebar__link">
+                                    <div class="sidebar__link-img">
+                                        <img src="img/selfie.png" alt="wtQR">
+                                    </div>
+                                    <span class="sidebar__link-text">wtQR</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Рассылки" class="sidebar__link">
+                                    <div class="sidebar__link-img">
+                                        <img src="img/love-letter.png" alt="Рассылки">
+                                    </div>
+                                    <span class="sidebar__link-text">Рассылки</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Номера" class="sidebar__link">
+                                    <div class="sidebar__link-img">
+                                        <img src="img/telephone.png" alt="Номера">
+                                    </div>
+                                    <span class="sidebar__link-text">Номера</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Кнопка" class="sidebar__link">
+                                    <div class="sidebar__link-img">
+                                        <img src="img/puzzle-piece.png" alt="Кнопка">
+                                    </div>
+                                    <span class="sidebar__link-text">Кнопка</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Аналитика" class="sidebar__link">
+                                    <div class="sidebar__link-img">
+                                        <img src="img/nerd-face.png" alt="Аналитика">
+                                    </div>
+                                    <span class="sidebar__link-text">Аналитика</span>
+                                </a>
+                            </li>
+                        </ol>
+                        <ol class="sidebar__list sidebar__list--topline">
+                            <li>
+                                <a href="#Настройки" class="sidebar__link">
+                                    <div class="sidebar__link-img">
+                                        <img src="img/gear.png" alt="Настройки">
+                                    </div>
+                                    <span class="sidebar__link-text">Настройки</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Поддержка" class="sidebar__link">
+                                    <div class="sidebar__link-img">
+                                        <img src="img/support.png" alt="Поддержка">
+                                    </div>
+                                    <span class="sidebar__link-text">Поддержка</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Оплата" class="sidebar__link">
+                                    <div class="sidebar__link-img">
+                                        <img src="img/money-with-wings.png" alt="Оплата">
+                                    </div>
+                                    <span class="sidebar__link-text">Оплата</span>
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>                <main class="main">
+                    <div class="main__content">
+                        
+                        <div class="divause-iPhone">
+                            <div class="divause-iPhone__content">
+                                <div class="divause-iPhone__header">
+                                    <div class="divause-iPhone__time">15:51</div>
+                        
+                                    <div class="divause-iPhone__contact">
+                                        <div class="divause-iPhone__contact-img">
+                                            <img src="img/image-numbers1.jpg" alt="Яндекс Go — Staff">
+                                        </div>
+                                        <div class="divause-iPhone__contact-text" title="Яндекс Go — Staff">
+                                            Яндекс Go — Staff
+                                        </div>
+                                        <div class="divause-iPhone__contact-check_mark">
+                                            <img src="/img/Verified.svg" alt="check_mark">
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                        
+                                <div class="divause-iPhone__notification">
+                                    <div class="divause-iPhone__notification-text">
+                                        <img class="divause-iPhone__notification-text-icon" src="img/lock.svg" alt="lock">
+                                        Сообщения и звонки в данном чате
+                                        теперь защищены сквозным шифрованием.<br>
+                                        Бизнес может использовать
+                                        сторонний сервис для хранения и чтения ваших сообщений и ответа на сообщения и
+                                        звонки. Подробнее.
+                                    </div>
+                                </div>
+                        
+                                <div class="divause-iPhone__information">
+                                    <div class="divause-iPhone__information-text">
+                                        Данная переписка ведётся с бизнес-аккаунтом. Подробнее.
+                                    </div>
+                                </div>  
+                        
+                                <div class="divause-iPhone__message">
+                                    <div class="divause-iPhone__message-block">
+                                        <div style="position: relative;">
+                                            <span class="divause-iPhone__message-tail_out">
+                                                <svg width="8" height="8" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6.10352e-05 12.1429C6.51957 9.24286 9.29266 6.49463 13.0001 0V17C7.19003 16.9064 4.38447 15.758 6.10352e-05 12.1429Z" fill="#F9F9F9"/>
+                                                </svg>    
+                                            </span>
+                            
+                                            <div class="divause-iPhone__message-content">
+                            
+                                                <div class="divause-iPhone__message-padding">
+                                                    <div class="divause-iPhone__message-text">
+                            
+                                                        <div style="position: relative; overflow-wrap: break-word;"> 
+                                                            <span style="vertical-align: initial;">
+                                                                <span>
+                                                                    Здравствуйте 👋 Вы были в туре с нами в ОАЭ в 2019 году. У нас новости: мы придумали, что подарить вашим близким — впечатления! Нажмите на кнопку и узнайте, как работают подарочные карты TUI.
+                                                                </span>
+                                                            </span>
+                                                            <span class="divause-iPhone__message-plug"></span>
+                                                        </div>
+                            
+                                                    </div>
+                                                    <div class="divause-iPhone__message-time">15:49</div> 
+                                                </div>
+                            
+                                            </div>
+                                        </div>
+                                        <div class="divause-iPhone__message-btns">
+                                            <div class="divause-iPhone__message-btns-col">
+                                                <button class="button divause-iPhone__message-btn">Подробнее</button>
+                                            </div>
+                                            <div class="divause-iPhone__message-btns-col">
+                                                <button class="button divause-iPhone__message-btn">Не интересно</button>
+                                            </div>
+                                            <div class="divause-iPhone__message-btns-col">
+                                                <button class="button divause-iPhone__message-btn">Записаться на экскурсию</button>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>  
+                        
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    <script src="js/script.min.js" defer></script>
+    </body>
+</html>
