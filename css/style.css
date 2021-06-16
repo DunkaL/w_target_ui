@@ -1644,17 +1644,18 @@ img {
 
 .divause-iPhone__notification-text {
   background: #fdf4c5;
-  font-size: 8px;
+  font-size: 8.5px;
   font-weight: 500;
   text-align: center;
-  border-radius: 13px;
-  padding: 4px 11px;
+  border-radius: 5px;
+  padding: 4px 10px;
 }
 
 .divause-iPhone__notification-text-icon {
   vertical-align: text-top;
   width: 6px;
-  height: 9px;
+  height: 8px;
+  margin-right: 2px;
 }
 
 .divause-iPhone__information {
@@ -1664,11 +1665,11 @@ img {
 
 .divause-iPhone__information-text {
   background: #eef9f5;
-  font-size: 8px;
+  font-size: 8.5px;
   font-weight: 500;
   text-align: center;
-  border-radius: 13px;
-  padding: 5px 11px;
+  border-radius: 5px;
+  padding: 5px 7px;
 }
 
 .divause-iPhone__message {
