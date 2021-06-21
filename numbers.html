@@ -35,47 +35,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.min.css">
         
-        <title>w-target AP | Numbers</title>        <!-- <script>
-            function loadFont(a, b, c, d) {
-                function e() {
-                    if (!window.FontFace) return !1;
-                    var a = new FontFace("t", 'url("data:application/font-woff2,") format("woff2")', {}),
-                        b = a.load();
-                    try {
-                        b.then(null, function () {})
-                    } catch (c) {}
-                    return "loading" === a.status
-                }
-                var f = navigator.userAgent,
-                    g = !window.addEventListener || f.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/) && !f
-                    .match(/Chrome/);
-                if (!g) {
-                    var h = {};
-                    try {
-                        h = localStorage || {}
-                    } catch (i) {}
-                    var j = "x-font-" + a,
-                        k = j + "url",
-                        l = j + "css",
-                        m = h[k],
-                        n = h[l],
-                        o = document.createElement("style");
-                    if (o.rel = "stylesheet", document.head.appendChild(o), !n || m !== b && m !== c) {
-                        var p = c && e() ? c : b,
-                            q = new XMLHttpRequest;
-                        q.open("GET", p), q.onload = function () {
-                            q.status >= 200 && q.status < 400 && (h[k] = p, h[l] = q.responseText, d || (o.textContent =
-                                q.responseText))
-                        }, q.send()
-                    } else o.textContent = n
-                }
-            }
-            loadFont('Comfortaa', 'font/fonts.woff.css', 'font/fonts.woff2.css');
-        </script>
-        <style>body{font-family: Comfortaa, sans-serif;}</style> -->
-    </head>
+        <title>w-target AP | Numbers</title>    </head>
     <body>
-        <div style="position: relative;height: 100%;"> <!-- width: 1397px; -->
+        <div style="position: relative;height: 100%;"> 
             <header class="header">
                 <div class="page-header header__container">
                     <a href="/">
@@ -104,7 +66,7 @@
                         <li class="header__nav-item">
                             <a class="profile" href="#">
                                 <div class="profile__initials">VD</div>
-                                <div class="profile__img" style="background-image: url();"></div>
+                                <div class="profile__img" style="background-image: url(img/profile-pic.jpg);"></div>
                             </a>
                         </li>
                     </ul>
@@ -114,7 +76,7 @@
                     <nav class="sidebar__content">
                         <ol class="sidebar__list">
                             <li>
-                                <a href="/templates.html" class="sidebar__link">
+                                <a href="/templates.html" class="sidebar__link sidebar__link--active">
                                     <div class="sidebar__link-img">
                                         <img src="img/writing-hand.png" alt="Шаблоны">
                                     </div>
@@ -146,7 +108,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#Номера" class="sidebar__link sidebar__link--active">
+                                <a href="#Номера" class="sidebar__link">
                                     <div class="sidebar__link-img">
                                         <img src="img/telephone.png" alt="Номера">
                                     </div>
@@ -201,7 +163,11 @@
                     <div class="main__content">
                         
                         
-                        <h2 class="main__title main__header-indent">Номера WhatsApp</h2>
+                        <h2 class="main__title main__header--indent">
+                            <div class="main__title-text">
+                                Номера WhatsApp
+                            </div>
+                        </h2>
                         
                         <div class="main__grid main__grid--three">
                             <div class="aside">
@@ -328,7 +294,11 @@
                                 
                                     <div class="form__block">
                                         <label class="form__label" for="extended-description">Расширенное описание</label>
-                                        <textarea class="form__input form__textarea" id="extended-description" placeholder="" data-autoresize>Яндекс Go — мобильное приложение на базе Яндекс. Такси. Оно помогает быстро передвигаться.</textarea>
+                                        <div class="form__group">
+                                            <div class="form__textarea form__textarea--three_line">
+                                                <textarea id="extended-description" data-autoresize>Яндекс Go — мобильное приложение на базе Яндекс. Такси. Оно помогает быстро передвигаться.</textarea>
+                                            </div>
+                                        </div>
                                     </div>
                                 
                                     <div class="form__block form__validation--warning"> <!-- form__validation--error form__validation--warning -->
@@ -390,7 +360,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                                                                <div class="divause-iPhone">
+                                
+                                <div class="divause-iPhone">
                                     <div class="divause-iPhone__content">
                                         <div class="divause-iPhone__header">
                                             <div class="divause-iPhone__time">15:51</div>
@@ -479,6 +450,7 @@
                 </main>
             </div>
         </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.min.js" defer></script>
     </body>
 </html>

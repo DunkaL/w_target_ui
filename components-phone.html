@@ -35,47 +35,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.min.css">
         
-        <title>w-target AP | components-phone</title>        <!-- <script>
-            function loadFont(a, b, c, d) {
-                function e() {
-                    if (!window.FontFace) return !1;
-                    var a = new FontFace("t", 'url("data:application/font-woff2,") format("woff2")', {}),
-                        b = a.load();
-                    try {
-                        b.then(null, function () {})
-                    } catch (c) {}
-                    return "loading" === a.status
-                }
-                var f = navigator.userAgent,
-                    g = !window.addEventListener || f.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/) && !f
-                    .match(/Chrome/);
-                if (!g) {
-                    var h = {};
-                    try {
-                        h = localStorage || {}
-                    } catch (i) {}
-                    var j = "x-font-" + a,
-                        k = j + "url",
-                        l = j + "css",
-                        m = h[k],
-                        n = h[l],
-                        o = document.createElement("style");
-                    if (o.rel = "stylesheet", document.head.appendChild(o), !n || m !== b && m !== c) {
-                        var p = c && e() ? c : b,
-                            q = new XMLHttpRequest;
-                        q.open("GET", p), q.onload = function () {
-                            q.status >= 200 && q.status < 400 && (h[k] = p, h[l] = q.responseText, d || (o.textContent =
-                                q.responseText))
-                        }, q.send()
-                    } else o.textContent = n
-                }
-            }
-            loadFont('Comfortaa', 'font/fonts.woff.css', 'font/fonts.woff2.css');
-        </script>
-        <style>body{font-family: Comfortaa, sans-serif;}</style> -->
-    </head>
+        <title>w-target AP | components-phone</title>    </head>
     <body>
-        <div style="position: relative;height: 100%;"> <!-- width: 1397px; -->
+        <div style="position: relative;height: 100%;"> 
             <header class="header">
                 <div class="page-header header__container">
                     <a href="/">
@@ -114,7 +76,7 @@
                     <nav class="sidebar__content">
                         <ol class="sidebar__list">
                             <li>
-                                <a href="/templates.html" class="sidebar__link">
+                                <a href="/templates.html" class="sidebar__link sidebar__link--active">
                                     <div class="sidebar__link-img">
                                         <img src="img/writing-hand.png" alt="Шаблоны">
                                     </div>
@@ -207,7 +169,7 @@
                         
                                     <div class="divause-iPhone__contact">
                                         <div class="divause-iPhone__contact-img">
-                                            <img src="img/image-numbers1.jpg" alt="Яндекс Go — Staff">
+                                            <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс Go — Staff">
                                         </div>
                                         <div class="divause-iPhone__contact-text" title="Яндекс Go — Staff">
                                             Яндекс Go — Staff
@@ -280,11 +242,11 @@
                                 </div>  
                         
                             </div>
-                        </div>
-                    </div>
+                        </div>                    </div>
                 </main>
             </div>
         </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.min.js" defer></script>
     </body>
 </html>

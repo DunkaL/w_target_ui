@@ -35,47 +35,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.min.css">
         
-        <title>w-target AP | Campaigns</title>        <!-- <script>
-            function loadFont(a, b, c, d) {
-                function e() {
-                    if (!window.FontFace) return !1;
-                    var a = new FontFace("t", 'url("data:application/font-woff2,") format("woff2")', {}),
-                        b = a.load();
-                    try {
-                        b.then(null, function () {})
-                    } catch (c) {}
-                    return "loading" === a.status
-                }
-                var f = navigator.userAgent,
-                    g = !window.addEventListener || f.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/) && !f
-                    .match(/Chrome/);
-                if (!g) {
-                    var h = {};
-                    try {
-                        h = localStorage || {}
-                    } catch (i) {}
-                    var j = "x-font-" + a,
-                        k = j + "url",
-                        l = j + "css",
-                        m = h[k],
-                        n = h[l],
-                        o = document.createElement("style");
-                    if (o.rel = "stylesheet", document.head.appendChild(o), !n || m !== b && m !== c) {
-                        var p = c && e() ? c : b,
-                            q = new XMLHttpRequest;
-                        q.open("GET", p), q.onload = function () {
-                            q.status >= 200 && q.status < 400 && (h[k] = p, h[l] = q.responseText, d || (o.textContent =
-                                q.responseText))
-                        }, q.send()
-                    } else o.textContent = n
-                }
-            }
-            loadFont('Comfortaa', 'font/fonts.woff.css', 'font/fonts.woff2.css');
-        </script>
-        <style>body{font-family: Comfortaa, sans-serif;}</style> -->
-    </head>
+        <title>w-target AP | Campaigns</title>    </head>
     <body>
-        <div style="position: relative;height: 100%;"> <!-- width: 1397px; -->
+        <div style="position: relative;height: 100%;"> 
             <header class="header">
                 <div class="page-header header__container">
                     <a href="/">
@@ -114,7 +76,7 @@
                     <nav class="sidebar__content">
                         <ol class="sidebar__list">
                             <li>
-                                <a href="/templates.html" class="sidebar__link">
+                                <a href="/templates.html" class="sidebar__link sidebar__link--active">
                                     <div class="sidebar__link-img">
                                         <img src="img/writing-hand.png" alt="Шаблоны">
                                     </div>
@@ -138,7 +100,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#Рассылки" class="sidebar__link sidebar__link--active">
+                                <a href="#Рассылки" class="sidebar__link">
                                     <div class="sidebar__link-img">
                                         <img src="img/love-letter.png" alt="Рассылки">
                                     </div>
@@ -200,7 +162,12 @@
                 </div>                <main class="main">
                     <div class="main__content">
                         
-                        <h2 class="main__title main__header-indent">Рассылки</h2>
+                        
+                        <h2 class="main__title main__header--indent">
+                            <div class="main__title-text">
+                                Рассылки
+                            </div>
+                        </h2>
                         
                         <div class="flex flex--space-between" style="margin-bottom: 21px;">
                             <form class="search">
@@ -213,7 +180,7 @@
                             </form>
                             <button class="button button--mailbox">Создать</button>
                         </div>
-
+                        
                         <div class="table">
                             <div class="table-row table__head">
                                 <div class="table-row__cell" style="width:36%;">
@@ -230,13 +197,13 @@
                                 <div class="table-row__cell table-row__cell-right" style="width:13%;">Отвечено</div>
                                 <div class="table-row__cell"></div>
                             </div>
-
-
+                        
+                        
                             <a href="#Розыгрыш iPhone 12 Pro Max" class="table-row table-item">
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
-
+                        
                                             <div class="table-item__title">
                                                 <div class="table-item__title-text">Розыгрыш iPhone 12 Pro Max</div>
                                                 <button class="button table-item__title-btn">
@@ -254,20 +221,20 @@
                                                     <span>Виктор Довжик</span>
                                                 </div>
                                             </div> 
-
+                        
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="-">-</div>
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <span class="status status--draft">Черновик</span>
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="89,3%">
                                             <div class="table-item__checkbox_hover">
@@ -276,7 +243,7 @@
                                             </div>
                                         </div>   
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="25,1%">
                                             <div class="table-item__checkbox_hover">
@@ -285,7 +252,7 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__btn_open">
@@ -296,11 +263,11 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                             </a>
-
+                        
                             <a href="#Розыгрыш iPhone 12 Pro Max2" class="table-row table-item">
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__title">
@@ -323,17 +290,17 @@
                                             </div> 
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="152 / 2581">152 / 2581</div>
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <span class="status status--process">В процессе</span>
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="89,3%">
                                             <div class="table-item__checkbox_hover">
@@ -342,7 +309,7 @@
                                             </div>
                                         </div>   
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="25,1%">
                                             <div class="table-item__checkbox_hover">
@@ -351,7 +318,7 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__btn_open">
@@ -362,11 +329,11 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                             </a>
-
+                        
                             <a href="#Розыгрыш iPhone 12 Pro Max3" class="table-row table-item">
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__title">
@@ -390,17 +357,17 @@
                                             </div> 
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="0 / 2581">0 / 2581</div>
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <span class="status status--expectation">Ожидание</span>
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="89,3%">
                                             <div class="table-item__checkbox_hover">
@@ -409,7 +376,7 @@
                                             </div>
                                         </div>   
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="25,1%">
                                             <div class="table-item__checkbox_hover">
@@ -418,7 +385,7 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__btn_open">
@@ -429,11 +396,11 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                             </a>
-
+                        
                             <a href="#Розыгрыш iPhone 12 Pro Max4" class="table-row table-item">
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__title">
@@ -457,17 +424,17 @@
                                             </div> 
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="12 864">12 864</div>
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <span class="status status--sentby">Отправлено</span>
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="89,3%">
                                             <div class="table-item__checkbox_hover">
@@ -476,7 +443,7 @@
                                             </div>
                                         </div>   
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="25,1%">
                                             <div class="table-item__checkbox_hover">
@@ -485,7 +452,7 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__btn_open">
@@ -496,11 +463,11 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                             </a>
-
+                            
                             <a href="#Розыгрыш iPhone 12 Pro Max5" class="table-row table-item">
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__title">
@@ -524,17 +491,17 @@
                                             </div> 
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="869">869</div>
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <span class="status status--sentby">Отправлено</span>
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="89,3%">
                                             <div class="table-item__checkbox_hover">
@@ -543,7 +510,7 @@
                                             </div>
                                         </div>   
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="25,1%">
                                             <div class="table-item__checkbox_hover">
@@ -552,7 +519,7 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__btn_open">
@@ -563,11 +530,11 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                             </a>
-
+                        
                             <a href="#Розыгрыш iPhone 12 Pro Max6" class="table-row table-item">
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__title">
@@ -591,17 +558,17 @@
                                             </div> 
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="869">869</div>
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <span class="status status--sentby">Отправлено</span>
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="89,3%">
                                             <div class="table-item__checkbox_hover">
@@ -610,7 +577,7 @@
                                             </div>
                                         </div>   
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="25,1%">
                                             <div class="table-item__checkbox_hover">
@@ -619,7 +586,7 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__btn_open">
@@ -630,11 +597,11 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                             </a>
-
+                        
                             <a href="#Розыгрыш iPhone 12 Pro Max7" class="table-row table-item">
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__title">
@@ -657,17 +624,17 @@
                                             </div> 
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="10 / 869">10 / 869</div>
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <span class="status status--process">В процессе</span>
                                         </div>
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="89,3%">
                                             <div class="table-item__checkbox_hover">
@@ -676,7 +643,7 @@
                                             </div>
                                         </div>   
                                     </div>
-
+                        
                                     <div class="table-row__cell table-row__cell-right">
                                         <div class="table-row__inner" title="25,1%">
                                             <div class="table-item__checkbox_hover">
@@ -685,7 +652,7 @@
                                             </div>
                                         </div>  
                                     </div>
-
+                        
                                     <div class="table-row__cell">
                                         <div class="table-row__inner">
                                             <div class="table-item__btn_open">
@@ -696,18 +663,17 @@
                                             </div>
                                         </div>  
                                     </div>
-
-                            </a>
-
-                        </div>
                         
-
+                            </a>
+                        
+                        </div>
                         
                         
                     </div>
                 </main>
             </div>
         </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.min.js" defer></script>
     </body>
 </html>

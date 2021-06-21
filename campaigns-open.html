@@ -35,47 +35,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.min.css">
         
-        <title>w-target AP | Campaigns-open</title>        <!-- <script>
-            function loadFont(a, b, c, d) {
-                function e() {
-                    if (!window.FontFace) return !1;
-                    var a = new FontFace("t", 'url("data:application/font-woff2,") format("woff2")', {}),
-                        b = a.load();
-                    try {
-                        b.then(null, function () {})
-                    } catch (c) {}
-                    return "loading" === a.status
-                }
-                var f = navigator.userAgent,
-                    g = !window.addEventListener || f.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/) && !f
-                    .match(/Chrome/);
-                if (!g) {
-                    var h = {};
-                    try {
-                        h = localStorage || {}
-                    } catch (i) {}
-                    var j = "x-font-" + a,
-                        k = j + "url",
-                        l = j + "css",
-                        m = h[k],
-                        n = h[l],
-                        o = document.createElement("style");
-                    if (o.rel = "stylesheet", document.head.appendChild(o), !n || m !== b && m !== c) {
-                        var p = c && e() ? c : b,
-                            q = new XMLHttpRequest;
-                        q.open("GET", p), q.onload = function () {
-                            q.status >= 200 && q.status < 400 && (h[k] = p, h[l] = q.responseText, d || (o.textContent =
-                                q.responseText))
-                        }, q.send()
-                    } else o.textContent = n
-                }
-            }
-            loadFont('Comfortaa', 'font/fonts.woff.css', 'font/fonts.woff2.css');
-        </script>
-        <style>body{font-family: Comfortaa, sans-serif;}</style> -->
-    </head>
+        <title>w-target AP | Campaigns-open</title>    </head>
     <body>
-        <div style="position: relative;height: 100%;"> <!-- width: 1397px; -->
+        <div style="position: relative;height: 100%;"> 
             <header class="header">
                 <div class="page-header header__container">
                     <a href="/">
@@ -114,7 +76,7 @@
                     <nav class="sidebar__content">
                         <ol class="sidebar__list">
                             <li>
-                                <a href="/templates.html" class="sidebar__link">
+                                <a href="/templates.html" class="sidebar__link sidebar__link--active">
                                     <div class="sidebar__link-img">
                                         <img src="img/writing-hand.png" alt="Шаблоны">
                                     </div>
@@ -138,7 +100,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#Рассылки" class="sidebar__link sidebar__link--active">
+                                <a href="#Рассылки" class="sidebar__link">
                                     <div class="sidebar__link-img">
                                         <img src="img/love-letter.png" alt="Рассылки">
                                     </div>
@@ -200,40 +162,44 @@
                 </div>                <main class="main">
                     <div class="main__content">
                         
-                        <div class="flex flex--space-between flex--ai-center main__header-indent">
-                            <div class="flex flex--ai-center">
-                                <div>
-                                    <a href="#" class="button button--back">
-                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.246 4.25007V5.75007H3.62503L6.05728 8.18232L4.99603 9.24282L0.754028 5.00007L4.99603 0.757324L6.05728 1.81782L3.62503 4.25007H13.246Z" fill="rgba(14, 14, 14, 0.5)"/>
-                                        </svg>
-                                        <div>Назад</div>
-                                    </a>
-                                </div>
                         
-                                <h2 class="main__title" style="margin-right: 16px;">Розыгрыш iPhone 12 Pro Max</h2>
+                        <ul class="main__header main__header--indent">
+                            <li class="main__header-cell">
+                                <button class="button button--back">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.246 4.25007V5.75007H3.62503L6.05728 8.18232L4.99603 9.24282L0.754028 5.00007L4.99603 0.757324L6.05728 1.81782L3.62503 4.25007H13.246Z" fill="rgba(14, 14, 14, 0.5)"/>
+                                    </svg>
+                                    <span>Назад</span>
+                                </button>
+                            </li>
+                            <li class="main__header-cell">
+                                <h2 class="main__title">
+                                    <div class="main__title-text">
+                                        Розыгрыш iPhone 12 Pro Max 
+                                    </div>
+                                 </h2>
+                            </li>
+                            <li class="main__header-cell">
+                                <span class="status status--process">В процессе</span>
+                            </li>
+                            <li class="main__header-cell">
+                                <span class="main__header-gray_text">17 мая в 12:30</span>
+                            </li>
+                            <li class="main__header-cell main__header-cell--left">
+                                <button class="button button--stop">
+                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="6" width="4" height="12" fill="#C4C4C4"/>
+                                        <rect width="4" height="12" fill="#C4C4C4"/>
+                                    </svg>
+                                    Остановить
+                                </button>
+                            </li>
+                        </ul>
                         
-                                <div style="margin-right: 18px;">
-                                    <span class="status status--process">В процессе</span>
-                                </div>
-                        
-                                <div style="color: rgba(14, 14, 14, 0.5);">17 мая в 12:30</div>
-                            </div>
-                        
-                            <!-- <button>
-                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="6" width="4" height="12" fill="#C4C4C4"/>
-                                    <rect width="4" height="12" fill="#C4C4C4"/>
-                                </svg>
-                                Остановить
-                            </button> -->
-                        </div>
-                        
-                        
-                        
+                         
                         <ul class="tabs">
                             <li class="tabs__item">
-                                <button class="tabs__link tabs__link--action" data-tabs="#Preview">Предпросмотр</button>
+                                <button class="tabs__link tabs__link--active" data-tabs="#Preview">Предпросмотр</button>
                             </li>
                             <li class="tabs__item">
                                 <button class="tabs__link" data-tabs="#Analytics">Аналитика</button>
@@ -242,11 +208,10 @@
                                 <button class="tabs__link" data-tabs="#Recipients">Получатели</button>
                             </li>
                         </ul>
-                        
                         <div class="tabs__content">
-                            <div class="tabs__content-pane action" id="Preview">
+                            <div class="tabs__content-pane active" id="Preview">
                                 <div class="gray-block flex flex--jc-center">
-                                    <!-- временно -->
+                                     <!-- временно -->
                                     <div>
                                         <div class="pagination" style="margin-bottom: 24px;">
                                             <ul class="pagination__list">
@@ -281,6 +246,7 @@
                 </main>
             </div>
         </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.min.js" defer></script>
     </body>
 </html>
