@@ -170,14 +170,14 @@
                         
                         <ul class="tabs">
                             <li class="tabs__item">
-                                <button class="tabs__link tabs__link--active" data-tabs="#Pre-templates">Пре-шаблоны</button>
+                                <button class="tabs__link" data-tabs="#Pre-templates">Пре-шаблоны</button>
                             </li>
                             <li class="tabs__item">
-                                <button class="tabs__link" data-tabs="#AmoCRM-templates">Шаблоны amoCRM</button>
+                                <button class="tabs__link tabs__link--active" data-tabs="#AmoCRM-templates">Шаблоны amoCRM</button>
                             </li>
                         </ul>
                         <div class="tabs__content">
-                            <div class="tabs__content-pane active" id="Pre-templates">
+                            <div class="tabs__content-pane" id="Pre-templates">
                                 <div class="main__grid main__grid--three">
                                     <div class="aside">
                                         <div class="list">
@@ -528,7 +528,7 @@
                                         </div>            </div>
                                 </div>
                             </div>
-                            <div class="tabs__content-pane" id="AmoCRM-templates">
+                            <div class="tabs__content-pane active" id="AmoCRM-templates">
                                 <div class="main__grid main__grid--three">
                                     <div class="aside">
                                         <div class="list">
@@ -605,30 +605,30 @@
                                             </div>
                                           
                                             <div class="form__block">
-                                                <label class="form__label" for="cap-AmoCRM-template">Шапка: {1}}</label>
+                                                <label class="form__label" for="cap-AmoCRM-template">Шапка: {{1}}</label>
                                                 <div class="form__group">
                                                     <div class="form__textarea">
-                                                        <textarea id="cap-AmoCRM-template" data-autoresize>отличный вопрос, {Контакт.Имя}}</textarea>
+                                                        <textarea id="cap-AmoCRM-template" data-autoresize>отличный вопрос, {{Контакт.Имя}}</textarea>
                                                         <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         
                                             <div class="form__block">
-                                                <label class="form__label" for="message-AmoCRM-template">Сообщение: {1}}</label>
+                                                <label class="form__label" for="message-AmoCRM-template">Сообщение: {{1}}</label>
                                                 <div class="form__group">
                                                     <div class="form__textarea">
-                                                        <textarea id="message-AmoCRM-template" data-autoresize>отличный вопрос, {Контакт.Имя}}</textarea>
+                                                        <textarea id="message-AmoCRM-template" data-autoresize>отличный вопрос, {{Контакт.Имя}}</textarea>
                                                         <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         
                                             <div class="form__block">
-                                                <label class="form__label" for="btn-AmoCRM-template">Кнопка: {1}}</label>
+                                                <label class="form__label" for="btn-AmoCRM-template">Кнопка: {{1}}</label>
                                                 <div class="form__group">
                                                     <div class="form__textarea">
-                                                        <textarea id="btn-AmoCRM-template" data-autoresize>amocrm&id={Сделка.ID}}</textarea>
+                                                        <textarea id="btn-AmoCRM-template" data-autoresize>amocrm&id={{Сделка.ID}}</textarea>
                                                         <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
                                                     </div>
                                                 </div>
