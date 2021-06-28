@@ -33,424 +33,346 @@
         
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         
         <title>w-target AP | Numbers</title>    </head>
     <body>
-        <div style="position: relative;height: 100%;"> 
-            <header class="header">
-                <div class="page-header header__container">
-                    <a href="/">
-                        <img src="img/Logo.svg" alt="logo">
-                    </a>
-                    <ul class="header__nav">
-                        <li class="header__nav-item">
-                            <span class="rub">
-                                0 
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.97959 7.61932C9.65005 7.61932 11.1785 6.14773 11.1785 4.01705C11.1785 1.96023 9.68414 0.363636 6.97959 0.363636H2.59323V5.88636H0.883001V7.61932H2.59323V8.48295H0.883001V10.2159H2.59323V12H4.6955V10.2159H7.24664V8.48295H4.6955V7.61932H6.97959ZM4.6955 5.88636V2.11364H6.97959C8.39437 2.11364 9.07618 2.94318 9.0705 4.03409C9.07618 5.14773 8.40573 5.88636 6.93414 5.88636H4.6955Z" fill="#F6522E"/>
-                                </svg>
-                            </span>
-                        </li>
-                        <li class="header__nav-item">
-                            <button class="button button--border">Оплатить</button>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="unicorn" href="#">
-                                <img class="unicorn__img" src="img/unicorn.png" alt="unicorn">
-                                <div class="unicorn__count">
-                                    <span>3</span>
-                                </div> <!-- unicorn__count--hide -->
+        <header class="header">
+            <div class="page-header header__container">
+                <a href="/">
+                    <img src="img/Logo.svg" alt="logo">
+                </a>
+                <ul class="header__nav">
+                    <li class="header__nav-item">
+                        <span class="rub">
+                            0 
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.97959 7.61932C9.65005 7.61932 11.1785 6.14773 11.1785 4.01705C11.1785 1.96023 9.68414 0.363636 6.97959 0.363636H2.59323V5.88636H0.883001V7.61932H2.59323V8.48295H0.883001V10.2159H2.59323V12H4.6955V10.2159H7.24664V8.48295H4.6955V7.61932H6.97959ZM4.6955 5.88636V2.11364H6.97959C8.39437 2.11364 9.07618 2.94318 9.0705 4.03409C9.07618 5.14773 8.40573 5.88636 6.93414 5.88636H4.6955Z" fill="#F6522E"/>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="header__nav-item">
+                        <button class="button button--border">Оплатить</button>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="unicorn" href="#">
+                            <img class="unicorn__img" src="img/unicorn.png" alt="unicorn">
+                            <div class="unicorn__count">
+                                <span>3</span>
+                            </div> <!-- unicorn__count--hide -->
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="profile" href="#">
+                            <div class="profile__initials">VD</div>
+                            <div class="profile__img" style="background-image: url();"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>           <div class="page-layout">
+            <div class="sidebar">
+                <nav class="sidebar__content">
+                    <ol class="sidebar__list">
+                        <li>
+                            <a href="/templates.html" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/writing-hand.png" alt="Шаблоны">
+                                </div>
+                                <span class="sidebar__link-text">Шаблоны</span>
                             </a>
                         </li>
-                        <li class="header__nav-item">
-                            <a class="profile" href="#">
-                                <div class="profile__initials">VD</div>
-                                <div class="profile__img" style="background-image: url();"></div>
+                        <li>
+                            <a href="#Интеграции" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/robot.png" alt="Интеграции">
+                                </div>
+                                <span class="sidebar__link-text">Интеграции</span>
                             </a>
                         </li>
-                    </ul>
-                </div>
-            </header>               <div class="page-layout">
-                <div class="sidebar">
-                    <nav class="sidebar__content">
-                        <ol class="sidebar__list">
-                            <li>
-                                <a href="/templates.html" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/writing-hand.png" alt="Шаблоны">
-                                    </div>
-                                    <span class="sidebar__link-text">Шаблоны</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Интеграции" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/robot.png" alt="Интеграции">
-                                    </div>
-                                    <span class="sidebar__link-text">Интеграции</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#wtQR" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/selfie.png" alt="wtQR">
-                                    </div>
-                                    <span class="sidebar__link-text">wtQR</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Рассылки" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/love-letter.png" alt="Рассылки">
-                                    </div>
-                                    <span class="sidebar__link-text">Рассылки</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Номера" class="sidebar__link sidebar__link--active">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/telephone.png" alt="Номера">
-                                    </div>
-                                    <span class="sidebar__link-text">Номера</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Кнопка" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/puzzle-piece.png" alt="Кнопка">
-                                    </div>
-                                    <span class="sidebar__link-text">Кнопка</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Аналитика" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/nerd-face.png" alt="Аналитика">
-                                    </div>
-                                    <span class="sidebar__link-text">Аналитика</span>
-                                </a>
-                            </li>
-                        </ol>
-                        <ol class="sidebar__list sidebar__list--topline">
-                            <li>
-                                <a href="#Настройки" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/gear.png" alt="Настройки">
-                                    </div>
-                                    <span class="sidebar__link-text">Настройки</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Поддержка" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/support.png" alt="Поддержка">
-                                    </div>
-                                    <span class="sidebar__link-text">Поддержка</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Оплата" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/money-with-wings.png" alt="Оплата">
-                                    </div>
-                                    <span class="sidebar__link-text">Оплата</span>
-                                </a>
-                            </li>
-                        </ol>
-                    </nav>
-                </div>                <main class="main">
-                    <div class="main__content">
-                        
-                        
-                        <h2 class="main__title main__header--indent">
-                            <div class="main__title-text">
-                                Номера WhatsApp
-                            </div>
-                        </h2>
-                        
-                        <div class="main__grid main__grid--three">
-                            <div class="aside">
-                                <div class="list">
-                                
-                                    <ul class="list__items">
-                                        <li class="list__item" title="Яндекс – Staff">
-                                            <a href="#1" class="list__item-link">
-                                                <div class="flex flex--ai-center">
-                                                    <div>
-                                                        <div class="list__item-img">
-                                                            <img src="img/image-numbers1.jpg" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Staff">
-                                                        </div>
-                                                    </div>
-                                                    <div class="list__item-cont">
-                                                        <p class="list__item-title">+7 (495) 123-45-67</p>
-                                                        <p class="list__item-subtitle">Яндекс – Staff</p>
+                        <li>
+                            <a href="#wtQR" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/selfie.png" alt="wtQR">
+                                </div>
+                                <span class="sidebar__link-text">wtQR</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Рассылки" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/love-letter.png" alt="Рассылки">
+                                </div>
+                                <span class="sidebar__link-text">Рассылки</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Номера" class="sidebar__link sidebar__link--active">
+                                <div class="sidebar__link-img">
+                                    <img src="img/telephone.png" alt="Номера">
+                                </div>
+                                <span class="sidebar__link-text">Номера</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Кнопка" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/puzzle-piece.png" alt="Кнопка">
+                                </div>
+                                <span class="sidebar__link-text">Кнопка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Аналитика" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/nerd-face.png" alt="Аналитика">
+                                </div>
+                                <span class="sidebar__link-text">Аналитика</span>
+                            </a>
+                        </li>
+                    </ol>
+                    <ol class="sidebar__list sidebar__list--topline">
+                        <li>
+                            <a href="#Настройки" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/gear.png" alt="Настройки">
+                                </div>
+                                <span class="sidebar__link-text">Настройки</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Поддержка" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/support.png" alt="Поддержка">
+                                </div>
+                                <span class="sidebar__link-text">Поддержка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Оплата" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/money-with-wings.png" alt="Оплата">
+                                </div>
+                                <span class="sidebar__link-text">Оплата</span>
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>            <main class="main">
+                <div class="main__content">
+                    
+                    
+                    <h2 class="main__title main__header--indent">
+                        <div class="main__title-text">
+                            Номера WhatsApp
+                        </div>
+                    </h2>
+                    
+                    <div class="main__grid main__grid--three">
+                        <div class="aside">
+                            <div class="list">
+                            
+                                <ul class="list__items">
+                                    <li class="list__item" title="Яндекс – Staff">
+                                        <a href="#1" class="list__item-link">
+                                            <div class="flex flex--ai-center">
+                                                <div>
+                                                    <div class="list__item-img">
+                                                        <img src="img/image-numbers1.jpg" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Staff">
                                                     </div>
                                                 </div>
+                                                <div class="list__item-cont">
+                                                    <p class="list__item-title">+7 (495) 123-45-67</p>
+                                                    <p class="list__item-subtitle">Яндекс – Staff</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                            
+                                    <li class="list__item" title="Яндекс – Поддержка">
+                                        <a href="#2" class="list__item-link">
+                                            <div class="flex flex--ai-center">
+                                                <div>
+                                                    <div class="list__item-img">
+                                                        <img src="img/image-numbers2.jpg" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Поддержка">
+                                                    </div>
+                                                </div>
+                                                <div class="list__item-cont">
+                                                    <p class="list__item-title">+7 (495) 123-45-67</p>
+                                                    <p class="list__item-subtitle">Яндекс – Поддержка</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                            
+                                    <li class="list__item list__item--active" title="Яндекс – Staff">
+                                        <a href="#3" class="list__item-link">
+                                            <div class="flex flex--ai-center">
+                                                <div>
+                                                    <div class="list__item-img">
+                                                        <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Staff">
+                                                    </div>
+                                                </div>
+                                                <div class="list__item-cont">
+                                                    <p class="list__item-title">+7 (495) 123-45-67</p>
+                                                    <p class="list__item-subtitle">Яндекс – Staff</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                            
+                                    <li class="list__item" title="Яндекс Лицей">
+                                        <a href="#4" class="list__item-link">
+                                            <div class="flex flex--ai-center">
+                                                <div>
+                                                    <div class="list__item-img">
+                                                        <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс Лицей">
+                                                    </div>
+                                                </div>
+                                                <div class="list__item-cont">
+                                                    <p class="list__item-title">+7 (495) 123-45-67</p>
+                                                    <p class="list__item-subtitle">Яндекс Лицей</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                            
+                                    <li class="list__item" title="Яндекс – Staff">
+                                        <a href="#3" class="list__item-link">
+                                            <div class="flex flex--ai-center">
+                                                <div>
+                                                    <div class="list__item-img">
+                                                        <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Staff">
+                                                    </div>
+                                                </div>
+                                                <div class="list__item-cont">
+                                                    <p class="list__item-title">+7 (495) 123-45-67</p>
+                                                    <p class="list__item-subtitle">Яндекс – Staff</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            
+                                <a href="#" class="list__button"> <!-- list__button--active -->
+                                    <svg class="list__button-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="circle" d="M18.0426 0.0849609C27.9599 0.0849609 36 8.12485 36 18.0425C36 27.9602 27.9599 36.0001 18.0424 36.0001C8.12479 36.0001 0.0848999 27.9602 0.0848999 18.0425C0.0848999 8.12485 8.12479 0.0849609 18.0426 0.0849609Z" fill="#DFE5E7"/>
+                                        <path d="M18 10C17.7348 10 17.4804 10.1054 17.2929 10.2929C17.1054 10.4804 17 10.7348 17 11V17H11C10.7348 17 10.4804 17.1054 10.2929 17.2929C10.1054 17.4804 10 17.7348 10 18C10 18.2652 10.1054 18.5196 10.2929 18.7071C10.4804 18.8946 10.7348 19 11 19H17V25C17 25.2652 17.1054 25.5196 17.2929 25.7071C17.4804 25.8946 17.7348 26 18 26C18.2652 26 18.5196 25.8946 18.7071 25.7071C18.8946 25.5196 19 25.2652 19 25V19H25C25.2652 19 25.5196 18.8946 25.7071 18.7071C25.8946 18.5196 26 18.2652 26 18C26 17.7348 25.8946 17.4804 25.7071 17.2929C25.5196 17.1054 25.2652 17 25 17H19V11C19 10.7348 18.8946 10.4804 18.7071 10.2929C18.5196 10.1054 18.2652 10 18 10Z" fill="white"/>
+                                    </svg>
+                                    <p>Добавить номер</p>
+                                </a>
+                            </div>    </div>
+                        <div>
+                            <form class="form" action="/">
+                                <div class="form__block">
+                                    <label class="form__label" for="name">Название</label>
+                                    <div class="form__group">
+                                        <input class="form__input" type="text" id="name" value="Яндекс Go" placeholder="">
+                                        <span class="form__group__icon">
+                                            <img src="img/Verified.svg" alt="Verified">
+                                        </span>
+                                    </div>
+                                </div>
+                            
+                                <div class="form__block">
+                                    <div class="form__label">Фото профиля</div>
+                                    <div class="form__profile-file">
+                                        <img class="form__profile-file__img" src="img/profile-pic.jpg" alt="profile">
+                                        <label class="button button--border">
+                                            Загрузить
+                                            <input type="file" accept="image/jpeg,image/png,image/gif">
+                                        </label>
+                                    </div>
+                                </div>
+                            
+                                <div class="form__block form__validation--error"> <!-- form__validation--error form__validation--warning -->
+                                    <label class="form__label" for="short-description">Короткое описание</label>
+                                    <input class="form__input" type="text" id="short-description" value="Для перемещения вас и еды." placeholder="">
+                                    <div class="form__feedback">Текст ошибки</div>
+                                </div>
+                            
+                                <div class="form__block">
+                                    <label class="form__label" for="extended-description">Расширенное описание</label>
+                                    <div class="form__group">
+                                        <div class="form__textarea form__textarea--three_line">
+                                            <textarea id="extended-description" data-autoresize>Яндекс Go — мобильное приложение на базе Яндекс. Такси. Оно помогает быстро передвигаться.</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="form__block form__validation--warning"> <!-- form__validation--error form__validation--warning -->
+                                    <label class="form__label" for="address">Адрес</label>
+                                    <input class="form__input" type="text" id="address" value="Для перемещения вас и еды." placeholder="">
+                                    <div class="form__feedback">Модерируется!</div>
+                                </div>
+                                <div class="form__block">
+                                    <label class="form__label">Вид деятельности</label>
+                                    <select class="form__input form__select">
+                                        <option value="Другое">Другое</option>
+                                        <option value="Другое1">Другое1</option>
+                                        <option value="Другое2">Другое2</option>
+                                        <option value="Другое3">Другое3</option>
+                                    </select>
+                                </div>
+                                <div class="form__block">
+                                    <label class="form__label" for="web-site">Веб-сайт</label>
+                                    <input class="form__input" type="text" id="web-site" value="https://go.yandex" placeholder="">
+                                </div>
+                                <div class="form__block">
+                                    <label class="form__label" for="email">Email</label>
+                                    <input class="form__input" type="email" id="email" value="go@yandex.ru" placeholder="">
+                                </div>
+                                <div class="form__block">
+                                    <button class="button button--save button-floppy-disk">Сохранить</button>
+                                </div>
+                            </form>    </div>
+                        <div>
+                            
+                            <div class="grop-pagination grop-pagination--small-indent">
+                    
+                                <div class="pagination">
+                                    <div class="pagination__title">Предпросмотр</div>
+                                    <ul class="pagination__list">
+                                        <li class="pagination__item">
+                                            <a class="pagination__link" href="#">1</a>
+                                        </li>
+                                        <li class="pagination__item pagination__item--active">
+                                            <a class="pagination__link" href="#">2</a>
+                                        </li>
+                                        <li class="pagination__item">
+                                            <a class="pagination__link" href="#">3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                    
+                                <div class="pagination">
+                                    <div class="pagination__title">Тема</div>
+                                    <ul class="pagination__list">
+                                        <li class="pagination__item pagination__item--active">
+                                            <a class="pagination__link pagination__link-icon" href="#">
+                                                <img src="img/full-moon-face.svg" alt="1">
                                             </a>
                                         </li>
-                                
-                                        <li class="list__item" title="Яндекс – Поддержка">
-                                            <a href="#2" class="list__item-link">
-                                                <div class="flex flex--ai-center">
-                                                    <div>
-                                                        <div class="list__item-img">
-                                                            <img src="img/image-numbers2.jpg" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Поддержка">
-                                                        </div>
-                                                    </div>
-                                                    <div class="list__item-cont">
-                                                        <p class="list__item-title">+7 (495) 123-45-67</p>
-                                                        <p class="list__item-subtitle">Яндекс – Поддержка</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                
-                                        <li class="list__item list__item--active" title="Яндекс – Staff">
-                                            <a href="#3" class="list__item-link">
-                                                <div class="flex flex--ai-center">
-                                                    <div>
-                                                        <div class="list__item-img">
-                                                            <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Staff">
-                                                        </div>
-                                                    </div>
-                                                    <div class="list__item-cont">
-                                                        <p class="list__item-title">+7 (495) 123-45-67</p>
-                                                        <p class="list__item-subtitle">Яндекс – Staff</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                
-                                        <li class="list__item" title="Яндекс Лицей">
-                                            <a href="#4" class="list__item-link">
-                                                <div class="flex flex--ai-center">
-                                                    <div>
-                                                        <div class="list__item-img">
-                                                            <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс Лицей">
-                                                        </div>
-                                                    </div>
-                                                    <div class="list__item-cont">
-                                                        <p class="list__item-title">+7 (495) 123-45-67</p>
-                                                        <p class="list__item-subtitle">Яндекс Лицей</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                
-                                        <li class="list__item" title="Яндекс – Staff">
-                                            <a href="#3" class="list__item-link">
-                                                <div class="flex flex--ai-center">
-                                                    <div>
-                                                        <div class="list__item-img">
-                                                            <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Staff">
-                                                        </div>
-                                                    </div>
-                                                    <div class="list__item-cont">
-                                                        <p class="list__item-title">+7 (495) 123-45-67</p>
-                                                        <p class="list__item-subtitle">Яндекс – Staff</p>
-                                                    </div>
-                                                </div>
+                                        <li class="pagination__item">
+                                            <a class="pagination__link pagination__link-icon" href="#">
+                                                <img src="img/new-moon-face.svg" alt="1">
                                             </a>
                                         </li>
                                     </ul>
-                                
-                                    <button class="list__button">
-                                        <svg class="list__button-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="circle" d="M18.0426 0.0849609C27.9599 0.0849609 36 8.12485 36 18.0425C36 27.9602 27.9599 36.0001 18.0424 36.0001C8.12479 36.0001 0.0848999 27.9602 0.0848999 18.0425C0.0848999 8.12485 8.12479 0.0849609 18.0426 0.0849609Z" fill="#DFE5E7"/>
-                                            <path d="M18 10C17.7348 10 17.4804 10.1054 17.2929 10.2929C17.1054 10.4804 17 10.7348 17 11V17H11C10.7348 17 10.4804 17.1054 10.2929 17.2929C10.1054 17.4804 10 17.7348 10 18C10 18.2652 10.1054 18.5196 10.2929 18.7071C10.4804 18.8946 10.7348 19 11 19H17V25C17 25.2652 17.1054 25.5196 17.2929 25.7071C17.4804 25.8946 17.7348 26 18 26C18.2652 26 18.5196 25.8946 18.7071 25.7071C18.8946 25.5196 19 25.2652 19 25V19H25C25.2652 19 25.5196 18.8946 25.7071 18.7071C25.8946 18.5196 26 18.2652 26 18C26 17.7348 25.8946 17.4804 25.7071 17.2929C25.5196 17.1054 25.2652 17 25 17H19V11C19 10.7348 18.8946 10.4804 18.7071 10.2929C18.5196 10.1054 18.2652 10 18 10Z" fill="white"/>
-                                        </svg>
-                                        <p>Добавить номер</p>
-                                    </button>
-                                </div>    </div>
-                            <div>
-                                <form class="form" action="/">
-                                    <div class="form__block">
-                                        <label class="form__label" for="name">Название</label>
-                                        <div class="form__group">
-                                            <input class="form__input" type="text" id="name" value="Яндекс Go" placeholder="">
-                                            <span class="form__group__icon">
-                                                <img src="img/Verified.svg" alt="Verified">
-                                            </span>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="form__block">
-                                        <div class="form__label">Фото профиля</div>
-                                        <div class="form__profile-file">
-                                            <img class="form__profile-file__img" src="img/profile-pic.jpg" alt="profile">
-                                            <label class="button button--border">
-                                                Загрузить
-                                                <input type="file" accept="image/jpeg,image/png,image/gif">
-                                            </label>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="form__block form__validation--error"> <!-- form__validation--error form__validation--warning -->
-                                        <label class="form__label" for="short-description">Короткое описание</label>
-                                        <input class="form__input" type="text" id="short-description" value="Для перемещения вас и еды." placeholder="">
-                                        <div class="form__feedback">Текст ошибки</div>
-                                    </div>
-                                
-                                    <div class="form__block">
-                                        <label class="form__label" for="extended-description">Расширенное описание</label>
-                                        <div class="form__group">
-                                            <div class="form__textarea form__textarea--three_line">
-                                                <textarea id="extended-description" data-autoresize>Яндекс Go — мобильное приложение на базе Яндекс. Такси. Оно помогает быстро передвигаться.</textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="form__block form__validation--warning"> <!-- form__validation--error form__validation--warning -->
-                                        <label class="form__label" for="address">Адрес</label>
-                                        <input class="form__input" type="text" id="address" value="Для перемещения вас и еды." placeholder="">
-                                        <div class="form__feedback">Модерируется!</div>
-                                    </div>
-                                    <div class="form__block">
-                                        <label class="form__label">Вид деятельности</label>
-                                        <select class="form__input form__select">
-                                            <option value="Другое">Другое</option>
-                                            <option value="Другое1">Другое1</option>
-                                            <option value="Другое2">Другое2</option>
-                                            <option value="Другое3">Другое3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__block">
-                                        <label class="form__label" for="web-site">Веб-сайт</label>
-                                        <input class="form__input" type="text" id="web-site" value="https://go.yandex" placeholder="">
-                                    </div>
-                                    <div class="form__block">
-                                        <label class="form__label" for="email">Email</label>
-                                        <input class="form__input" type="email" id="email" value="go@yandex.ru" placeholder="">
-                                    </div>
-                                    <div class="form__block">
-                                        <button class="button button--save">Сохранить</button>
-                                    </div>
-                                </form>    </div>
-                            <div>
-                                <!-- временно -->
-                                <div class="row" style="justify-content: space-between; padding: 0 23px; margin-bottom: 15px;">
-                                    <div class="pagination">
-                                        <div class="pagination__title">Предпросмотр</div>
-                                        <ul class="pagination__list">
-                                            <li class="pagination__item">
-                                                <a class="pagination__link" href="#">1</a>
-                                            </li>
-                                            <li class="pagination__item pagination__item--active">
-                                                <a class="pagination__link" href="#">2</a>
-                                            </li>
-                                            <li class="pagination__item">
-                                                <a class="pagination__link" href="#">3</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="pagination">
-                                        <div class="pagination__title">Тема</div>
-                                        <ul class="pagination__list">
-                                            <li class="pagination__item pagination__item--active">
-                                                <a class="pagination__link pagination__link-icon" href="#">
-                                                    <img src="img/full-moon-face.svg" alt="1">
-                                                </a>
-                                            </li>
-                                            <li class="pagination__item">
-                                                <a class="pagination__link pagination__link-icon" href="#">
-                                                    <img src="img/new-moon-face.svg" alt="1">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
-                                
-                                <div class="divause-iPhone">
-                                    <div class="divause-iPhone__content">
-                                        <div class="divause-iPhone__header">
-                                            <div class="divause-iPhone__time">15:51</div>
-                                
-                                            <div class="divause-iPhone__contact">
-                                                <div class="divause-iPhone__contact-img">
-                                                    <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс Go — Staff">
-                                                </div>
-                                                <div class="divause-iPhone__contact-text" title="Яндекс Go — Staff">
-                                                    Яндекс Go — Staff
-                                                </div>
-                                                <div class="divause-iPhone__contact-check_mark">
-                                                    <img src="img/Verified.svg" alt="check_mark">
-                                                </div>
-                                            </div>
-                                
-                                        </div>
-                                
-                                        <div class="divause-iPhone__notification">
-                                            <div class="divause-iPhone__notification-text">
-                                                <img class="divause-iPhone__notification-text-icon" src="img/lock.svg" alt="lock">
-                                                Сообщения и звонки в данном чате
-                                                теперь защищены сквозным шифрованием.<br>
-                                                Бизнес может использовать
-                                                сторонний сервис для хранения и чтения ваших сообщений и ответа на сообщения и
-                                                звонки. Подробнее.
-                                            </div>
-                                        </div>
-                                
-                                        <div class="divause-iPhone__information">
-                                            <div class="divause-iPhone__information-text">
-                                                Данная переписка ведётся с бизнес-аккаунтом. Подробнее.
-                                            </div>
-                                        </div>  
-                                
-                                        <div class="divause-iPhone__message">
-                                            <div class="divause-iPhone__message-block">
-                                                <div style="position: relative;">
-                                                    <span class="divause-iPhone__message-tail_out">
-                                                        <svg width="8" height="8" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M6.10352e-05 12.1429C6.51957 9.24286 9.29266 6.49463 13.0001 0V17C7.19003 16.9064 4.38447 15.758 6.10352e-05 12.1429Z" fill="#F9F9F9"/>
-                                                        </svg>    
-                                                    </span>
-                                    
-                                                    <div class="divause-iPhone__message-content">
-                                    
-                                                        <div class="divause-iPhone__message-padding">
-                                                            <div class="divause-iPhone__message-text">
-                                    
-                                                                <div style="position: relative; overflow-wrap: break-word;"> 
-                                                                    <span style="vertical-align: initial;">
-                                                                        <span>
-                                                                            Здравствуйте 👋 Вы были в туре с нами в ОАЭ в 2019 году. У нас новости: мы придумали, что подарить вашим близким — впечатления! Нажмите на кнопку и узнайте, как работают подарочные карты TUI.
-                                                                        </span>
-                                                                    </span>
-                                                                    <span class="divause-iPhone__message-plug"></span>
-                                                                </div>
-                                    
-                                                            </div>
-                                                            <div class="divause-iPhone__message-time">15:49</div> 
-                                                        </div>
-                                    
-                                                    </div>
-                                                </div>
-                                                <div class="divause-iPhone__message-btns">
-                                                    <div class="divause-iPhone__message-btns-col">
-                                                        <button class="button divause-iPhone__message-btn">Подробнее</button>
-                                                    </div>
-                                                    <div class="divause-iPhone__message-btns-col">
-                                                        <button class="button divause-iPhone__message-btn">Не интересно</button>
-                                                    </div>
-                                                    <div class="divause-iPhone__message-btns-col">
-                                                        <button class="button divause-iPhone__message-btn">Записаться на экскурсию</button>
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                        </div>  
-                                
-                                    </div>
-                                </div>
+                    
                             </div>
+                    
+                            <img src="/img/phone.png" alt="phone">
+                    
                         </div>
-                        
-                        
                     </div>
-                </main>
-            </div>
+                    
+                    
+                </div>
+            </main>
         </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/script.min.js" defer></script>
+    <script src="js/script.js" defer></script>
     </body>
 </html>

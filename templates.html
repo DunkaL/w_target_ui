@@ -33,722 +33,562 @@
         
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         
         <title>w-target AP | Templates</title>    </head>
     <body>
-        <div style="position: relative;height: 100%;"> 
-            <header class="header">
-                <div class="page-header header__container">
-                    <a href="/">
-                        <img src="img/Logo.svg" alt="logo">
-                    </a>
-                    <ul class="header__nav">
-                        <li class="header__nav-item">
-                            <span class="rub">
-                                0 
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.97959 7.61932C9.65005 7.61932 11.1785 6.14773 11.1785 4.01705C11.1785 1.96023 9.68414 0.363636 6.97959 0.363636H2.59323V5.88636H0.883001V7.61932H2.59323V8.48295H0.883001V10.2159H2.59323V12H4.6955V10.2159H7.24664V8.48295H4.6955V7.61932H6.97959ZM4.6955 5.88636V2.11364H6.97959C8.39437 2.11364 9.07618 2.94318 9.0705 4.03409C9.07618 5.14773 8.40573 5.88636 6.93414 5.88636H4.6955Z" fill="#F6522E"/>
-                                </svg>
-                            </span>
-                        </li>
-                        <li class="header__nav-item">
-                            <button class="button button--border">Оплатить</button>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="unicorn" href="#">
-                                <img class="unicorn__img" src="img/unicorn.png" alt="unicorn">
-                                <div class="unicorn__count">
-                                    <span>3</span>
-                                </div> <!-- unicorn__count--hide -->
+        <header class="header">
+            <div class="page-header header__container">
+                <a href="/">
+                    <img src="img/Logo.svg" alt="logo">
+                </a>
+                <ul class="header__nav">
+                    <li class="header__nav-item">
+                        <span class="rub">
+                            0 
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.97959 7.61932C9.65005 7.61932 11.1785 6.14773 11.1785 4.01705C11.1785 1.96023 9.68414 0.363636 6.97959 0.363636H2.59323V5.88636H0.883001V7.61932H2.59323V8.48295H0.883001V10.2159H2.59323V12H4.6955V10.2159H7.24664V8.48295H4.6955V7.61932H6.97959ZM4.6955 5.88636V2.11364H6.97959C8.39437 2.11364 9.07618 2.94318 9.0705 4.03409C9.07618 5.14773 8.40573 5.88636 6.93414 5.88636H4.6955Z" fill="#F6522E"/>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="header__nav-item">
+                        <button class="button button--border">Оплатить</button>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="unicorn" href="#">
+                            <img class="unicorn__img" src="img/unicorn.png" alt="unicorn">
+                            <div class="unicorn__count">
+                                <span>3</span>
+                            </div> <!-- unicorn__count--hide -->
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="profile" href="#">
+                            <div class="profile__initials">VD</div>
+                            <div class="profile__img" style="background-image: url(img/profile-pic.jpg);"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>           <div class="page-layout">
+            <div class="sidebar">
+                <nav class="sidebar__content">
+                    <ol class="sidebar__list">
+                        <li>
+                            <a href="/templates.html" class="sidebar__link sidebar__link--active">
+                                <div class="sidebar__link-img">
+                                    <img src="img/writing-hand.png" alt="Шаблоны">
+                                </div>
+                                <span class="sidebar__link-text">Шаблоны</span>
                             </a>
                         </li>
-                        <li class="header__nav-item">
-                            <a class="profile" href="#">
-                                <div class="profile__initials">VD</div>
-                                <div class="profile__img" style="background-image: url(img/profile-pic.jpg);"></div>
+                        <li>
+                            <a href="#Интеграции" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/robot.png" alt="Интеграции">
+                                </div>
+                                <span class="sidebar__link-text">Интеграции</span>
                             </a>
+                        </li>
+                        <li>
+                            <a href="#wtQR" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/selfie.png" alt="wtQR">
+                                </div>
+                                <span class="sidebar__link-text">wtQR</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Рассылки" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/love-letter.png" alt="Рассылки">
+                                </div>
+                                <span class="sidebar__link-text">Рассылки</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Номера" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/telephone.png" alt="Номера">
+                                </div>
+                                <span class="sidebar__link-text">Номера</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Кнопка" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/puzzle-piece.png" alt="Кнопка">
+                                </div>
+                                <span class="sidebar__link-text">Кнопка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Аналитика" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/nerd-face.png" alt="Аналитика">
+                                </div>
+                                <span class="sidebar__link-text">Аналитика</span>
+                            </a>
+                        </li>
+                    </ol>
+                    <ol class="sidebar__list sidebar__list--topline">
+                        <li>
+                            <a href="#Настройки" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/gear.png" alt="Настройки">
+                                </div>
+                                <span class="sidebar__link-text">Настройки</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Поддержка" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/support.png" alt="Поддержка">
+                                </div>
+                                <span class="sidebar__link-text">Поддержка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Оплата" class="sidebar__link">
+                                <div class="sidebar__link-img">
+                                    <img src="img/money-with-wings.png" alt="Оплата">
+                                </div>
+                                <span class="sidebar__link-text">Оплата</span>
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>            <main class="main">
+                <div class="main__content">
+                    
+                    <h2 class="main__title main__header--indent">
+                       <div class="main__title-text">
+                            Шаблоны
+                       </div>
+                    </h2>
+                    
+                    <ul class="tabs">
+                        <li class="tabs__item">
+                            <button class="tabs__link tabs__link--active" data-tabs="#Pre-templates">Пре-шаблоны</button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__link" data-tabs="#AmoCRM-templates">Шаблоны amoCRM</button>
                         </li>
                     </ul>
-                </div>
-            </header>               <div class="page-layout">
-                <div class="sidebar">
-                    <nav class="sidebar__content">
-                        <ol class="sidebar__list">
-                            <li>
-                                <a href="/templates.html" class="sidebar__link sidebar__link--active">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/writing-hand.png" alt="Шаблоны">
-                                    </div>
-                                    <span class="sidebar__link-text">Шаблоны</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Интеграции" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/robot.png" alt="Интеграции">
-                                    </div>
-                                    <span class="sidebar__link-text">Интеграции</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#wtQR" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/selfie.png" alt="wtQR">
-                                    </div>
-                                    <span class="sidebar__link-text">wtQR</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Рассылки" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/love-letter.png" alt="Рассылки">
-                                    </div>
-                                    <span class="sidebar__link-text">Рассылки</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Номера" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/telephone.png" alt="Номера">
-                                    </div>
-                                    <span class="sidebar__link-text">Номера</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Кнопка" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/puzzle-piece.png" alt="Кнопка">
-                                    </div>
-                                    <span class="sidebar__link-text">Кнопка</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Аналитика" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/nerd-face.png" alt="Аналитика">
-                                    </div>
-                                    <span class="sidebar__link-text">Аналитика</span>
-                                </a>
-                            </li>
-                        </ol>
-                        <ol class="sidebar__list sidebar__list--topline">
-                            <li>
-                                <a href="#Настройки" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/gear.png" alt="Настройки">
-                                    </div>
-                                    <span class="sidebar__link-text">Настройки</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Поддержка" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/support.png" alt="Поддержка">
-                                    </div>
-                                    <span class="sidebar__link-text">Поддержка</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Оплата" class="sidebar__link">
-                                    <div class="sidebar__link-img">
-                                        <img src="img/money-with-wings.png" alt="Оплата">
-                                    </div>
-                                    <span class="sidebar__link-text">Оплата</span>
-                                </a>
-                            </li>
-                        </ol>
-                    </nav>
-                </div>                <main class="main">
-                    <div class="main__content">
-                        
-                        <h2 class="main__title main__header--indent">
-                           <div class="main__title-text">
-                                Шаблоны
-                           </div>
-                        </h2>
-                        
-                        <ul class="tabs">
-                            <li class="tabs__item">
-                                <button class="tabs__link" data-tabs="#Pre-templates">Пре-шаблоны</button>
-                            </li>
-                            <li class="tabs__item">
-                                <button class="tabs__link tabs__link--active" data-tabs="#AmoCRM-templates">Шаблоны amoCRM</button>
-                            </li>
-                        </ul>
-                        <div class="tabs__content">
-                            <div class="tabs__content-pane" id="Pre-templates">
-                                <div class="main__grid main__grid--three">
-                                    <div class="aside">
-                                        <div class="list">
-                                        
-                                            <ul class="list__items">
-                                                <li class="list__item" title="Приветствие">
-                                                    <a href="#1" class="list__item-link">
-                                                        <div class="flex flex--ai-center">
-                                                            <div>
-                                                                <div class="list__item-indicator list__item-indicator--green"></div>
-                                                            </div>
-                                                            <div class="list__item-cont">
-                                                                <p class="list__item-title">Приветствие</p>
-                                                            </div>
+                    <div class="tabs__content">
+                        <div class="tabs__content-pane active" id="Pre-templates">
+                            <div class="main__grid main__grid--three">
+                                <div class="aside">
+                                    <div class="list">
+                                    
+                                        <ul class="list__items">
+                                            <li class="list__item" title="Приветствие">
+                                                <a href="#1" class="list__item-link">
+                                                    <div class="flex flex--ai-center">
+                                                        <div>
+                                                            <div class="list__item-indicator list__item-indicator--green"></div>
                                                         </div>
-                                                        <p class="list__item-subtitle">hello_1</p>
-                                                    </a>
-                                                </li>
-                                        
-                                                <li class="list__item" title="Подтверждение встречи">
-                                                    <a href="#2" class="list__item-link">
-                                                        <div class="flex flex--ai-center">
-                                                            <div>
-                                                                <div class="list__item-indicator list__item-indicator--yellow"></div>
-                                                            </div>
-                                                            <div class="list__item-cont">
-                                                                <p class="list__item-title">Подтверждение встречи</p>
-                                                            </div>
-                                                        </div>
-                                                        <p class="list__item-subtitle">meet_confirm</p>
-                                                    </a>
-                                                </li>
-                                        
-                                                <li class="list__item list__item--active" title="Благодарим за покупку">
-                                                    <a href="#3" class="list__item-link">
-                                                        <div class="flex flex--ai-center">
-                                                            <div>
-                                                                <div class="list__item-indicator list__item-indicator--red"></div>
-                                                            </div>
-                                                            <div class="list__item-cont">
-                                                                <p class="list__item-title">Благодарим за покупку</p>
-                                                            </div>
-                                                        </div>
-                                                        <p class="list__item-subtitle">thanks</p>
-                                                    </a>
-                                                </li>
-                                        
-                                                <li class="list__item" title="NPS Оценка">
-                                                    <a href="#4" class="list__item-link">
-                                                        <div class="flex flex--ai-center">
-                                                            <div>
-                                                                <div class="list__item-indicator list__item-indicator--yellow"></div>
-                                                            </div>
-                                                            <div class="list__item-cont">
-                                                                <p class="list__item-title">NPS Оценка</p>
-                                                            </div>
-                                                        </div>
-                                                        <p class="list__item-subtitle">nps_rating</p>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        
-                                            <button class="list__button">
-                                                <svg class="list__button-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path class="circle" d="M18.0426 0.0849609C27.9599 0.0849609 36 8.12485 36 18.0425C36 27.9602 27.9599 36.0001 18.0424 36.0001C8.12479 36.0001 0.0848999 27.9602 0.0848999 18.0425C0.0848999 8.12485 8.12479 0.0849609 18.0426 0.0849609Z" fill="#DFE5E7"/>
-                                                    <path d="M18 10C17.7348 10 17.4804 10.1054 17.2929 10.2929C17.1054 10.4804 17 10.7348 17 11V17H11C10.7348 17 10.4804 17.1054 10.2929 17.2929C10.1054 17.4804 10 17.7348 10 18C10 18.2652 10.1054 18.5196 10.2929 18.7071C10.4804 18.8946 10.7348 19 11 19H17V25C17 25.2652 17.1054 25.5196 17.2929 25.7071C17.4804 25.8946 17.7348 26 18 26C18.2652 26 18.5196 25.8946 18.7071 25.7071C18.8946 25.5196 19 25.2652 19 25V19H25C25.2652 19 25.5196 18.8946 25.7071 18.7071C25.8946 18.5196 26 18.2652 26 18C26 17.7348 25.8946 17.4804 25.7071 17.2929C25.5196 17.1054 25.2652 17 25 17H19V11C19 10.7348 18.8946 10.4804 18.7071 10.2929C18.5196 10.1054 18.2652 10 18 10Z" fill="white"/>
-                                                </svg>
-                                                <p>Добавить шаблон</p>
-                                            </button>
-                                        </div>            </div>
-                                    <div>
-                                        <form class="form" action="/">
-                                            <div class="form__block">
-                                                <label class="form__label" for="name">Название</label>
-                                                <input class="form__input" type="text" id="name" value="Благодарим за покупку">
-                                            </div>
-                                            <div class="form__block">
-                                                <label class="form__label" for="code-templates">Код шаблона</label>
-                                                <input class="form__input" type="text" id="code-templates" value="thanks" disabled="true">
-                                            </div>
-                                            <div class="row form__block">
-                                                <div class="col grids-7">
-                                                    <label class="form__label">Категория</label>
-                                                    <select class="form__input form__select">
-                                                        <option value="Auto Reply">Auto Reply</option>
-                                                        <option value="Auto Reply1">Auto Reply1</option>
-                                                        <option value="Auto Reply2">Auto Reply2</option>
-                                                        <option value="Auto Reply3">Auto Reply3</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col grids-5">
-                                                    <label class="form__label">Язык</label>
-                                                    <div class="js-form-select-icon">
-                                                        <select class="form__input form__select">
-                                                            <option selected data-img="img/flag-russia.png" value="RU">RU</option>
-                                                            <option data-img="img/flag-russia.png" value="RU1">RU1</option>
-                                                            <option data-img="img/flag-russia.png" value="RU2">RU2</option>
-                                                            <option data-img="img/flag-russia.png" value="RU3">RU3</option>
-                                                        </select>
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="form__block">
-                                                <label class="form__label">Статус</label>
-                                                <div class="flex flex--ai-center">
-                                                    <!-- form__indicator--red, form__indicator--yellow, form__indicator--green -->
-                                                    <span class="form__indicator form__indicator--red"></span> Отклонён: Неверный формат
-                                                </div>
-                                            </div>    
-                                        
-                                            <div class="form__block">
-                                                <label class="form__label" for="cap">Шапка</label>
-                                                <select class="form__input form__select" style="margin-bottom: 8px;">
-                                                    <option value="Текст">Текст</option>
-                                                    <option value="Текст1">Текст1</option>
-                                                    <option value="Текст2">Текст2</option>
-                                                    <option value="Текст3">Текст3</option>
-                                                </select>
-                                                <div class="form__group">
-                                                    <input class="form__input" type="text" id="cap" value="Для перемещения вас и еды." placeholder="">
-                                                    <div class="form__group__icon">
-                                                        <button type="button" class="button">{{2}}</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="form__block">
-                                                <label class="form__label" for="message">Сообщение</label>
-                                                <div class="form__group">
-                                                    <div class="form__textarea form__textarea--three_line">
-                                                        <textarea id="message" data-autoresize>Здравствуйте, {{2}}. Ждём вас в офисе по адресу Рабочая ул., 33. Не забудьте надеть маску и перчатки!</textarea>
-                                                        <button type="button" class="button form__group__icon-textarea">+ Параметр {{2}}</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="form__block">
-                                                <label class="form__label" for="signature">Подпись</label>
-                                                <div class="form__group">
-                                                    <input class="form__input" type="text" id="signature" value="Для перемещения вас и еды." placeholder="">
-                                                    <div class="form__group__icon">
-                                                        <button type="button" class="button">{{2}}</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="form__block">
-                                                <label class="form__label">Кнопки</label>
-                                                <div>
-                                                    <div class="form__tags">
-                                                        <div class="form__tags-item form__tags-item--active">
-                                                            <span>Ссылка</span>
-                                                            <button type="button" class="button form__tags-button">
-                                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.91667 1.91675V1.33341C8.91667 1.024 8.79375 0.727249 8.57496 0.508457C8.35616 0.289664 8.05942 0.166748 7.75 0.166748H4.25C3.94058 0.166748 3.64383 0.289664 3.42504 0.508457C3.20625 0.727249 3.08333 1.024 3.08333 1.33341V1.91675H1.33333C1.17862 1.91675 1.03025 1.97821 0.920854 2.0876C0.811458 2.197 0.75 2.34537 0.75 2.50008C0.75 2.65479 0.811458 2.80316 0.920854 2.91256C1.03025 3.02196 1.17862 3.08341 1.33333 3.08341H1.91667V9.50008C1.91667 9.96421 2.10104 10.4093 2.42923 10.7375C2.75742 11.0657 3.20254 11.2501 3.66667 11.2501H8.33333C8.79746 11.2501 9.24258 11.0657 9.57077 10.7375C9.89896 10.4093 10.0833 9.96421 10.0833 9.50008V3.08341H10.6667C10.8214 3.08341 10.9697 3.02196 11.0791 2.91256C11.1885 2.80316 11.25 2.65479 11.25 2.50008C11.25 2.34537 11.1885 2.197 11.0791 2.0876C10.9697 1.97821 10.8214 1.91675 10.6667 1.91675H8.91667ZM7.75 1.33341H4.25V1.91675H7.75V1.33341ZM8.91667 3.08341H3.08333V9.50008C3.08333 9.65479 3.14479 9.80316 3.25419 9.91256C3.36358 10.022 3.51196 10.0834 3.66667 10.0834H8.33333C8.48804 10.0834 8.63642 10.022 8.74581 9.91256C8.85521 9.80316 8.91667 9.65479 8.91667 9.50008V3.08341Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                    <path d="M4.25 4.25H5.41667V8.91667H4.25V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                    <path d="M6.58334 4.25H7.75V8.91667H6.58334V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                        <div class="form__tags-item">
-                                                            <button type="button" class="button form__tags-add">+ Добавить</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                        
-                                                <input class="form__input" type="text" value="Оплатить онлайн" placeholder="" style="margin-bottom: 8px;">
-                                                <div class="form__group">
-                                                    <input class="form__input" type="text" value="https://go.yandex" placeholder="">
-                                                    <div class="form__group__icon">
-                                                        <button type="button" class="button">{{1}}</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="form__block">
-                                                <label class="form__label">Кнопки</label>
-                                        
-                                                <div>
-                                                    <div class="form__tags">
-                                                        <div class="form__tags-item form__tags-item--active">
-                                                            <span>Ссылка</span>
-                                                            <button type="button" class="button form__tags-button">
-                                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.91667 1.91675V1.33341C8.91667 1.024 8.79375 0.727249 8.57496 0.508457C8.35616 0.289664 8.05942 0.166748 7.75 0.166748H4.25C3.94058 0.166748 3.64383 0.289664 3.42504 0.508457C3.20625 0.727249 3.08333 1.024 3.08333 1.33341V1.91675H1.33333C1.17862 1.91675 1.03025 1.97821 0.920854 2.0876C0.811458 2.197 0.75 2.34537 0.75 2.50008C0.75 2.65479 0.811458 2.80316 0.920854 2.91256C1.03025 3.02196 1.17862 3.08341 1.33333 3.08341H1.91667V9.50008C1.91667 9.96421 2.10104 10.4093 2.42923 10.7375C2.75742 11.0657 3.20254 11.2501 3.66667 11.2501H8.33333C8.79746 11.2501 9.24258 11.0657 9.57077 10.7375C9.89896 10.4093 10.0833 9.96421 10.0833 9.50008V3.08341H10.6667C10.8214 3.08341 10.9697 3.02196 11.0791 2.91256C11.1885 2.80316 11.25 2.65479 11.25 2.50008C11.25 2.34537 11.1885 2.197 11.0791 2.0876C10.9697 1.97821 10.8214 1.91675 10.6667 1.91675H8.91667ZM7.75 1.33341H4.25V1.91675H7.75V1.33341ZM8.91667 3.08341H3.08333V9.50008C3.08333 9.65479 3.14479 9.80316 3.25419 9.91256C3.36358 10.022 3.51196 10.0834 3.66667 10.0834H8.33333C8.48804 10.0834 8.63642 10.022 8.74581 9.91256C8.85521 9.80316 8.91667 9.65479 8.91667 9.50008V3.08341Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                    <path d="M4.25 4.25H5.41667V8.91667H4.25V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                    <path d="M6.58334 4.25H7.75V8.91667H6.58334V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                        <div class="form__tags-item">
-                                                            <span>Телефон</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                        
-                                                <input class="form__input" type="text" value="Оплатить онлайн" placeholder="" style="margin-bottom: 8px;">
-                                                <div class="form__group">
-                                                    <input class="form__input" type="text" value="https://go.yandex" placeholder="">
-                                                    <div class="form__group__icon">
-                                                        <button type="button" class="button">{{3}}</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="form__block">
-                                                <label class="form__label">Кнопки</label>
-                                                <div>
-                                                    <div class="form__tags">
-                                                        <div class="form__tags-item form__tags-item--active">
-                                                            <span>#1</span>
-                                                            <button type="button" class="button form__tags-button">
-                                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.91667 1.91675V1.33341C8.91667 1.024 8.79375 0.727249 8.57496 0.508457C8.35616 0.289664 8.05942 0.166748 7.75 0.166748H4.25C3.94058 0.166748 3.64383 0.289664 3.42504 0.508457C3.20625 0.727249 3.08333 1.024 3.08333 1.33341V1.91675H1.33333C1.17862 1.91675 1.03025 1.97821 0.920854 2.0876C0.811458 2.197 0.75 2.34537 0.75 2.50008C0.75 2.65479 0.811458 2.80316 0.920854 2.91256C1.03025 3.02196 1.17862 3.08341 1.33333 3.08341H1.91667V9.50008C1.91667 9.96421 2.10104 10.4093 2.42923 10.7375C2.75742 11.0657 3.20254 11.2501 3.66667 11.2501H8.33333C8.79746 11.2501 9.24258 11.0657 9.57077 10.7375C9.89896 10.4093 10.0833 9.96421 10.0833 9.50008V3.08341H10.6667C10.8214 3.08341 10.9697 3.02196 11.0791 2.91256C11.1885 2.80316 11.25 2.65479 11.25 2.50008C11.25 2.34537 11.1885 2.197 11.0791 2.0876C10.9697 1.97821 10.8214 1.91675 10.6667 1.91675H8.91667ZM7.75 1.33341H4.25V1.91675H7.75V1.33341ZM8.91667 3.08341H3.08333V9.50008C3.08333 9.65479 3.14479 9.80316 3.25419 9.91256C3.36358 10.022 3.51196 10.0834 3.66667 10.0834H8.33333C8.48804 10.0834 8.63642 10.022 8.74581 9.91256C8.85521 9.80316 8.91667 9.65479 8.91667 9.50008V3.08341Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                    <path d="M4.25 4.25H5.41667V8.91667H4.25V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                    <path d="M6.58334 4.25H7.75V8.91667H6.58334V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                        <div class="form__tags-item">
-                                                            <span>#2</span>
-                                                        </div>
-                                                        <div class="form__tags-item">
-                                                            <button type="button" class="button form__tags-add">+ Добавить</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <input class="form__input" type="text" value="Оплатить онлайн" placeholder="" style="margin-bottom: 8px;">
-                                            </div>
-                                            <div class="form__block">
-                                                <label class="form__label">Кнопки</label>
-                                                <div>
-                                                    <div class="form__tags">
-                                                        <div class="form__tags-item">
-                                                            <button type="button" class="button form__tags-add">+ Добавить</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="form__block flex">
-                                                <button class="button button--save">Сохранить</button>
-                                                <button type="button" class="button button--cancellation">Отмена</button>
-                                            </div>
-                                        
-                                        </form>            </div>
-                                    <div>
-                                        <!-- временно -->
-                                        <div class="row" style="justify-content: center; padding: 0 23px; margin-bottom: 15px;">
-                                            <div class="pagination">
-                                                <div class="pagination__title">Предпросмотр</div>
-                                                <ul class="pagination__list">
-                                                    <li class="pagination__item pagination__item--active">
-                                                        <a class="pagination__link pagination__link-icon" href="#">
-                                                            <img src="img/full-moon-face.svg" alt="1">
-                                                        </a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link pagination__link-icon" href="#">
-                                                            <img src="img/new-moon-face.svg" alt="1">
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="divause-iPhone">
-                                            <div class="divause-iPhone__content">
-                                                <div class="divause-iPhone__header">
-                                                    <div class="divause-iPhone__time">15:51</div>
-                                        
-                                                    <div class="divause-iPhone__contact">
-                                                        <div class="divause-iPhone__contact-img">
-                                                            <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс Go — Staff">
-                                                        </div>
-                                                        <div class="divause-iPhone__contact-text" title="Яндекс Go — Staff">
-                                                            Яндекс Go — Staff
-                                                        </div>
-                                                        <div class="divause-iPhone__contact-check_mark">
-                                                            <img src="img/Verified.svg" alt="check_mark">
-                                                        </div>
-                                                    </div>
-                                        
-                                                </div>
-                                        
-                                                <div class="divause-iPhone__notification">
-                                                    <div class="divause-iPhone__notification-text">
-                                                        <img class="divause-iPhone__notification-text-icon" src="img/lock.svg" alt="lock">
-                                                        Сообщения и звонки в данном чате
-                                                        теперь защищены сквозным шифрованием.<br>
-                                                        Бизнес может использовать
-                                                        сторонний сервис для хранения и чтения ваших сообщений и ответа на сообщения и
-                                                        звонки. Подробнее.
-                                                    </div>
-                                                </div>
-                                        
-                                                <div class="divause-iPhone__information">
-                                                    <div class="divause-iPhone__information-text">
-                                                        Данная переписка ведётся с бизнес-аккаунтом. Подробнее.
-                                                    </div>
-                                                </div>  
-                                        
-                                                <div class="divause-iPhone__message">
-                                                    <div class="divause-iPhone__message-block">
-                                                        <div style="position: relative;">
-                                                            <span class="divause-iPhone__message-tail_out">
-                                                                <svg width="8" height="8" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M6.10352e-05 12.1429C6.51957 9.24286 9.29266 6.49463 13.0001 0V17C7.19003 16.9064 4.38447 15.758 6.10352e-05 12.1429Z" fill="#F9F9F9"/>
-                                                                </svg>    
-                                                            </span>
-                                            
-                                                            <div class="divause-iPhone__message-content">
-                                            
-                                                                <div class="divause-iPhone__message-padding">
-                                                                    <div class="divause-iPhone__message-text">
-                                            
-                                                                        <div style="position: relative; overflow-wrap: break-word;"> 
-                                                                            <span style="vertical-align: initial;">
-                                                                                <span>
-                                                                                    Здравствуйте 👋 Вы были в туре с нами в ОАЭ в 2019 году. У нас новости: мы придумали, что подарить вашим близким — впечатления! Нажмите на кнопку и узнайте, как работают подарочные карты TUI.
-                                                                                </span>
-                                                                            </span>
-                                                                            <span class="divause-iPhone__message-plug"></span>
-                                                                        </div>
-                                            
-                                                                    </div>
-                                                                    <div class="divause-iPhone__message-time">15:49</div> 
-                                                                </div>
-                                            
-                                                            </div>
-                                                        </div>
-                                                        <div class="divause-iPhone__message-btns">
-                                                            <div class="divause-iPhone__message-btns-col">
-                                                                <button class="button divause-iPhone__message-btn">Подробнее</button>
-                                                            </div>
-                                                            <div class="divause-iPhone__message-btns-col">
-                                                                <button class="button divause-iPhone__message-btn">Не интересно</button>
-                                                            </div>
-                                                            <div class="divause-iPhone__message-btns-col">
-                                                                <button class="button divause-iPhone__message-btn">Записаться на экскурсию</button>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </div>  
-                                        
-                                            </div>
-                                        </div>            </div>
-                                </div>
-                            </div>
-                            <div class="tabs__content-pane active" id="AmoCRM-templates">
-                                <div class="main__grid main__grid--three">
-                                    <div class="aside">
-                                        <div class="list">
-                                        
-                                            <ul class="list__items">
-                                                <li class="list__item" title="Приветствие">
-                                                    <a href="#1" class="list__item-link">
                                                         <div class="list__item-cont">
                                                             <p class="list__item-title">Приветствие</p>
                                                         </div>
-                                                    </a>
-                                                </li>
-                                        
-                                                <li class="list__item" title="Подтверждение встречи">
-                                                    <a href="#2" class="list__item-link">
+                                                    </div>
+                                                    <p class="list__item-subtitle">hello_1</p>
+                                                </a>
+                                            </li>
+                                    
+                                            <li class="list__item" title="Подтверждение встречи">
+                                                <a href="#2" class="list__item-link">
+                                                    <div class="flex flex--ai-center">
+                                                        <div>
+                                                            <div class="list__item-indicator list__item-indicator--yellow"></div>
+                                                        </div>
                                                         <div class="list__item-cont">
                                                             <p class="list__item-title">Подтверждение встречи</p>
                                                         </div>
-                                                    </a>
-                                                </li>
-                                        
-                                                <li class="list__item list__item--active" title="Спасибо, Ольга">
-                                                    <a href="#3" class="list__item-link">
-                                                        <div class="list__item-cont">
-                                                            <p class="list__item-title">Спасибо, Ольга</p>
+                                                    </div>
+                                                    <p class="list__item-subtitle">meet_confirm</p>
+                                                </a>
+                                            </li>
+                                    
+                                            <li class="list__item list__item--active" title="Благодарим за покупку">
+                                                <a href="#3" class="list__item-link">
+                                                    <div class="flex flex--ai-center">
+                                                        <div>
+                                                            <div class="list__item-indicator list__item-indicator--red"></div>
                                                         </div>
-                                                    </a>
-                                                </li>
-                                        
-                                                <li class="list__item" title="NPS Оценка">
-                                                    <a href="#4" class="list__item-link">
+                                                        <div class="list__item-cont">
+                                                            <p class="list__item-title">Благодарим за покупку</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="list__item-subtitle">thanks</p>
+                                                </a>
+                                            </li>
+                                    
+                                            <li class="list__item" title="NPS Оценка">
+                                                <a href="#4" class="list__item-link">
+                                                    <div class="flex flex--ai-center">
+                                                        <div>
+                                                            <div class="list__item-indicator list__item-indicator--yellow"></div>
+                                                        </div>
                                                         <div class="list__item-cont">
                                                             <p class="list__item-title">NPS Оценка</p>
                                                         </div>
+                                                    </div>
+                                                    <p class="list__item-subtitle">nps_rating</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    
+                                        <a href="#" class="list__button"> <!-- list__button--active -->
+                                            <svg class="list__button-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="circle" d="M18.0426 0.0849609C27.9599 0.0849609 36 8.12485 36 18.0425C36 27.9602 27.9599 36.0001 18.0424 36.0001C8.12479 36.0001 0.0848999 27.9602 0.0848999 18.0425C0.0848999 8.12485 8.12479 0.0849609 18.0426 0.0849609Z" fill="#DFE5E7"/>
+                                                <path d="M18 10C17.7348 10 17.4804 10.1054 17.2929 10.2929C17.1054 10.4804 17 10.7348 17 11V17H11C10.7348 17 10.4804 17.1054 10.2929 17.2929C10.1054 17.4804 10 17.7348 10 18C10 18.2652 10.1054 18.5196 10.2929 18.7071C10.4804 18.8946 10.7348 19 11 19H17V25C17 25.2652 17.1054 25.5196 17.2929 25.7071C17.4804 25.8946 17.7348 26 18 26C18.2652 26 18.5196 25.8946 18.7071 25.7071C18.8946 25.5196 19 25.2652 19 25V19H25C25.2652 19 25.5196 18.8946 25.7071 18.7071C25.8946 18.5196 26 18.2652 26 18C26 17.7348 25.8946 17.4804 25.7071 17.2929C25.5196 17.1054 25.2652 17 25 17H19V11C19 10.7348 18.8946 10.4804 18.7071 10.2929C18.5196 10.1054 18.2652 10 18 10Z" fill="white"/>
+                                            </svg>
+                                            <p>Добавить шаблон</p>
+                                        </a>
+                                    </div>            </div>
+                                <div>
+                                    <form class="form" action="/">
+                                        <div class="form__block">
+                                            <label class="form__label" for="name">Название</label>
+                                            <input class="form__input" type="text" id="name" value="Благодарим за покупку">
+                                        </div>
+                                        <div class="form__block">
+                                            <label class="form__label" for="code-templates">Код шаблона</label>
+                                            <input class="form__input" type="text" id="code-templates" value="thanks" disabled="true">
+                                        </div>
+                                        <div class="row form__block">
+                                            <div class="col grids-7">
+                                                <label class="form__label">Категория</label>
+                                                <select class="form__input form__select">
+                                                    <option value="Auto Reply">Auto Reply</option>
+                                                    <option value="Auto Reply1">Auto Reply1</option>
+                                                    <option value="Auto Reply2">Auto Reply2</option>
+                                                    <option value="Auto Reply3">Auto Reply3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col grids-5">
+                                                <label class="form__label">Язык</label>
+                                                <div class="js-form-select-icon">
+                                                    <select class="form__input form__select">
+                                                        <option selected data-img="img/flag-russia.png" value="RU">RU</option>
+                                                        <option data-img="img/flag-russia.png" value="RU1">RU1</option>
+                                                        <option data-img="img/flag-russia.png" value="RU2">RU2</option>
+                                                        <option data-img="img/flag-russia.png" value="RU3">RU3</option>
+                                                    </select>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form__block">
+                                            <label class="form__label">Статус</label>
+                                            <div class="flex flex--ai-center">
+                                                <!-- form__indicator--red, form__indicator--yellow, form__indicator--green -->
+                                                <span class="form__indicator form__indicator--red"></span> Отклонён: Неверный формат
+                                            </div>
+                                        </div>    
+                                    
+                                        <div class="form__block">
+                                            <label class="form__label" for="cap">Шапка</label>
+                                            <select class="form__input form__select" style="margin-bottom: 8px;">
+                                                <option value="Текст">Текст</option>
+                                                <option value="Текст1">Текст1</option>
+                                                <option value="Текст2">Текст2</option>
+                                                <option value="Текст3">Текст3</option>
+                                            </select>
+                                            <div class="form__group">
+                                                <input class="form__input" type="text" id="cap" value="Для перемещения вас и еды." placeholder="">
+                                                <div class="form__group__icon">
+                                                    <button type="button" class="button">{{2}}</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form__block">
+                                            <label class="form__label" for="message">Сообщение</label>
+                                            <div class="form__group">
+                                                <div class="form__textarea form__textarea--three_line">
+                                                    <textarea id="message" data-autoresize>Здравствуйте, {{2}}. Ждём вас в офисе по адресу Рабочая ул., 33. Не забудьте надеть маску и перчатки!</textarea>
+                                                    <button type="button" class="button form__group__icon-textarea">+ Параметр {{2}}</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form__block">
+                                            <label class="form__label" for="signature">Подпись</label>
+                                            <div class="form__group">
+                                                <input class="form__input" type="text" id="signature" value="Для перемещения вас и еды." placeholder="">
+                                                <div class="form__group__icon">
+                                                    <button type="button" class="button">{{2}}</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form__block">
+                                            <label class="form__label">Кнопки</label>
+                                            <div>
+                                                <div class="form__tags">
+                                                    <div class="form__tags-item form__tags-item--active">
+                                                        <span>Ссылка</span>
+                                                        <button type="button" class="button form__tags-button">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.91667 1.91675V1.33341C8.91667 1.024 8.79375 0.727249 8.57496 0.508457C8.35616 0.289664 8.05942 0.166748 7.75 0.166748H4.25C3.94058 0.166748 3.64383 0.289664 3.42504 0.508457C3.20625 0.727249 3.08333 1.024 3.08333 1.33341V1.91675H1.33333C1.17862 1.91675 1.03025 1.97821 0.920854 2.0876C0.811458 2.197 0.75 2.34537 0.75 2.50008C0.75 2.65479 0.811458 2.80316 0.920854 2.91256C1.03025 3.02196 1.17862 3.08341 1.33333 3.08341H1.91667V9.50008C1.91667 9.96421 2.10104 10.4093 2.42923 10.7375C2.75742 11.0657 3.20254 11.2501 3.66667 11.2501H8.33333C8.79746 11.2501 9.24258 11.0657 9.57077 10.7375C9.89896 10.4093 10.0833 9.96421 10.0833 9.50008V3.08341H10.6667C10.8214 3.08341 10.9697 3.02196 11.0791 2.91256C11.1885 2.80316 11.25 2.65479 11.25 2.50008C11.25 2.34537 11.1885 2.197 11.0791 2.0876C10.9697 1.97821 10.8214 1.91675 10.6667 1.91675H8.91667ZM7.75 1.33341H4.25V1.91675H7.75V1.33341ZM8.91667 3.08341H3.08333V9.50008C3.08333 9.65479 3.14479 9.80316 3.25419 9.91256C3.36358 10.022 3.51196 10.0834 3.66667 10.0834H8.33333C8.48804 10.0834 8.63642 10.022 8.74581 9.91256C8.85521 9.80316 8.91667 9.65479 8.91667 9.50008V3.08341Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                                <path d="M4.25 4.25H5.41667V8.91667H4.25V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                                <path d="M6.58334 4.25H7.75V8.91667H6.58334V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form__tags-item">
+                                                        <button type="button" class="button form__tags-add">+ Добавить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <input class="form__input" type="text" value="Оплатить онлайн" placeholder="" style="margin-bottom: 8px;">
+                                            <div class="form__group">
+                                                <input class="form__input" type="text" value="https://go.yandex" placeholder="">
+                                                <div class="form__group__icon">
+                                                    <button type="button" class="button">{{1}}</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form__block">
+                                            <label class="form__label">Кнопки</label>
+                                    
+                                            <div>
+                                                <div class="form__tags">
+                                                    <div class="form__tags-item form__tags-item--active">
+                                                        <span>Ссылка</span>
+                                                        <button type="button" class="button form__tags-button">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.91667 1.91675V1.33341C8.91667 1.024 8.79375 0.727249 8.57496 0.508457C8.35616 0.289664 8.05942 0.166748 7.75 0.166748H4.25C3.94058 0.166748 3.64383 0.289664 3.42504 0.508457C3.20625 0.727249 3.08333 1.024 3.08333 1.33341V1.91675H1.33333C1.17862 1.91675 1.03025 1.97821 0.920854 2.0876C0.811458 2.197 0.75 2.34537 0.75 2.50008C0.75 2.65479 0.811458 2.80316 0.920854 2.91256C1.03025 3.02196 1.17862 3.08341 1.33333 3.08341H1.91667V9.50008C1.91667 9.96421 2.10104 10.4093 2.42923 10.7375C2.75742 11.0657 3.20254 11.2501 3.66667 11.2501H8.33333C8.79746 11.2501 9.24258 11.0657 9.57077 10.7375C9.89896 10.4093 10.0833 9.96421 10.0833 9.50008V3.08341H10.6667C10.8214 3.08341 10.9697 3.02196 11.0791 2.91256C11.1885 2.80316 11.25 2.65479 11.25 2.50008C11.25 2.34537 11.1885 2.197 11.0791 2.0876C10.9697 1.97821 10.8214 1.91675 10.6667 1.91675H8.91667ZM7.75 1.33341H4.25V1.91675H7.75V1.33341ZM8.91667 3.08341H3.08333V9.50008C3.08333 9.65479 3.14479 9.80316 3.25419 9.91256C3.36358 10.022 3.51196 10.0834 3.66667 10.0834H8.33333C8.48804 10.0834 8.63642 10.022 8.74581 9.91256C8.85521 9.80316 8.91667 9.65479 8.91667 9.50008V3.08341Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                                <path d="M4.25 4.25H5.41667V8.91667H4.25V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                                <path d="M6.58334 4.25H7.75V8.91667H6.58334V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form__tags-item">
+                                                        <span>Телефон</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <input class="form__input" type="text" value="Оплатить онлайн" placeholder="" style="margin-bottom: 8px;">
+                                            <div class="form__group">
+                                                <input class="form__input" type="text" value="https://go.yandex" placeholder="">
+                                                <div class="form__group__icon">
+                                                    <button type="button" class="button">{{3}}</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form__block">
+                                            <label class="form__label">Кнопки</label>
+                                            <div>
+                                                <div class="form__tags">
+                                                    <div class="form__tags-item form__tags-item--active">
+                                                        <span>#1</span>
+                                                        <button type="button" class="button form__tags-button">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.91667 1.91675V1.33341C8.91667 1.024 8.79375 0.727249 8.57496 0.508457C8.35616 0.289664 8.05942 0.166748 7.75 0.166748H4.25C3.94058 0.166748 3.64383 0.289664 3.42504 0.508457C3.20625 0.727249 3.08333 1.024 3.08333 1.33341V1.91675H1.33333C1.17862 1.91675 1.03025 1.97821 0.920854 2.0876C0.811458 2.197 0.75 2.34537 0.75 2.50008C0.75 2.65479 0.811458 2.80316 0.920854 2.91256C1.03025 3.02196 1.17862 3.08341 1.33333 3.08341H1.91667V9.50008C1.91667 9.96421 2.10104 10.4093 2.42923 10.7375C2.75742 11.0657 3.20254 11.2501 3.66667 11.2501H8.33333C8.79746 11.2501 9.24258 11.0657 9.57077 10.7375C9.89896 10.4093 10.0833 9.96421 10.0833 9.50008V3.08341H10.6667C10.8214 3.08341 10.9697 3.02196 11.0791 2.91256C11.1885 2.80316 11.25 2.65479 11.25 2.50008C11.25 2.34537 11.1885 2.197 11.0791 2.0876C10.9697 1.97821 10.8214 1.91675 10.6667 1.91675H8.91667ZM7.75 1.33341H4.25V1.91675H7.75V1.33341ZM8.91667 3.08341H3.08333V9.50008C3.08333 9.65479 3.14479 9.80316 3.25419 9.91256C3.36358 10.022 3.51196 10.0834 3.66667 10.0834H8.33333C8.48804 10.0834 8.63642 10.022 8.74581 9.91256C8.85521 9.80316 8.91667 9.65479 8.91667 9.50008V3.08341Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                                <path d="M4.25 4.25H5.41667V8.91667H4.25V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                                <path d="M6.58334 4.25H7.75V8.91667H6.58334V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form__tags-item">
+                                                        <span>#2</span>
+                                                    </div>
+                                                    <div class="form__tags-item">
+                                                        <button type="button" class="button form__tags-add">+ Добавить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input class="form__input" type="text" value="Оплатить онлайн" placeholder="" style="margin-bottom: 8px;">
+                                        </div>
+                                        <div class="form__block">
+                                            <label class="form__label">Кнопки</label>
+                                            <div>
+                                                <div class="form__tags">
+                                                    <div class="form__tags-item">
+                                                        <button type="button" class="button form__tags-add">+ Добавить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form__block flex">
+                                            <button class="button button--save button-floppy-disk">Сохранить</button>
+                                            <button type="button" class="button button--cancellation">Отмена</button>
+                                        </div>
+                                    
+                                    </form>            </div>
+                                <div>
+                                    <div class="grop-pagination grop-pagination--small-indent">        
+                                        <div class="pagination">
+                                            <div class="pagination__title">Предпросмотр</div>
+                                            <ul class="pagination__list">
+                                                <li class="pagination__item pagination__item--active">
+                                                    <a class="pagination__link pagination__link-icon" href="#">
+                                                        <img src="img/full-moon-face.svg" alt="1">
+                                                    </a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link pagination__link-icon" href="#">
+                                                        <img src="img/new-moon-face.svg" alt="1">
                                                     </a>
                                                 </li>
                                             </ul>
-                                        
-                                            <button class="list__button">
-                                                <svg class="list__button-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path class="circle" d="M18.0426 0.0849609C27.9599 0.0849609 36 8.12485 36 18.0425C36 27.9602 27.9599 36.0001 18.0424 36.0001C8.12479 36.0001 0.0848999 27.9602 0.0848999 18.0425C0.0848999 8.12485 8.12479 0.0849609 18.0426 0.0849609Z" fill="#DFE5E7"/>
-                                                    <path d="M18 10C17.7348 10 17.4804 10.1054 17.2929 10.2929C17.1054 10.4804 17 10.7348 17 11V17H11C10.7348 17 10.4804 17.1054 10.2929 17.2929C10.1054 17.4804 10 17.7348 10 18C10 18.2652 10.1054 18.5196 10.2929 18.7071C10.4804 18.8946 10.7348 19 11 19H17V25C17 25.2652 17.1054 25.5196 17.2929 25.7071C17.4804 25.8946 17.7348 26 18 26C18.2652 26 18.5196 25.8946 18.7071 25.7071C18.8946 25.5196 19 25.2652 19 25V19H25C25.2652 19 25.5196 18.8946 25.7071 18.7071C25.8946 18.5196 26 18.2652 26 18C26 17.7348 25.8946 17.4804 25.7071 17.2929C25.5196 17.1054 25.2652 17 25 17H19V11C19 10.7348 18.8946 10.4804 18.7071 10.2929C18.5196 10.1054 18.2652 10 18 10Z" fill="white"/>
-                                                </svg>
-                                                <p>Добавить шаблон</p>
-                                            </button>
-                                        </div>            </div>
-                                    <div>
-                                        <form class="form" action="/">
-                                            <div class="form__block">
-                                                <label class="form__label" for="name-AmoCRM-template">Название</label>
-                                                <input class="form__input" type="text" id="name-AmoCRM-template" value="Спасибо, Ольга">
-                                            </div>
-                                            <div class="form__block">
-                                                <label class="form__label">Пре-шаблон</label>
-                                                <select class="form__input form__select">
-                                                    <option value="Благодарим за покупку">Благодарим за покупку</option>
-                                                    <option value="Благодарим за покупку1">Благодарим за покупку1</option>
-                                                    <option value="Благодарим за покупку2">Благодарим за покупку2</option>
-                                                    <option value="Благодарим за покупку3">Благодарим за покупку3</option>
-                                                </select>
-                                            </div>
-                                        
-                                            <div class="form__block">
-                                                <label class="form__label">Изображение</label>
-                                                <div class="form__profile-file">
-                                                    <label class="button button--border">
-                                                        Загрузить
-                                                        <input type="file" accept="image/jpeg,image/png">
-                                                    </label>
-                                                    <div class="form__profile-file__info form__profile-file__info--download">
-                                                        .jpg или .png, до 2МБ
-                                                    </div>
-                                                </div>
-                                            </div>
-                                          
-                                            <div class="form__block">
-                                                <label class="form__label" for="cap-AmoCRM-template">Шапка: {{1}}</label>
-                                                <div class="form__group">
-                                                    <div class="form__textarea">
-                                                        <textarea id="cap-AmoCRM-template" data-autoresize>отличный вопрос, {{Контакт.Имя}}</textarea>
-                                                        <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="form__block">
-                                                <label class="form__label" for="message-AmoCRM-template">Сообщение: {{1}}</label>
-                                                <div class="form__group">
-                                                    <div class="form__textarea">
-                                                        <textarea id="message-AmoCRM-template" data-autoresize>отличный вопрос, {{Контакт.Имя}}</textarea>
-                                                        <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="form__block">
-                                                <label class="form__label" for="btn-AmoCRM-template">Кнопка: {{1}}</label>
-                                                <div class="form__group">
-                                                    <div class="form__textarea">
-                                                        <textarea id="btn-AmoCRM-template" data-autoresize>amocrm&id={{Сделка.ID}}</textarea>
-                                                        <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="form__block flex">
-                                                <button class="button button--save">Сохранить</button>
-                                                <button type="button" class="button button--cancellation">Отмена</button>
-                                            </div>
-                                        
-                                        </form>            </div>
-                                    <div>
-                                        <!-- временно -->
-                                        <div class="row" style="justify-content: center; padding: 0 23px; margin-bottom: 15px;">
-                                            <div class="pagination">
-                                                <div class="pagination__title">Предпросмотр</div>
-                                                <ul class="pagination__list">
-                                                    <li class="pagination__item pagination__item--active">
-                                                        <a class="pagination__link pagination__link-icon" href="#">
-                                                            <img src="img/full-moon-face.svg" alt="1">
-                                                        </a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link pagination__link-icon" href="#">
-                                                            <img src="img/new-moon-face.svg" alt="1">
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
                                         </div>
-                                        <div class="divause-iPhone">
-                                            <div class="divause-iPhone__content">
-                                                <div class="divause-iPhone__header">
-                                                    <div class="divause-iPhone__time">15:51</div>
-                                        
-                                                    <div class="divause-iPhone__contact">
-                                                        <div class="divause-iPhone__contact-img">
-                                                            <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс Go — Staff">
-                                                        </div>
-                                                        <div class="divause-iPhone__contact-text" title="Яндекс Go — Staff">
-                                                            Яндекс Go — Staff
-                                                        </div>
-                                                        <div class="divause-iPhone__contact-check_mark">
-                                                            <img src="img/Verified.svg" alt="check_mark">
-                                                        </div>
-                                                    </div>
-                                        
-                                                </div>
-                                        
-                                                <div class="divause-iPhone__notification">
-                                                    <div class="divause-iPhone__notification-text">
-                                                        <img class="divause-iPhone__notification-text-icon" src="img/lock.svg" alt="lock">
-                                                        Сообщения и звонки в данном чате
-                                                        теперь защищены сквозным шифрованием.<br>
-                                                        Бизнес может использовать
-                                                        сторонний сервис для хранения и чтения ваших сообщений и ответа на сообщения и
-                                                        звонки. Подробнее.
-                                                    </div>
-                                                </div>
-                                        
-                                                <div class="divause-iPhone__information">
-                                                    <div class="divause-iPhone__information-text">
-                                                        Данная переписка ведётся с бизнес-аккаунтом. Подробнее.
-                                                    </div>
-                                                </div>  
-                                        
-                                                <div class="divause-iPhone__message">
-                                                    <div class="divause-iPhone__message-block">
-                                                        <div style="position: relative;">
-                                                            <span class="divause-iPhone__message-tail_out">
-                                                                <svg width="8" height="8" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M6.10352e-05 12.1429C6.51957 9.24286 9.29266 6.49463 13.0001 0V17C7.19003 16.9064 4.38447 15.758 6.10352e-05 12.1429Z" fill="#F9F9F9"/>
-                                                                </svg>    
-                                                            </span>
-                                            
-                                                            <div class="divause-iPhone__message-content">
-                                            
-                                                                <div class="divause-iPhone__message-padding">
-                                                                    <div class="divause-iPhone__message-text">
-                                            
-                                                                        <div style="position: relative; overflow-wrap: break-word;"> 
-                                                                            <span style="vertical-align: initial;">
-                                                                                <span>
-                                                                                    Здравствуйте 👋 Вы были в туре с нами в ОАЭ в 2019 году. У нас новости: мы придумали, что подарить вашим близким — впечатления! Нажмите на кнопку и узнайте, как работают подарочные карты TUI.
-                                                                                </span>
-                                                                            </span>
-                                                                            <span class="divause-iPhone__message-plug"></span>
-                                                                        </div>
-                                            
-                                                                    </div>
-                                                                    <div class="divause-iPhone__message-time">15:49</div> 
-                                                                </div>
-                                            
-                                                            </div>
-                                                        </div>
-                                                        <div class="divause-iPhone__message-btns">
-                                                            <div class="divause-iPhone__message-btns-col">
-                                                                <button class="button divause-iPhone__message-btn">Подробнее</button>
-                                                            </div>
-                                                            <div class="divause-iPhone__message-btns-col">
-                                                                <button class="button divause-iPhone__message-btn">Не интересно</button>
-                                                            </div>
-                                                            <div class="divause-iPhone__message-btns-col">
-                                                                <button class="button divause-iPhone__message-btn">Записаться на экскурсию</button>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </div>  
-                                        
-                                            </div>
-                                        </div>            </div>
+                                    </div>
+                    
+                                    <img src="/img/phone.png" alt="phone">
                                 </div>
                             </div>
                         </div>
-                        
+                        <div class="tabs__content-pane" id="AmoCRM-templates">
+                            <div class="main__grid main__grid--three">
+                                <div class="aside">
+                                    <div class="list">
+                                    
+                                        <ul class="list__items">
+                                            <li class="list__item" title="Приветствие">
+                                                <a href="#1" class="list__item-link">
+                                                    <div class="list__item-cont">
+                                                        <p class="list__item-title">Приветствие</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                    
+                                            <li class="list__item" title="Подтверждение встречи">
+                                                <a href="#2" class="list__item-link">
+                                                    <div class="list__item-cont">
+                                                        <p class="list__item-title">Подтверждение встречи</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                    
+                                            <li class="list__item list__item--active" title="Спасибо, Ольга">
+                                                <a href="#3" class="list__item-link">
+                                                    <div class="list__item-cont">
+                                                        <p class="list__item-title">Спасибо, Ольга</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                    
+                                            <li class="list__item" title="NPS Оценка">
+                                                <a href="#4" class="list__item-link">
+                                                    <div class="list__item-cont">
+                                                        <p class="list__item-title">NPS Оценка</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    
+                                        <a href="#" class="list__button"> <!-- list__button--active -->
+                                            <svg class="list__button-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="circle" d="M18.0426 0.0849609C27.9599 0.0849609 36 8.12485 36 18.0425C36 27.9602 27.9599 36.0001 18.0424 36.0001C8.12479 36.0001 0.0848999 27.9602 0.0848999 18.0425C0.0848999 8.12485 8.12479 0.0849609 18.0426 0.0849609Z" fill="#DFE5E7"/>
+                                                <path d="M18 10C17.7348 10 17.4804 10.1054 17.2929 10.2929C17.1054 10.4804 17 10.7348 17 11V17H11C10.7348 17 10.4804 17.1054 10.2929 17.2929C10.1054 17.4804 10 17.7348 10 18C10 18.2652 10.1054 18.5196 10.2929 18.7071C10.4804 18.8946 10.7348 19 11 19H17V25C17 25.2652 17.1054 25.5196 17.2929 25.7071C17.4804 25.8946 17.7348 26 18 26C18.2652 26 18.5196 25.8946 18.7071 25.7071C18.8946 25.5196 19 25.2652 19 25V19H25C25.2652 19 25.5196 18.8946 25.7071 18.7071C25.8946 18.5196 26 18.2652 26 18C26 17.7348 25.8946 17.4804 25.7071 17.2929C25.5196 17.1054 25.2652 17 25 17H19V11C19 10.7348 18.8946 10.4804 18.7071 10.2929C18.5196 10.1054 18.2652 10 18 10Z" fill="white"/>
+                                            </svg>
+                                            <p>Добавить шаблон</p>
+                                        </a>
+                                    </div>            </div>
+                                <div>
+                                    <form class="form" action="/">
+                                        <div class="form__block">
+                                            <label class="form__label" for="name-AmoCRM-template">Название</label>
+                                            <input class="form__input" type="text" id="name-AmoCRM-template" value="Спасибо, Ольга">
+                                        </div>
+                                        <div class="form__block">
+                                            <label class="form__label">Пре-шаблон</label>
+                                            <select class="form__input form__select">
+                                                <option value="Благодарим за покупку">Благодарим за покупку</option>
+                                                <option value="Благодарим за покупку1">Благодарим за покупку1</option>
+                                                <option value="Благодарим за покупку2">Благодарим за покупку2</option>
+                                                <option value="Благодарим за покупку3">Благодарим за покупку3</option>
+                                            </select>
+                                        </div>
+                                    
+                                        <div class="form__block">
+                                            <label class="form__label">Изображение</label>
+                                            <div class="form__profile-file">
+                                                <label class="button button--border">
+                                                    Загрузить
+                                                    <input type="file" accept="image/jpeg,image/png">
+                                                </label>
+                                                <div class="form__profile-file__info form__profile-file__info--download">
+                                                    .jpg или .png, до 2МБ
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+                                        <div class="form__block">
+                                            <label class="form__label" for="cap-AmoCRM-template">Шапка: {{1}}</label>
+                                            <div class="form__group">
+                                                <div class="form__textarea">
+                                                    <textarea id="cap-AmoCRM-template" data-autoresize>отличный вопрос, {{Контакт.Имя}}</textarea>
+                                                    <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form__block">
+                                            <label class="form__label" for="message-AmoCRM-template">Сообщение: {{1}}</label>
+                                            <div class="form__group">
+                                                <div class="form__textarea">
+                                                    <textarea id="message-AmoCRM-template" data-autoresize>отличный вопрос, {{Контакт.Имя}}</textarea>
+                                                    <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form__block">
+                                            <label class="form__label" for="btn-AmoCRM-template">Кнопка: {{1}}</label>
+                                            <div class="form__group">
+                                                <div class="form__textarea">
+                                                    <textarea id="btn-AmoCRM-template" data-autoresize>amocrm&id={{Сделка.ID}}</textarea>
+                                                    <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form__block flex">
+                                            <button class="button button--save button-floppy-disk">Сохранить</button>
+                                            <button type="button" class="button button--cancellation">Отмена</button>
+                                        </div>
+                                    
+                                    </form>            </div>
+                                <div>
+                                    <div class="grop-pagination grop-pagination--small-indent">        
+                                        <div class="pagination">
+                                            <div class="pagination__title">Предпросмотр</div>
+                                            <ul class="pagination__list">
+                                                <li class="pagination__item pagination__item--active">
+                                                    <a class="pagination__link pagination__link-icon" href="#">
+                                                        <img src="img/full-moon-face.svg" alt="1">
+                                                    </a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link pagination__link-icon" href="#">
+                                                        <img src="img/new-moon-face.svg" alt="1">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                    
+                                    <img src="/img/phone.png" alt="phone">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </main>
-            </div>
+                    
+                </div>
+            </main>
         </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/script.min.js" defer></script>
+    <script src="js/script.js" defer></script>
     </body>
 </html>
