@@ -32,7 +32,10 @@
         <meta name="twitter:domain" content="website.com"/>
         
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
         <title>w-target AP | Templates</title>    </head>
@@ -248,10 +251,9 @@
                                         </a>
                                     </div>            </div>
                                 <div>
-                                    <form class="form" action="/">
-                                        <div class="form__block">
+                                    <form class="form" action="/">                    <div class="form__block">
                                             <label class="form__label" for="name">Название</label>
-                                            <input class="form__input" type="text" id="name" value="Благодарим за покупку">
+                                            <input class="form__input" type="text" id="name" value="Благодарим за покупку" placeholder="">
                                         </div>
                                         <div class="form__block">
                                             <label class="form__label" for="code-templates">Код шаблона</label>
@@ -280,7 +282,7 @@
                                                 
                                             </div>
                                         </div>
-                                    
+                                        
                                         <div class="form__block">
                                             <label class="form__label">Статус</label>
                                             <div class="flex flex--ai-center">
@@ -288,10 +290,10 @@
                                                 <span class="form__indicator form__indicator--red"></span> Отклонён: Неверный формат
                                             </div>
                                         </div>    
-                                    
+                                        
                                         <div class="form__block">
                                             <label class="form__label" for="cap">Шапка</label>
-                                            <select class="form__input form__select" style="margin-bottom: 8px;">
+                                            <select class="form__input form__select form__input--mb8">
                                                 <option value="Текст">Текст</option>
                                                 <option value="Текст1">Текст1</option>
                                                 <option value="Текст2">Текст2</option>
@@ -300,31 +302,31 @@
                                             <div class="form__group">
                                                 <input class="form__input" type="text" id="cap" value="Для перемещения вас и еды." placeholder="">
                                                 <div class="form__group__icon">
-                                                    <button type="button" class="button">{{2}}</button>
+                                                    <button type="button" class="button">&lbrace;&lbrace;2&rbrace;&rbrace;</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                        
                                         <div class="form__block">
                                             <label class="form__label" for="message">Сообщение</label>
                                             <div class="form__group">
                                                 <div class="form__textarea form__textarea--three_line">
-                                                    <textarea id="message" data-autoresize>Здравствуйте, {{2}}. Ждём вас в офисе по адресу Рабочая ул., 33. Не забудьте надеть маску и перчатки!</textarea>
-                                                    <button type="button" class="button form__group__icon-textarea">+ Параметр {{2}}</button>
+                                                    <textarea id="message" data-autoresize>Здравствуйте, &lbrace;&lbrace;2&rbrace;&rbrace;. Ждём вас в офисе по адресу Рабочая ул., 33. Не забудьте надеть маску и перчатки!</textarea>
+                                                    <button type="button" class="button form__group__icon-textarea">+ Параметр &lbrace;&lbrace;2&rbrace;&rbrace;</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                        
                                         <div class="form__block">
                                             <label class="form__label" for="signature">Подпись</label>
                                             <div class="form__group">
                                                 <input class="form__input" type="text" id="signature" value="Для перемещения вас и еды." placeholder="">
                                                 <div class="form__group__icon">
-                                                    <button type="button" class="button">{{2}}</button>
+                                                    <button type="button" class="button">&lbrace;&lbrace;2&rbrace;&rbrace;</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                        
                                         <div class="form__block">
                                             <label class="form__label">Кнопки</label>
                                             <div>
@@ -344,19 +346,19 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                    
-                                            <input class="form__input" type="text" value="Оплатить онлайн" placeholder="" style="margin-bottom: 8px;">
+                                        
+                                            <input class="form__input form__input--mb8" type="text" value="Оплатить онлайн" placeholder="">
                                             <div class="form__group">
                                                 <input class="form__input" type="text" value="https://go.yandex" placeholder="">
                                                 <div class="form__group__icon">
-                                                    <button type="button" class="button">{{1}}</button>
+                                                    <button type="button" class="button">&lbrace;&lbrace;1&rbrace;&rbrace;</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                        
                                         <div class="form__block">
                                             <label class="form__label">Кнопки</label>
-                                    
+                                        
                                             <div>
                                                 <div class="form__tags">
                                                     <div class="form__tags-item form__tags-item--active">
@@ -374,16 +376,16 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                    
-                                            <input class="form__input" type="text" value="Оплатить онлайн" placeholder="" style="margin-bottom: 8px;">
+                                        
+                                            <input class="form__input form__input--mb8" type="text" value="Оплатить онлайн" placeholder="">
                                             <div class="form__group">
                                                 <input class="form__input" type="text" value="https://go.yandex" placeholder="">
                                                 <div class="form__group__icon">
-                                                    <button type="button" class="button">{{3}}</button>
+                                                    <button type="button" class="button">&lbrace;&lbrace;3&rbrace;&rbrace;</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                        
                                         <div class="form__block">
                                             <label class="form__label">Кнопки</label>
                                             <div>
@@ -406,7 +408,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <input class="form__input" type="text" value="Оплатить онлайн" placeholder="" style="margin-bottom: 8px;">
+                                            <input class="form__input form__input--mb8" type="text" value="Оплатить онлайн" placeholder="">
                                         </div>
                                         <div class="form__block">
                                             <label class="form__label">Кнопки</label>
@@ -418,34 +420,112 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                        
                                         <div class="form__block flex">
                                             <button class="button button--save button-floppy-disk">Сохранить</button>
                                             <button type="button" class="button button--cancellation">Отмена</button>
                                         </div>
-                                    
                                     </form>            </div>
                                 <div>
-                                    <div class="grop-pagination grop-pagination--small-indent">        
-                                        <div class="pagination">
-                                            <div class="pagination__title">Предпросмотр</div>
-                                            <ul class="pagination__list">
-                                                <li class="pagination__item pagination__item--active">
-                                                    <a class="pagination__link pagination__link-icon" href="#">
+                                    <div class="switches switches--small-indent">                    <div class="switch">
+                                            <div class="switch__title">Предпросмотр</div>
+                                            <ul class="switch__list">
+                                                <li class="switch__item switch__item--active">
+                                                    <a class="switch__link switch__link-icon" href="#">
                                                         <img src="img/full-moon-face.svg" alt="1">
                                                     </a>
                                                 </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link pagination__link-icon" href="#">
+                                                <li class="switch__item">
+                                                    <a class="switch__link switch__link-icon" href="#">
                                                         <img src="img/new-moon-face.svg" alt="1">
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
-                    
-                                    <img src="img/phone.png" alt="phone">
-                                </div>
+                                    <div class="divause-iPhone divause-iPhone--zoom0_45">
+                                        <div class="divause-iPhone__fon">
+                                            <div class="divause-iPhone__content">
+                                                <div class="divause-iPhone__header">
+                                                    <div class="divause-iPhone__header-img">
+                                                        <img src="" onerror="this.src='img/image-numbers1-2.jpg'" alt="Яндекс Go — Staff">
+                                                    </div>
+                                                    <div class="divause-iPhone__header-text" title="Яндекс Go — Staff">
+                                                        Яндекс Go — Staff
+                                                    </div>
+                                                    <div class="divause-iPhone__header-check_mark">
+                                                        <img src="img/Verified.svg" alt="check_mark">
+                                                    </div>
+                                                </div>
+                                                <div class="divause-iPhone__chat">
+                                                    <div class="divause-iPhone__chat-messages">                    <div class="divause-iPhone__chat-day">
+                                            Сегодня
+                                        </div>                    <div class="divause-iPhone__chat-notification">
+                                            <img class="divause-iPhone__chat-notification-icon" src="img/lock.svg" alt="lock"/>Сообщения и звонки в данном чате
+                                            теперь защищены сквозным шифрованием.
+                                            Яндекс Go — Staff может использовать
+                                            сторонний сервис для хранения и чтения ваших сообщений и ответа на сообщения и
+                                            звонки. Подробнее.
+                                        </div>                    <div class="divause-iPhone__chat-information">
+                                            Данная переписка ведётся с бизнес-аккаунтом. Подробнее.
+                                        </div>                    <div class="divause-iPhone__message">
+                                            <div class="divause-iPhone__message-block">
+                                                <div style="position: relative;">
+                                                    <span class="divause-iPhone__message-tail_out">
+                                                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 12.1429C6.5195 9.24286 9.29259 6.49463 13 0V17C7.18997 16.9064 4.38441 15.758 0 12.1429Z" fill="#F9F9F9"/>
+                                                        </svg>       
+                                                    </span>
+                                        
+                                                    <div class="divause-iPhone__message-content">
+                                        
+                                                        <div class="divause-iPhone__message-padding">
+                                                            <div class="divause-iPhone__message-file">
+                                                                <img src="img/divause/image.svg" alt="image">
+                                                            </div>
+                                                            <div class="divause-iPhone__message-text">
+                                        
+                                                                <div style="position: relative; overflow-wrap: break-word;"> 
+                                                                    <span style="vertical-align: initial;">
+                                                                        <span>
+                                                                            <p class="divause-iPhone__message-header">Иван, здравствуйте!</p>
+                                                                            Привет <br>
+                                                                            Я с BP DAY <br>
+                                                                            <span class="divause-iPhone__message-fatty">жирный</span><br>
+                                                                            <span class="divause-iPhone__message-italics">курсив</span><br>
+                                                                            <span class="divause-iPhone__message-strikethrough">зачёркнутый</span><br>
+                                                                            <span class="divause-iPhone__message-monospaced">моноширинный (Menlo)</span>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="divause-iPhone__message-plug"></span>
+                                                                </div>
+                                        
+                                                            </div>
+                                                            <div class="divause-iPhone__message-footer">
+                                                                Работает на базе Тинькофф.
+                                                            </div>
+                                                            <div class="divause-iPhone__message-time">15:49</div> 
+                                                        </div>
+                                        
+                                                    </div>
+                                                </div>
+                                                <div class="divause-iPhone__message-btns">
+                                                    <div class="divause-iPhone__message-btns-col">
+                                                        <button class="button divause-iPhone__message-btn">Подробнее</button>
+                                                    </div>
+                                                    <div class="divause-iPhone__message-btns-col">
+                                                        <button class="button divause-iPhone__message-btn divause-iPhone__message-btn--gray">Не интересно</button>
+                                                    </div>
+                                                    <div class="divause-iPhone__message-btns-col">
+                                                        <button class="button divause-iPhone__message-btn">Записаться на экскурсию</button>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>                                 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>            </div>
                             </div>
                         </div>
                         <div class="tabs__content-pane" id="AmoCRM-templates">
@@ -496,8 +576,7 @@
                                         </a>
                                     </div>            </div>
                                 <div>
-                                    <form class="form" action="/">
-                                        <div class="form__block">
+                                    <form class="form" action="/">                    <div class="form__block">
                                             <label class="form__label" for="name-AmoCRM-template">Название</label>
                                             <input class="form__input" type="text" id="name-AmoCRM-template" value="Спасибо, Ольга">
                                         </div>
@@ -510,7 +589,7 @@
                                                 <option value="Благодарим за покупку3">Благодарим за покупку3</option>
                                             </select>
                                         </div>
-                                    
+                                        
                                         <div class="form__block">
                                             <label class="form__label">Изображение</label>
                                             <div class="form__profile-file">
@@ -523,64 +602,142 @@
                                                 </div>
                                             </div>
                                         </div>
-                                      
+                                        
                                         <div class="form__block">
-                                            <label class="form__label" for="cap-AmoCRM-template">Шапка: {{1}}</label>
+                                            <label class="form__label" for="cap-AmoCRM-template">Шапка: &lbrace;&lbrace;1&rbrace;&rbrace;</label>
                                             <div class="form__group">
                                                 <div class="form__textarea">
-                                                    <textarea id="cap-AmoCRM-template" data-autoresize>отличный вопрос, {{Контакт.Имя}}</textarea>
+                                                    <textarea id="cap-AmoCRM-template" data-autoresize>отличный вопрос, &lbrace;&lbrace;Контакт.Имя&rbrace;&rbrace;</textarea>
                                                     <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                        
                                         <div class="form__block">
-                                            <label class="form__label" for="message-AmoCRM-template">Сообщение: {{1}}</label>
+                                            <label class="form__label" for="message-AmoCRM-template">Сообщение: &lbrace;&lbrace;1&rbrace;&rbrace;</label>
                                             <div class="form__group">
                                                 <div class="form__textarea">
-                                                    <textarea id="message-AmoCRM-template" data-autoresize>отличный вопрос, {{Контакт.Имя}}</textarea>
+                                                    <textarea id="message-AmoCRM-template" data-autoresize>отличный вопрос, &lbrace;&lbrace;Контакт.Имя&rbrace;&rbrace;</textarea>
                                                     <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                        
                                         <div class="form__block">
-                                            <label class="form__label" for="btn-AmoCRM-template">Кнопка: {{1}}</label>
+                                            <label class="form__label" for="btn-AmoCRM-template">Кнопка: &lbrace;&lbrace;1&rbrace;&rbrace;</label>
                                             <div class="form__group">
                                                 <div class="form__textarea">
-                                                    <textarea id="btn-AmoCRM-template" data-autoresize>amocrm&id={{Сделка.ID}}</textarea>
+                                                    <textarea id="btn-AmoCRM-template" data-autoresize>amocrm&id=&lbrace;&lbrace;Сделка.ID&rbrace;&rbrace;</textarea>
                                                     <button type="button" class="button form__group__icon-textarea">+ Параметр</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                        
                                         <div class="form__block flex">
                                             <button class="button button--save button-floppy-disk">Сохранить</button>
                                             <button type="button" class="button button--cancellation">Отмена</button>
                                         </div>
-                                    
                                     </form>            </div>
                                 <div>
-                                    <div class="grop-pagination grop-pagination--small-indent">        
-                                        <div class="pagination">
-                                            <div class="pagination__title">Предпросмотр</div>
-                                            <ul class="pagination__list">
-                                                <li class="pagination__item pagination__item--active">
-                                                    <a class="pagination__link pagination__link-icon" href="#">
+                                    <div class="switches switches--small-indent">                    <div class="switch">
+                                            <div class="switch__title">Предпросмотр</div>
+                                            <ul class="switch__list">
+                                                <li class="switch__item switch__item--active">
+                                                    <a class="switch__link switch__link-icon" href="#">
                                                         <img src="img/full-moon-face.svg" alt="1">
                                                     </a>
                                                 </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link pagination__link-icon" href="#">
+                                                <li class="switch__item">
+                                                    <a class="switch__link switch__link-icon" href="#">
                                                         <img src="img/new-moon-face.svg" alt="1">
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
-                    
-                                    <img src="img/phone.png" alt="phone">
-                                </div>
+                                    <div class="divause-iPhone divause-iPhone--zoom0_45">
+                                        <div class="divause-iPhone__fon">
+                                            <div class="divause-iPhone__content">
+                                                <div class="divause-iPhone__header">
+                                                    <div class="divause-iPhone__header-img">
+                                                        <img src="" onerror="this.src='img/image-numbers1-2.jpg'" alt="Яндекс Go — Staff">
+                                                    </div>
+                                                    <div class="divause-iPhone__header-text" title="Яндекс Go — Staff">
+                                                        Яндекс Go — Staff
+                                                    </div>
+                                                    <div class="divause-iPhone__header-check_mark">
+                                                        <img src="img/Verified.svg" alt="check_mark">
+                                                    </div>
+                                                </div>
+                                                <div class="divause-iPhone__chat">
+                                                    <div class="divause-iPhone__chat-messages">                    <div class="divause-iPhone__chat-day">
+                                            Сегодня
+                                        </div>                    <div class="divause-iPhone__chat-notification">
+                                            <img class="divause-iPhone__chat-notification-icon" src="img/lock.svg" alt="lock"/>Сообщения и звонки в данном чате
+                                            теперь защищены сквозным шифрованием.
+                                            Яндекс Go — Staff может использовать
+                                            сторонний сервис для хранения и чтения ваших сообщений и ответа на сообщения и
+                                            звонки. Подробнее.
+                                        </div>                    <div class="divause-iPhone__chat-information">
+                                            Данная переписка ведётся с бизнес-аккаунтом. Подробнее.
+                                        </div>                    <div class="divause-iPhone__message">
+                                            <div class="divause-iPhone__message-block">
+                                                <div style="position: relative;">
+                                                    <span class="divause-iPhone__message-tail_out">
+                                                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 12.1429C6.5195 9.24286 9.29259 6.49463 13 0V17C7.18997 16.9064 4.38441 15.758 0 12.1429Z" fill="#F9F9F9"/>
+                                                        </svg>       
+                                                    </span>
+                                        
+                                                    <div class="divause-iPhone__message-content">
+                                        
+                                                        <div class="divause-iPhone__message-padding">
+                                                            <div class="divause-iPhone__message-file">
+                                                                <img src="img/divause/image.svg" alt="image">
+                                                            </div>
+                                                            <div class="divause-iPhone__message-text">
+                                        
+                                                                <div style="position: relative; overflow-wrap: break-word;"> 
+                                                                    <span style="vertical-align: initial;">
+                                                                        <span>
+                                                                            <p class="divause-iPhone__message-header">Иван, здравствуйте!</p>
+                                                                            Привет <br>
+                                                                            Я с BP DAY <br>
+                                                                            <span class="divause-iPhone__message-fatty">жирный</span><br>
+                                                                            <span class="divause-iPhone__message-italics">курсив</span><br>
+                                                                            <span class="divause-iPhone__message-strikethrough">зачёркнутый</span><br>
+                                                                            <span class="divause-iPhone__message-monospaced">моноширинный (Menlo)</span>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="divause-iPhone__message-plug"></span>
+                                                                </div>
+                                        
+                                                            </div>
+                                                            <div class="divause-iPhone__message-footer">
+                                                                Работает на базе Тинькофф.
+                                                            </div>
+                                                            <div class="divause-iPhone__message-time">15:49</div> 
+                                                        </div>
+                                        
+                                                    </div>
+                                                </div>
+                                                <div class="divause-iPhone__message-btns">
+                                                    <div class="divause-iPhone__message-btns-col">
+                                                        <button class="button divause-iPhone__message-btn">Подробнее</button>
+                                                    </div>
+                                                    <div class="divause-iPhone__message-btns-col">
+                                                        <button class="button divause-iPhone__message-btn divause-iPhone__message-btn--gray">Не интересно</button>
+                                                    </div>
+                                                    <div class="divause-iPhone__message-btns-col">
+                                                        <button class="button divause-iPhone__message-btn">Записаться на экскурсию</button>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>                                 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>            </div>
                             </div>
                         </div>
                     </div>

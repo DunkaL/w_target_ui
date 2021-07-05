@@ -486,7 +486,7 @@ img {
 .page-layout {
   position: relative;
   max-width: 1560px;
-  min-width: 1283px;
+  min-width: 1319px;
   margin: 0 auto;
 }
 
@@ -1101,6 +1101,10 @@ img {
   opacity: 0.5;
 }
 
+.form__input--mb8 {
+  margin-bottom: 8px;
+}
+
 .form__textarea {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1370,7 +1374,7 @@ img {
   fill: #128C7E;
 }
 
-.grop-pagination {
+.switches {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1378,15 +1382,15 @@ img {
   justify-content: space-around;
 }
 
-.grop-pagination--small-indent {
+.switches--small-indent {
   margin-bottom: 16px;
 }
 
-.grop-pagination--large-indent {
+.switches--large-indent {
   margin-bottom: 24px;
 }
 
-.pagination {
+.switch {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1399,38 +1403,38 @@ img {
   align-items: center;
 }
 
-.pagination__title {
+.switch__title {
   font-size: 14px;
   color: rgba(14,14,14,0.35);
   margin-bottom: 4px;
 }
 
-.pagination__list {
+.switch__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.pagination__item:first-child .pagination__link {
+.switch__item:first-child .switch__link {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-.pagination__item:not(:first-child) .pagination__link {
+.switch__item:not(:first-child) .switch__link {
   margin-left: -1px;
 }
 
-.pagination__item:last-child .pagination__link {
+.switch__item:last-child .switch__link {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-.pagination__item--active .pagination__link {
+.switch__item--active .switch__link {
   background: #E1E1E1 !important;
 }
 
-.pagination__link {
+.switch__link {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1451,11 +1455,11 @@ img {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
-.pagination__link-icon {
+.switch__link-icon {
   width: 44px;
 }
 
-.pagination__link:hover {
+.switch__link:hover {
   background: #ececec;
 }
 
@@ -1700,64 +1704,80 @@ img {
 }
 
 .divause-iPhone {
-  background: url("../img/divause/bg_button.png") no-repeat center/cover;
-  padding: 20px calc(2px + (5 - 2) * ((100vw - 500px) / (1920 - 500)));
-  width: calc(266px + (670 - 266) * ((100vw - 500px) / (1920 - 500)));
+  position: relative;
+  width: 670px;
+  height: 1359px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   margin: 0 auto;
 }
 
-.divause-iPhone__corps {
-  position: relative;
+.divause-iPhone img {
+  pointer-events: none;
+}
+
+.divause-iPhone--circumcised {
+  height: 960px;
+}
+
+.divause-iPhone--circumcised .divause-iPhone__chat {
+  height: 789px;
+  padding-bottom: 0;
+}
+
+.divause-iPhone--zoom0_45 {
+  zoom: 0.45;
+}
+
+.divause-iPhone--zoom0_54 {
+  zoom: 0.54;
+}
+
+.divause-iPhone__fon {
+  background: url("../img/divause/iPhone-fon.png") no-repeat center top/cover;
+  padding: 30px 34px;
+  height: 100%;
+}
+
+.divause-iPhone__content {
+  height: 100%;
 }
 
 .divause-iPhone__header {
-  background: url("../img/divause/bg_header.png") no-repeat center/cover;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: relative;
-  margin-bottom: -1px;
-  height: calc(68px + (171 - 68) * ((100vw - 500px) / (1920 - 500)));
-}
-
-.divause-iPhone__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: calc(160px + (333 - 160) * ((100vw - 500px) / (1920 - 500)));
+  height: 141px;
+  padding: 77px 110px 6px 120px;
 }
 
-.divause-iPhone__contact-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: calc(20px + (57 - 20) * ((100vw - 500px) / (1920 - 500)));
-  min-width: calc(20px + (57 - 20) * ((100vw - 500px) / (1920 - 500)));
-  margin-right: calc(5px + (12 - 5) * ((100vw - 500px) / (1920 - 500)));
+.divause-iPhone__header-img {
+  min-width: 57px;
+  width: 57px;
+  min-height: 57px;
+  height: 57px;
+  border-radius: 100%;
+  margin-right: 12px;
+  overflow: hidden;
 }
 
-.divause-iPhone__contact-img img {
-  vertical-align: inherit;
-}
-
-.divause-iPhone__contact-text {
-  letter-spacing: 0.015em;
+.divause-iPhone__header-text {
+  font-size: 25px;
   font-weight: 500;
-  font-size: calc(10px + (25 - 10) * ((100vw - 500px) / (1920 - 500)));
+  letter-spacing: 0.015em;
   overflow: hidden;
   white-space: nowrap;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  margin-right: calc(4px + (8 - 4) * ((100vw - 500px) / (1920 - 500)));
+  margin-right: 8px;
 }
 
-.divause-iPhone__contact-check_mark {
+.divause-iPhone__header-check_mark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1766,30 +1786,219 @@ img {
   align-items: center;
 }
 
-.divause-iPhone__contact-check_mark img {
-  width: calc(11px + (24 - 11) * ((100vw - 500px) / (1920 - 500)));
-  min-width: calc(11px + (24 - 11) * ((100vw - 500px) / (1920 - 500)));
-  height: calc(11px + (24 - 11) * ((100vw - 500px) / (1920 - 500)));
-  min-height: calc(11px + (24 - 11) * ((100vw - 500px) / (1920 - 500)));
+.divause-iPhone__header-check_mark img {
+  min-width: 24px;
+  width: 24px;
+  min-height: 24px;
+  height: 24px;
 }
 
 .divause-iPhone__chat {
-  background: #D5D5D5;
-  margin-bottom: -1px;
-  padding: 0 calc(12px + (30 - 12) * ((100vw - 500px) / (1920 - 500)));
+  height: 1159px;
+  padding-bottom: 122px;
 }
 
-.divause-iPhone__chat-fon {
-  background: url("../img/divause/bg_chat.jpg") no-repeat center/cover;
-  height: calc(400px + (1039 - 400) * ((100vw - 500px) / (1920 - 500)));
-  font-size: calc(10px + (25 - 10) * ((100vw - 500px) / (1920 - 500)));
+.divause-iPhone__chat-messages {
+  height: 100%;
+  padding: 11px 0;
   overflow-y: auto;
 }
 
-.divause-iPhone__footer {
-  background: url("../img/divause/bg_footer.png") no-repeat center/cover;
+.divause-iPhone__chat-messages::-webkit-scrollbar {
+  width: 0;
+}
+
+.divause-iPhone__chat-day {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  padding: 2px 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #47474F;
+  background: #D1DBF9;
+  -webkit-box-shadow: 0px 1px 0px rgba(0,0,0,0.17),inset 0px 1px 0px rgba(255,255,255,0.05);
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.17),inset 0px 1px 0px rgba(255,255,255,0.05);
+  border-radius: 12px;
+}
+
+.divause-iPhone__chat-notification {
+  width: 466px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  padding: 9px 23px;
+  font-size: 19px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #1C1C1E;
+  background: #FDF4C5;
+  -webkit-box-shadow: 0px 1px 0px rgba(0,0,0,0.17),inset 0px 1px 0px rgba(255,255,255,0.05);
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.17),inset 0px 1px 0px rgba(255,255,255,0.05);
+  border-radius: 13px;
+}
+
+.divause-iPhone__chat-notification-icon {
+  margin-right: 6px;
+}
+
+.divause-iPhone__chat-information {
+  width: 407px;
+  margin: 0 auto;
+  padding: 10px 23px;
+  font-size: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+  background: #EEF8F4;
+  -webkit-box-shadow: 0px 1px 0px rgba(0,0,0,0.17),inset 0px 1px 0px rgba(255,255,255,0.05);
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.17),inset 0px 1px 0px rgba(255,255,255,0.05);
+  border-radius: 13px;
+  margin-bottom: 16px;
+}
+
+.divause-iPhone__message {
+  padding: 0 24px;
+}
+
+.divause-iPhone__message:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.divause-iPhone__message-block {
+  max-width: 84.3%;
   position: relative;
-  height: calc(60px + (151 - 60) * ((100vw - 500px) / (1920 - 500)));
+}
+
+.divause-iPhone__message-tail_out {
+  position: absolute;
+  left: -12px;
+  bottom: 8px;
+  z-index: 100;
+  display: block;
+}
+
+.divause-iPhone__message-tail_out svg {
+  display: block;
+  pointer-events: none;
+}
+
+.divause-iPhone__message-content {
+  background: #F9F9F9;
+  border-radius: 11px;
+}
+
+.divause-iPhone__message-padding {
+  padding: 6px;
+  vertical-align: initial;
+}
+
+.divause-iPhone__message-file {
+  background: #DDDDDD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 227px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.divause-iPhone__message-header {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.divause-iPhone__message-footer {
+  color: #949492;
+  font-size: 22px;
+  padding: 0 6px;
+  margin-top: 4px;
+}
+
+.divause-iPhone__message-plug {
+  display: inline-block;
+  width: 44px;
+  vertical-align: middle;
+}
+
+.divause-iPhone__message-text {
+  line-height: 1.4;
+  font-size: 25px;
+  padding: 0 6px;
+}
+
+.divause-iPhone__message-fatty {
+  font-weight: 600;
+}
+
+.divause-iPhone__message-italics {
+  font-style: italic;
+}
+
+.divause-iPhone__message-strikethrough {
+  text-decoration: line-through;
+}
+
+.divause-iPhone__message-monospaced {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+.divause-iPhone__message-time {
+  float: right;
+  font-size: 18px;
+  color: #BEBEC0;
+  letter-spacing: 0.02em;
+  margin: -21px 7px -5px 4px;
+}
+
+.divause-iPhone__message-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -2px;
+  margin-top: 5px;
+}
+
+.divause-iPhone__message-btns-col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  min-width: 50%;
+  padding: 0 2px;
+}
+
+.divause-iPhone__message-btn {
+  cursor: default;
+  color: #3478F6;
+  font-size: 23px;
+  line-height: 0;
+  padding: 30px 15px;
+  width: 100%;
+  margin-bottom: 4px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#F4F4F4));
+  background: -o-linear-gradient(top, #FAFAFA 0%, #F4F4F4 100%);
+  background: linear-gradient(180deg, #FAFAFA 0%, #F4F4F4 100%);
+}
+
+.divause-iPhone__message-btn--gray {
+  color: #969696;
 }
 
 .empty {
@@ -1928,7 +2137,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 1283px) {
+@media only screen and (max-width: 1319px) {
   body {
     margin-right: 0;
     overflow-x: auto;

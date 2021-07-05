@@ -55,38 +55,34 @@ document.addEventListener("DOMContentLoaded", function () {
     
   });
 
-    $.ajax({
-      url: 'https://qr.wtrg.introvert.bz/generate.php',
-      data: {
-          text: "https://wa.me/74996478531&text=Регистрация",
-          size: 176,
-          margin: 0,
-          fg_color: '#000000',
-          bg_color: '#ffffff',
-          bg_opacity: 127,
-          corner_squares_color: '#000000',
-          corner_frames_color: '#000000',
-          logo_url: 'https://qr.wtrg.introvert.bz/example/logos/wa1.svg',
-          logo_width: 58,
-          logo_height: 58,
-          logo_color: '#000000',
-          export: 'svg'
-      },
-      success: function (svg) {
-          const qrCode = $('.js-qcode');
-          qrCode.append($('svg', svg));
-      },
-      dataType: "xml",
+  $.ajax({
+    url: 'https://qr.wtrg.introvert.bz/generate.php',
+    data: {
+        text: "https://wa.me/74996478531&text=Регистрация",
+        size: 176,
+        margin: 0,
+        fg_color: '#000000',
+        bg_color: '#ffffff',
+        bg_opacity: 127,
+        corner_squares_color: '#000000',
+        corner_frames_color: '#000000',
+        logo_url: 'https://qr.wtrg.introvert.bz/example/logos/wa1.svg',
+        logo_width: 58,
+        logo_height: 58,
+        logo_color: '#000000',
+        export: 'svg'
+    },
+    success: function (svg) {
+        const qrCode = $('.js-qcode');
+        qrCode.append($('svg', svg));
+    },
+    dataType: "xml",
   });
 
   const openWhatsappWebButton = $('.js-qcode-open-wa-button');
   openWhatsappWebButton.click(function (event) {
       window.open('https://web.whatsapp.com/send?phone=74996478531&text=%D0%A0%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F');
   });
-
-
-
-
 
 
 });
