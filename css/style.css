@@ -1885,8 +1885,10 @@ img {
 }
 
 .divause-iPhone__message-content {
-  background: #F9F9F9;
+  background: linear-gradient(180deg, #F9F9F9 82.81%, #F4F4F4 100%);
   border-radius: 11px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
 }
 
 .divause-iPhone__message-padding {
@@ -1907,8 +1909,16 @@ img {
   justify-content: center;
   width: 100%;
   height: 227px;
+  overflow: hidden;
   margin-bottom: 8px;
   border-radius: 8px;
+}
+
+.divause-iPhone__message-file img {
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .divause-iPhone__message-header {
@@ -1969,7 +1979,7 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -2px;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .divause-iPhone__message-btns-col {
@@ -1984,14 +1994,15 @@ img {
   cursor: default;
   color: #3478F6;
   font-size: 23px;
-  line-height: 0;
-  padding: 30px 15px;
+  padding: 18px;
   width: 100%;
   margin-bottom: 4px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
   background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#F4F4F4));
   background: -o-linear-gradient(top, #FAFAFA 0%, #F4F4F4 100%);
   background: linear-gradient(180deg, #FAFAFA 0%, #F4F4F4 100%);
