@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index,follow">
+        <meta name="description" content="Сборка для верстки сайта">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Данные Open Graph -->
+        <meta property="og:title" content="Заголовок здесь"/>
+        <meta property="og:description" content="Описание здесь"/>
+        <meta property="og:image" content="https://.../image250X250.png"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://"/>
+        
+        <!-- Google -->
+        <meta property="business:contact_data:email" content="email"/>
+        <meta property="business:contact_data:phone_number" content="phone"/>
+        <meta property="business:contact_data:website" content="http://"/>
+        
+        <!-- Google Plus -->
+        <meta itemprop="name" content="Название сайта"/>
+        <meta itemprop="description" content="Описание сайта"/>
+        <meta itemprop="image" content="https://.../image250X250.png"/>
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content="Название страницы">
+        <meta name="twitter:description" content="Описание"/>
+        <meta name="twitter:image:src" content="https://.../image250X250.png"/>
+        <meta name="twitter:domain" content="website.com"/>
+        
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <title>w-target AP | state</title>    </head>
+    <body>
+        
+        <div style="padding: 20px; background-color: #fff">
+            <button id="bb" class="button button--save button-floppy-disk">
+                <span class="button__text">
+                    Сохранить
+                </span>
+            </button>
+            <br>
+            <br>
+            <button class="button button--save button-floppy-disk" disabled>
+                <span class="button__text">
+                    Сохранить
+                </span>
+            </button>
+            <br>
+            <br>
+            <button class="button button--save button-loader">
+                <span class="button__text">
+                    Сохранить
+                </span>
+            </button>
+            <br>
+            <br>
+            <button class="button button--save button-check-mark">
+                <span class="button__text">
+                    Сохранить
+                </span>
+            </button>
+            <br>
+            <br>
+            <button class="button button--save button-cross">
+                <span class="button__text">
+                    Сохранить
+                </span>
+            </button>
+        </div>
+        
+        <script>
+            document.getElementById('bb').addEventListener('click', function(){
+                document.getElementById('bb').classList.remove('button-floppy-disk');
+                document.getElementById('bb').classList.remove('button-check-mark');
+                document.getElementById('bb').classList.add('button-loader');
+                setTimeout(function(){
+                    document.getElementById('bb').classList.remove('button-loader');
+                    document.getElementById('bb').classList.add('button-check-mark');
+                }, 2000);
+                setTimeout(function(){
+                    document.getElementById('bb').classList.remove('button-check-mark');
+                    document.getElementById('bb').classList.add('button-floppy-disk');
+                }, 3000);
+            });
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js" defer></script>
+    </body>
+</html>

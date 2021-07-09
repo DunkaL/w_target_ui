@@ -797,6 +797,26 @@ img {
   color: #0E0E0E;
 }
 
+.button[disabled],
+.button-loader,
+.button-check-mark,
+.button-cross {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button[disabled] .button__text,
+.button[disabled]::before,
+.button[disabled]::after,
+.button-loader .button__text,
+.button-check-mark .button__text,
+.button-cross .button__text {
+  opacity: 0.35;
+}
+
 .button--back {
   background: #F8F8F8;
   display: -webkit-inline-box;
@@ -873,6 +893,37 @@ img {
   margin-right: 8px;
 }
 
+.button-loader::before {
+  content: '';
+  display: inline-block;
+  border: 3px solid rgba(14,14,14,0.2);
+  border-top: 3px solid #0E0E0E;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+  margin-right: 8px;
+}
+
+.button-check-mark::before {
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.722 11.137L3.636 8.051l1.029-1.028 2.057 2.056 4.114-4.114 1.029 1.03-5.143 5.141v.002z' fill='%23075E54'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 8a8 8 0 1116 0A8 8 0 010 8zm8 6.546a6.544 6.544 0 110-13.09 6.544 6.544 0 010 13.09z' fill='%23075E54'/%3e%3c/svg%3e") no-repeat center/cover;
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.button-cross::before {
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.156 6.052a.726.726 0 10-.992-1.064L8.036 6.972 6.052 4.844a.727.727 0 00-1.063.992l1.984 2.128-2.129 1.984a.727.727 0 10.992 1.063l2.128-1.983 1.984 2.128a.727.727 0 101.064-.992L9.028 8.036l2.128-1.984z' fill='%23DA2E2E'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 8a8 8 0 1116 0A8 8 0 010 8zm8 6.546a6.544 6.544 0 110-13.09 6.544 6.544 0 010 13.09z' fill='%23DA2E2E'/%3e%3c/svg%3e") no-repeat center/cover;
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
 .button--mailbox {
   background: #F3ECE4;
   font-weight: 500;
@@ -941,6 +992,30 @@ img {
 
 .button--stop:hover svg>rect {
   fill: #FC3F1D;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .list {
@@ -1727,8 +1802,8 @@ img {
   padding-bottom: 0;
 }
 
-.divause-iPhone--zoom0_45 {
-  zoom: 0.45;
+.divause-iPhone--zoom0_46 {
+  zoom: 0.46;
 }
 
 .divause-iPhone--zoom0_54 {
@@ -1787,10 +1862,10 @@ img {
 }
 
 .divause-iPhone__header-check_mark img {
-  min-width: 24px;
-  width: 24px;
-  min-height: 24px;
-  height: 24px;
+  min-width: 25px;
+  width: 25px;
+  min-height: 25px;
+  height: 25px;
 }
 
 .divause-iPhone__chat {
@@ -1976,27 +2051,37 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -2px;
-  margin-top: 4px;
 }
 
 .divause-iPhone__message-btns-col {
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 0%;
-  flex: 1 0 0%;
-  min-width: 50%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 123px;
+  flex-basis: 123px;
   padding: 0 2px;
 }
 
 .divause-iPhone__message-btn {
   cursor: default;
   color: #3478F6;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
   font-size: 23px;
   padding: 18px;
   width: 100%;
-  margin-bottom: 4px;
+  margin-top: 4px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2028,12 +2113,14 @@ img {
 }
 
 .empty__img {
+  width: 128px;
+  height: 128px;
   margin-bottom: 16px;
 }
 
 .empty__title {
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 
 .empty__subtitle {

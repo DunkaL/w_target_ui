@@ -78,7 +78,7 @@
                 <nav class="sidebar__content">
                     <ol class="sidebar__list">
                         <li>
-                            <a href="/templates.html" class="sidebar__link">
+                            <a href="/templates.html" class="sidebar__link sidebar__link--active">
                                 <div class="sidebar__link-img">
                                     <img src="img/writing-hand.png" alt="Шаблоны">
                                 </div>
@@ -110,7 +110,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#Номера" class="sidebar__link sidebar__link--active">
+                            <a href="#Номера" class="sidebar__link">
                                 <div class="sidebar__link-img">
                                     <img src="img/telephone.png" alt="Номера">
                                 </div>
@@ -173,6 +173,7 @@
                     
                     <div class="main__grid main__grid--three">
                         <div class="aside">
+                            
                             <div class="list">
                             
                                 <ul class="list__items">
@@ -181,7 +182,7 @@
                                             <div class="flex flex--ai-center">
                                                 <div>
                                                     <div class="list__item-img">
-                                                        <img src="img/image-numbers1.jpg" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Staff">
+                                                        <img src="img/image-numbers1.jpg" onerror="this.src='img/empty.svg'" alt="Яндекс – Staff">
                                                     </div>
                                                 </div>
                                                 <div class="list__item-cont">
@@ -197,7 +198,7 @@
                                             <div class="flex flex--ai-center">
                                                 <div>
                                                     <div class="list__item-img">
-                                                        <img src="img/image-numbers2.jpg" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Поддержка">
+                                                        <img src="img/image-numbers2.jpg" onerror="this.src='img/empty.svg'" alt="Яндекс – Поддержка">
                                                     </div>
                                                 </div>
                                                 <div class="list__item-cont">
@@ -213,7 +214,7 @@
                                             <div class="flex flex--ai-center">
                                                 <div>
                                                     <div class="list__item-img">
-                                                        <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Staff">
+                                                        <img src="" onerror="this.src='img/empty.svg'" alt="Яндекс – Staff">
                                                     </div>
                                                 </div>
                                                 <div class="list__item-cont">
@@ -229,7 +230,7 @@
                                             <div class="flex flex--ai-center">
                                                 <div>
                                                     <div class="list__item-img">
-                                                        <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс Лицей">
+                                                        <img src="" onerror="this.src='img/empty.svg'" alt="Яндекс Лицей">
                                                     </div>
                                                 </div>
                                                 <div class="list__item-cont">
@@ -245,7 +246,7 @@
                                             <div class="flex flex--ai-center">
                                                 <div>
                                                     <div class="list__item-img">
-                                                        <img src="" onerror="this.src='img/image-numbers3.jpg'" alt="Яндекс – Staff">
+                                                        <img src="" onerror="this.src='img/empty.svg'" alt="Яндекс – Staff">
                                                     </div>
                                                 </div>
                                                 <div class="list__item-cont">
@@ -264,9 +265,11 @@
                                     </svg>
                                     <p>Добавить номер</p>
                                 </a>
-                            </div>    </div>
+                            </div>
+                        </div>
                         <div>
-                            <form class="form" action="/">            <div class="form__block">
+                            <form class="form" action="/">
+                                <div class="form__block">
                                     <label class="form__label" for="name">Название</label>
                                     <div class="form__group">
                                         <input class="form__input" type="text" id="name" value="Яндекс Go" placeholder="">
@@ -325,11 +328,16 @@
                                     <input class="form__input" type="email" id="email" value="go@yandex.ru" placeholder="">
                                 </div>
                                 <div class="form__block">
-                                    <button class="button button--save button-floppy-disk">Сохранить</button>
+                                    <button class="button button--save button-floppy-disk">
+                                        <span class="button__text">
+                                            Сохранить
+                                        </span>
+                                    </button>
                                 </div>
                             </form>    </div>
                         <div>
-                            <div class="switches switches--small-indent">            <div class="switch">
+                            <div class="switches switches--small-indent">            
+                                <div class="switch">
                                     <div class="switch__title">Предпросмотр</div>
                                     <ul class="switch__list">
                                         <li class="switch__item">
@@ -343,6 +351,7 @@
                                         </li>
                                     </ul>
                                 </div>
+                                
                                 
                                 <div class="switch">
                                     <div class="switch__title">Тема</div>
@@ -359,14 +368,15 @@
                                         </li>
                                     </ul>
                                 </div>
+                    
                             </div>
                     
-                            <div class="divause-iPhone divause-iPhone--zoom0_45">
+                            <div class="divause-iPhone divause-iPhone--zoom0_46">
                                 <div class="divause-iPhone__fon">
                                     <div class="divause-iPhone__content">
                                         <div class="divause-iPhone__header">
                                             <div class="divause-iPhone__header-img">
-                                                <img src="" onerror="this.src='img/image-numbers1-2.jpg'" alt="Яндекс Go — Staff">
+                                                <img src="img/image-numbers2.jpg" onerror="this.src='img/empty.svg'" alt="Яндекс Go — Staff">
                                             </div>
                                             <div class="divause-iPhone__header-text" title="Яндекс Go — Staff">
                                                 Яндекс Go — Staff
@@ -376,17 +386,21 @@
                                             </div>
                                         </div>
                                         <div class="divause-iPhone__chat">
-                                            <div class="divause-iPhone__chat-messages">            <div class="divause-iPhone__chat-day">
+                                            <div class="divause-iPhone__chat-messages">            
+                                <div class="divause-iPhone__chat-day">
                                     Сегодня
-                                </div>            <div class="divause-iPhone__chat-notification">
+                                </div>
+                                <div class="divause-iPhone__chat-notification">
                                     <img class="divause-iPhone__chat-notification-icon" src="img/lock.svg" alt="lock"/>Сообщения и звонки в данном чате
                                     теперь защищены сквозным шифрованием.
                                     Яндекс Go — Staff может использовать
                                     сторонний сервис для хранения и чтения ваших сообщений и ответа на сообщения и
                                     звонки. Подробнее.
-                                </div>            <div class="divause-iPhone__chat-information">
+                                </div>
+                                <div class="divause-iPhone__chat-information">
                                     Данная переписка ведётся с бизнес-аккаунтом. Подробнее.
-                                </div>            <div class="divause-iPhone__message">
+                                </div>
+                                <div class="divause-iPhone__message">
                                     <div class="divause-iPhone__message-block">
                                         <div style="position: relative;">
                                             <span class="divause-iPhone__message-tail_out">
@@ -399,7 +413,7 @@
                                 
                                                 <div class="divause-iPhone__message-padding">
                                                     <div class="divause-iPhone__message-file">
-                                                        <img src="img/divause/image.svg" alt="image">
+                                                        <img src="" onerror="this.src='img/divause/image.svg'" alt="image">
                                                     </div>
                                                     <div class="divause-iPhone__message-text">
                                 
@@ -420,7 +434,10 @@
                                 
                                                     </div>
                                                     <div class="divause-iPhone__message-footer">
-                                                        Работает на базе Тинькофф.
+                                                        <span>
+                                                            Работает на базе Тинькофф.
+                                                        </span>
+                                                        <span class="divause-iPhone__message-plug"></span>
                                                     </div>
                                                     <div class="divause-iPhone__message-time">15:49</div> 
                                                 </div>
@@ -439,11 +456,13 @@
                                             </div>
                                         </div>
                                     </div> 
-                                </div>                         </div>
+                                </div> 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>        
+                            </div>
+                            
                         </div>
                     </div>
                     
