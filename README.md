@@ -12,3 +12,5 @@ https://dunkal.github.io/w-targer-ap/campaigns.html
 https://dunkal.github.io/w-targer-ap/campaigns-open.html
 
 https://dunkal.github.io/w-targer-ap/components-phone.html
+
+https://dunkal.github.io/w-targer-ap/state.html
