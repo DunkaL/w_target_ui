@@ -2064,8 +2064,8 @@ img {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -ms-flex-preferred-size: 123px;
-  flex-basis: 123px;
+  -ms-flex-preferred-size: 160px;
+  flex-basis: 160px;
   padding: 0 2px;
 }
 
