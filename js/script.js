@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  $('ul.tabs').on('click', 'li>button:not(.tabs__link--active)', function() {
-      $('ul.tabs .tabs__link--active').removeClass('tabs__link--active');
+  $('ul.tabs').on('click', 'li.tabs__item:not(.tabs__item--active)', function() {
+      $('ul.tabs .tabs__item--active').removeClass('tabs__item--active');
       
-      $('.tabs__content .tabs__content-pane.active').removeClass('active');
+      $('.tabs__content-pane.active').removeClass('active');
       let tabsPane = $(this).attr('data-tabs');
       $(tabsPane).addClass('active');
 
-      $(this).addClass('tabs__link--active');
+      $(this).addClass('tabs__item--active');
   });
 
   function textArea() {
@@ -84,5 +84,41 @@ document.addEventListener("DOMContentLoaded", function () {
       window.open('https://web.whatsapp.com/send?phone=74996478531&text=%D0%A0%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F');
   });
 
+  // form select
+
+  $.find('.form__select').map((value) => {
+    $(value).find('.form__select-placeholder').html(
+      $(value).find('.form__select-options .form__select-selected').html()
+    );
+    $(value).find('input').val(
+      $(value).find('.form__select-options .form__select-selected').data('value')
+    );
+
+    $(value).find('.form__select-placeholder').click(function(){
+      $(value).addClass('form__select--active');
+    });
+    $(value).find('.form__select-options li').click(function(){
+      $(value).find('.form__select-options li.form__select-selected').removeClass('form__select-selected');
+      $(this).addClass('form__select-selected');
+      $(value).find('.form__select-placeholder').html($(this).html());
+      $(value).find('input').val($(this).data('value'));
+      $(value).removeClass('form__select--active');
+    });
+  });
+
+
+  // $('.form__select .form__select-placeholder').click(function(){
+  //     $('.form__select').addClass('form__select--active');
+  // });
+
+  // $('.form__select-options li').click(function(){
+  //     $('.form__select-options li.form__select-selected').removeClass('form__select-selected');
+  //     $(this).addClass('form__select-selected');
+
+  //     $('.form__select-placeholder').html($(this).html());
+  //     $('.form__select input').val($(this).data('value'));
+
+  //     $('.form__select').removeClass('form__select--active');
+  // });
 
 });

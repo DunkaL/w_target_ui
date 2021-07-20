@@ -77,8 +77,8 @@
             <div class="sidebar">
                 <nav class="sidebar__content">
                     <ol class="sidebar__list">
-                        <li>
-                            <a href="/templates.html" class="sidebar__link sidebar__link--active">
+                        <li class="active">
+                            <a href="/templates.html" class="sidebar__link">
                                 <div class="sidebar__link-img">
                                     <img src="img/writing-hand.png" alt="Шаблоны">
                                 </div>
@@ -133,8 +133,7 @@
                                 <span class="sidebar__link-text">Аналитика</span>
                             </a>
                         </li>
-                    </ol>
-                    <ol class="sidebar__list sidebar__list--topline">
+                        <li class="sidebar__list--topline"></li>
                         <li>
                             <a href="#Настройки" class="sidebar__link">
                                 <div class="sidebar__link-img">
@@ -158,7 +157,7 @@
                                 </div>
                                 <span class="sidebar__link-text">Оплата</span>
                             </a>
-                        </li>
+                        </li>           
                     </ol>
                 </nav>
             </div>            <main class="main">
@@ -171,16 +170,16 @@
                     </h2>
                     
                     <ul class="tabs">
-                        <li class="tabs__item">
-                            <button class="tabs__link tabs__link--active" data-tabs="#Pre-templates">Пре-шаблоны</button>
+                        <li class="tabs__item tabs__item--active" data-tabs="#Pre-templates">
+                            Пре-шаблоны
                         </li>
-                        <li class="tabs__item">
-                            <button class="tabs__link" data-tabs="#AmoCRM-templates">Шаблоны amoCRM</button>
+                        <li class="tabs__item" data-tabs="#AmoCRM-templates">
+                            Шаблоны amoCRM
                         </li>
                     </ul>
                     <div class="tabs__content">
                         <div class="tabs__content-pane active" id="Pre-templates">
-                            <div class="main__grid main__grid--three">
+                            <div class="tabs__content-block">
                                 <div class="aside">
                                     <div class="list">
                                     
@@ -262,22 +261,61 @@
                                         <div class="row form__block">
                                             <div class="col grids-7">
                                                 <label class="form__label">Категория</label>
-                                                <select class="form__input form__select">
-                                                    <option value="Auto Reply">Auto Reply</option>
-                                                    <option value="Auto Reply1">Auto Reply1</option>
-                                                    <option value="Auto Reply2">Auto Reply2</option>
-                                                    <option value="Auto Reply3">Auto Reply3</option>
-                                                </select>
+                                                <div class="form__select">
+                                                    <span class="form__select-placeholder"></span>
+                                                    <div class="form__select-options">
+                                                        <ul>
+                                                            <li data-option data-value="Auto Reply" class="form__select-selected">Auto Reply</li>
+                                                            <li data-option data-value="Auto Reply1">Auto Reply1</li>
+                                                            <li data-option data-value="Auto Reply2">Auto Reply2</li>
+                                                            <li data-option data-value="Auto Reply3">Auto Reply3</li>
+                                                        </ul>
+                                                    </div>
+                                                    <input type="hidden" name="category" value="">
+                                                </div>
                                             </div>
                                             <div class="col grids-5">
                                                 <label class="form__label">Язык</label>
-                                                <div class="js-form-select-icon">
-                                                    <select class="form__input form__select">
+                                                <!-- <div class="js-form-select-icon">
+                                                    <select class="form__input">
                                                         <option selected data-img="img/flag-russia.png" value="RU">RU</option>
                                                         <option data-img="img/flag-russia.png" value="RU1">RU1</option>
                                                         <option data-img="img/flag-russia.png" value="RU2">RU2</option>
                                                         <option data-img="img/flag-russia.png" value="RU3">RU3</option>
                                                     </select>
+                                                </div> -->
+                                        
+                                                <div class="form__select">
+                                                    <span class="form__select-placeholder"></span>
+                                                    <div class="form__select-options">
+                                                        <ul>
+                                                            <li data-option data-value="RU" class="form__select-selected"> 
+                                                                <div class="form__select-icon">
+                                                                    <img src="img/flag-russia.png" alt=""> 
+                                                                    <span>RU</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-option data-value="RU1">
+                                                                <div class="form__select-icon">
+                                                                    <img src="img/flag-russia.png" alt=""> 
+                                                                    <span>RU1</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-option data-value="RU2">
+                                                                <div class="form__select-icon">
+                                                                    <img src="img/flag-russia.png" alt=""> 
+                                                                    <span>RU2</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-option data-value="RU3"> 
+                                                                <div class="form__select-icon">
+                                                                    <img src="img/flag-russia.png" alt=""> 
+                                                                    <span>RU3</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <input type="hidden" name="leng" value="">
                                                 </div>
                                                 
                                             </div>
@@ -293,12 +331,19 @@
                                         
                                         <div class="form__block">
                                             <label class="form__label" for="cap">Шапка</label>
-                                            <select class="form__input form__select form__input--mb8">
-                                                <option value="Текст">Текст</option>
-                                                <option value="Текст1">Текст1</option>
-                                                <option value="Текст2">Текст2</option>
-                                                <option value="Текст3">Текст3</option>
-                                            </select>
+                                            <div class="form__select form__input--mb8">
+                                                <span class="form__select-placeholder"></span>
+                                                <div class="form__select-options">
+                                                    <ul>
+                                                        <li data-option data-value="Текст" class="form__select-selected">Текст</li>
+                                                        <li data-option data-value="Текст1">Текст1</li>
+                                                        <li data-option data-value="Текст2">Текст2</li>
+                                                        <li data-option data-value="Текст3">Текст3</li>
+                                                    </ul>
+                                                </div>
+                                                <input type="hidden" name="cap-select" value="">
+                                            </div>
+                                            
                                             <div class="form__group">
                                                 <input class="form__input" type="text" id="cap" value="Для перемещения вас и еды." placeholder="">
                                                 <div class="form__group__icon">
@@ -430,113 +475,10 @@
                                             <button type="button" class="button button--cancellation">Отмена</button>
                                         </div>
                                     </form>            </div>
-                                <div>
-                                    <div class="switches switches--small-indent">                    <div class="switch">
-                                            <div class="switch__title">Предпросмотр</div>
-                                            <ul class="switch__list">
-                                                <li class="switch__item switch__item--active">
-                                                    <a class="switch__link switch__link-icon" href="#">
-                                                        <img src="img/full-moon-face.svg" alt="1">
-                                                    </a>
-                                                </li>
-                                                <li class="switch__item">
-                                                    <a class="switch__link switch__link-icon" href="#">
-                                                        <img src="img/new-moon-face.svg" alt="1">
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="divause-iPhone divause-iPhone--zoom0_46">
-                                        <div class="divause-iPhone__fon">
-                                            <div class="divause-iPhone__content">
-                                                <div class="divause-iPhone__header">
-                                                    <div class="divause-iPhone__header-img">
-                                                        <img src="img/image-numbers2.jpg" onerror="this.src='img/empty.svg'" alt="Яндекс Go — Staff">
-                                                    </div>
-                                                    <div class="divause-iPhone__header-text" title="Яндекс Go — Staff">
-                                                        Яндекс Go — Staff
-                                                    </div>
-                                                    <div class="divause-iPhone__header-check_mark">
-                                                        <img src="img/Verified.svg" alt="check_mark">
-                                                    </div>
-                                                </div>
-                                                <div class="divause-iPhone__chat">
-                                                    <div class="divause-iPhone__chat-messages">                    <div class="divause-iPhone__chat-day">
-                                            Сегодня
-                                        </div>                    <div class="divause-iPhone__chat-notification">
-                                            <img class="divause-iPhone__chat-notification-icon" src="img/lock.svg" alt="lock"/>Сообщения и звонки в данном чате
-                                            теперь защищены сквозным шифрованием.
-                                            Яндекс Go — Staff может использовать
-                                            сторонний сервис для хранения и чтения ваших сообщений и ответа на сообщения и
-                                            звонки. Подробнее.
-                                        </div>                    <div class="divause-iPhone__chat-information">
-                                            Данная переписка ведётся с бизнес-аккаунтом. Подробнее.
-                                        </div>                    <div class="divause-iPhone__message">
-                                            <div class="divause-iPhone__message-block">
-                                                <div style="position: relative;">
-                                                    <span class="divause-iPhone__message-tail_out">
-                                                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M0 12.1429C6.5195 9.24286 9.29259 6.49463 13 0V17C7.18997 16.9064 4.38441 15.758 0 12.1429Z" fill="#F9F9F9"/>
-                                                        </svg>       
-                                                    </span>
-                                        
-                                                    <div class="divause-iPhone__message-content">
-                                        
-                                                        <div class="divause-iPhone__message-padding">
-                                                            <div class="divause-iPhone__message-file">
-                                                                <img src="" onerror="this.src='img/divause/image.svg'" alt="image">
-                                                            </div>
-                                                            <div class="divause-iPhone__message-text">
-                                        
-                                                                <div style="position: relative; overflow-wrap: break-word;"> 
-                                                                    <span style="vertical-align: initial;">
-                                                                        <span>
-                                                                            <p class="divause-iPhone__message-header">Иван, здравствуйте!</p>
-                                                                            Привет <br>
-                                                                            Я с BP DAY <br>
-                                                                            <span class="divause-iPhone__message-fatty">жирный</span><br>
-                                                                            <span class="divause-iPhone__message-italics">курсив</span><br>
-                                                                            <span class="divause-iPhone__message-strikethrough">зачёркнутый</span><br>
-                                                                            <span class="divause-iPhone__message-monospaced">моноширинный (Menlo)</span>
-                                                                        </span>
-                                                                    </span>
-                                                                    <span class="divause-iPhone__message-plug"></span>
-                                                                </div>
-                                        
-                                                            </div>
-                                                            <div class="divause-iPhone__message-footer">
-                                                                <span>
-                                                                    Работает на базе Тинькофф.
-                                                                </span>
-                                                                <span class="divause-iPhone__message-plug"></span>
-                                                            </div>
-                                                            <div class="divause-iPhone__message-time">15:49</div> 
-                                                        </div>
-                                        
-                                                    </div>
-                                                </div>
-                                                <div class="divause-iPhone__message-btns">
-                                                    <div class="divause-iPhone__message-btns-col">
-                                                        <button class="button divause-iPhone__message-btn">Подробнее</button>
-                                                    </div>
-                                                    <div class="divause-iPhone__message-btns-col">
-                                                        <button class="button divause-iPhone__message-btn divause-iPhone__message-btn--gray">Не интересно</button>
-                                                    </div>
-                                                    <div class="divause-iPhone__message-btns-col">
-                                                        <button class="button divause-iPhone__message-btn">Записаться на экскурсию</button>
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                        </div>                                 </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>            </div>
                             </div>
                         </div>
                         <div class="tabs__content-pane" id="AmoCRM-templates">
-                            <div class="main__grid main__grid--three">
+                            <div class="tabs__content-block">
                                 <div class="aside">
                                     <div class="list">
                                     
@@ -589,12 +531,18 @@
                                         </div>
                                         <div class="form__block">
                                             <label class="form__label">Пре-шаблон</label>
-                                            <select class="form__input form__select">
-                                                <option value="Благодарим за покупку">Благодарим за покупку</option>
-                                                <option value="Благодарим за покупку1">Благодарим за покупку1</option>
-                                                <option value="Благодарим за покупку2">Благодарим за покупку2</option>
-                                                <option value="Благодарим за покупку3">Благодарим за покупку3</option>
-                                            </select>
+                                            <div class="form__select">
+                                                <span class="form__select-placeholder"></span>
+                                                <div class="form__select-options">
+                                                    <ul>
+                                                        <li data-option data-value="Благодарим за покупку" class="form__select-selected">Благодарим за покупку</li>
+                                                        <li data-option data-value="Благодарим за покупку1">Благодарим за покупку1</li>
+                                                        <li data-option data-value="Благодарим за покупку2">Благодарим за покупку2</li>
+                                                        <li data-option data-value="Благодарим за покупку3">Благодарим за покупку3</li>
+                                                    </ul>
+                                                </div>
+                                                <input type="hidden" name="cap-select" value="">
+                                            </div>
                                         </div>
                                         
                                         <div class="form__block">
@@ -649,111 +597,111 @@
                                             <button type="button" class="button button--cancellation">Отмена</button>
                                         </div>
                                     </form>            </div>
-                                <div>
-                                    <div class="switches switches--small-indent">                    <div class="switch">
-                                            <div class="switch__title">Предпросмотр</div>
-                                            <ul class="switch__list">
-                                                <li class="switch__item switch__item--active">
-                                                    <a class="switch__link switch__link-icon" href="#">
-                                                        <img src="img/full-moon-face.svg" alt="1">
-                                                    </a>
-                                                </li>
-                                                <li class="switch__item">
-                                                    <a class="switch__link switch__link-icon" href="#">
-                                                        <img src="img/new-moon-face.svg" alt="1">
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="divause-iPhone divause-iPhone--zoom0_46">
-                                        <div class="divause-iPhone__fon">
-                                            <div class="divause-iPhone__content">
-                                                <div class="divause-iPhone__header">
-                                                    <div class="divause-iPhone__header-img">
-                                                        <img src="img/image-numbers2.jpg" onerror="this.src='img/empty.svg'" alt="Яндекс Go — Staff">
-                                                    </div>
-                                                    <div class="divause-iPhone__header-text" title="Яндекс Go — Staff">
-                                                        Яндекс Go — Staff
-                                                    </div>
-                                                    <div class="divause-iPhone__header-check_mark">
-                                                        <img src="img/Verified.svg" alt="check_mark">
-                                                    </div>
-                                                </div>
-                                                <div class="divause-iPhone__chat">
-                                                    <div class="divause-iPhone__chat-messages">                    <div class="divause-iPhone__chat-day">
-                                            Сегодня
-                                        </div>                    <div class="divause-iPhone__chat-notification">
-                                            <img class="divause-iPhone__chat-notification-icon" src="img/lock.svg" alt="lock"/>Сообщения и звонки в данном чате
-                                            теперь защищены сквозным шифрованием.
-                                            Яндекс Go — Staff может использовать
-                                            сторонний сервис для хранения и чтения ваших сообщений и ответа на сообщения и
-                                            звонки. Подробнее.
-                                        </div>                    <div class="divause-iPhone__chat-information">
-                                            Данная переписка ведётся с бизнес-аккаунтом. Подробнее.
-                                        </div>                    <div class="divause-iPhone__message">
-                                            <div class="divause-iPhone__message-block">
-                                                <div style="position: relative;">
-                                                    <span class="divause-iPhone__message-tail_out">
-                                                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M0 12.1429C6.5195 9.24286 9.29259 6.49463 13 0V17C7.18997 16.9064 4.38441 15.758 0 12.1429Z" fill="#F9F9F9"/>
-                                                        </svg>       
-                                                    </span>
-                                        
-                                                    <div class="divause-iPhone__message-content">
-                                        
-                                                        <div class="divause-iPhone__message-padding">
-                                                            <div class="divause-iPhone__message-file">
-                                                                <img src="" onerror="this.src='img/divause/image.svg'" alt="image">
-                                                            </div>
-                                                            <div class="divause-iPhone__message-text">
-                                        
-                                                                <div style="position: relative; overflow-wrap: break-word;"> 
-                                                                    <span style="vertical-align: initial;">
-                                                                        <span>
-                                                                            <p class="divause-iPhone__message-header">Иван, здравствуйте!</p>
-                                                                            Привет <br>
-                                                                            Я с BP DAY <br>
-                                                                            <span class="divause-iPhone__message-fatty">жирный</span><br>
-                                                                            <span class="divause-iPhone__message-italics">курсив</span><br>
-                                                                            <span class="divause-iPhone__message-strikethrough">зачёркнутый</span><br>
-                                                                            <span class="divause-iPhone__message-monospaced">моноширинный (Menlo)</span>
-                                                                        </span>
-                                                                    </span>
-                                                                    <span class="divause-iPhone__message-plug"></span>
-                                                                </div>
-                                        
-                                                            </div>
-                                                            <div class="divause-iPhone__message-footer">
-                                                                <span>
-                                                                    Работает на базе Тинькофф.
-                                                                </span>
-                                                                <span class="divause-iPhone__message-plug"></span>
-                                                            </div>
-                                                            <div class="divause-iPhone__message-time">15:49</div> 
-                                                        </div>
-                                        
-                                                    </div>
-                                                </div>
-                                                <div class="divause-iPhone__message-btns">
-                                                    <div class="divause-iPhone__message-btns-col">
-                                                        <button class="button divause-iPhone__message-btn">Подробнее</button>
-                                                    </div>
-                                                    <div class="divause-iPhone__message-btns-col">
-                                                        <button class="button divause-iPhone__message-btn divause-iPhone__message-btn--gray">Не интересно</button>
-                                                    </div>
-                                                    <div class="divause-iPhone__message-btns-col">
-                                                        <button class="button divause-iPhone__message-btn">Записаться на экскурсию</button>
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                        </div>                                 </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>            </div>
                             </div>
                         </div>
+                        <div>
+                            <div class="switches switches--small-indent">            <div class="switch">
+                                    <div class="switch__title">Предпросмотр</div>
+                                    <ul class="switch__list">
+                                        <li class="switch__item switch__item--active">
+                                            <a class="switch__link switch__link-icon" href="#">
+                                                <img src="img/full-moon-face.svg" alt="1">
+                                            </a>
+                                        </li>
+                                        <li class="switch__item">
+                                            <a class="switch__link switch__link-icon" href="#">
+                                                <img src="img/new-moon-face.svg" alt="1">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="divause-iPhone divause-iPhone--zoom0_46">
+                                <div class="divause-iPhone__fon">
+                                    <div class="divause-iPhone__content">
+                                        <div class="divause-iPhone__header">
+                                            <div class="divause-iPhone__header-img">
+                                                <img src="img/image-numbers2.jpg" onerror="this.src='img/empty.svg'" alt="Яндекс Go — Staff">
+                                            </div>
+                                            <div class="divause-iPhone__header-text" title="Яндекс Go — Staff">
+                                                Яндекс Go — Staff
+                                            </div>
+                                            <div class="divause-iPhone__header-check_mark">
+                                                <img src="img/Verified.svg" alt="check_mark">
+                                            </div>
+                                        </div>
+                                        <div class="divause-iPhone__chat">
+                                            <div class="divause-iPhone__chat-messages">            <div class="divause-iPhone__chat-day">
+                                    Сегодня
+                                </div>            <div class="divause-iPhone__chat-notification">
+                                    <img class="divause-iPhone__chat-notification-icon" src="img/lock.svg" alt="lock"/>Сообщения и звонки в данном чате
+                                    теперь защищены сквозным шифрованием.
+                                    Яндекс Go — Staff может использовать
+                                    сторонний сервис для хранения и чтения ваших сообщений и ответа на сообщения и
+                                    звонки. Подробнее.
+                                </div>            <div class="divause-iPhone__chat-information">
+                                    Данная переписка ведётся с бизнес-аккаунтом. Подробнее.
+                                </div>            <div class="divause-iPhone__message">
+                                    <div class="divause-iPhone__message-block">
+                                        <div style="position: relative;">
+                                            <span class="divause-iPhone__message-tail_out">
+                                                <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0 12.1429C6.5195 9.24286 9.29259 6.49463 13 0V17C7.18997 16.9064 4.38441 15.758 0 12.1429Z" fill="#F9F9F9"/>
+                                                </svg>       
+                                            </span>
+                                
+                                            <div class="divause-iPhone__message-content">
+                                
+                                                <div class="divause-iPhone__message-padding">
+                                                    <div class="divause-iPhone__message-file">
+                                                        <img src="" onerror="this.src='img/divause/image.svg'" alt="image">
+                                                    </div>
+                                                    <div class="divause-iPhone__message-text">
+                                
+                                                        <div style="position: relative; overflow-wrap: break-word;"> 
+                                                            <span style="vertical-align: initial;">
+                                                                <span>
+                                                                    <p class="divause-iPhone__message-header">Иван, здравствуйте!</p>
+                                                                    Привет <br>
+                                                                    Я с BP DAY <br>
+                                                                    <span class="divause-iPhone__message-fatty">жирный</span><br>
+                                                                    <span class="divause-iPhone__message-italics">курсив</span><br>
+                                                                    <span class="divause-iPhone__message-strikethrough">зачёркнутый</span><br>
+                                                                    <span class="divause-iPhone__message-monospaced">моноширинный (Menlo)</span>
+                                                                </span>
+                                                            </span>
+                                                            <span class="divause-iPhone__message-plug"></span>
+                                                        </div>
+                                
+                                                    </div>
+                                                    <div class="divause-iPhone__message-footer">
+                                                        <span>
+                                                            Работает на базе Тинькофф.
+                                                        </span>
+                                                        <span class="divause-iPhone__message-plug"></span>
+                                                    </div>
+                                                    <div class="divause-iPhone__message-time">15:49</div> 
+                                                </div>
+                                
+                                            </div>
+                                        </div>
+                                        <div class="divause-iPhone__message-btns">
+                                            <div class="divause-iPhone__message-btns-col">
+                                                <button class="button divause-iPhone__message-btn">Подробнее</button>
+                                            </div>
+                                            <div class="divause-iPhone__message-btns-col">
+                                                <button class="button divause-iPhone__message-btn divause-iPhone__message-btn--gray">Не интересно</button>
+                                            </div>
+                                            <div class="divause-iPhone__message-btns-col">
+                                                <button class="button divause-iPhone__message-btn">Записаться на экскурсию</button>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>                         </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    </div>
                     </div>
                     
                 </div>

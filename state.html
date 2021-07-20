@@ -42,6 +42,22 @@
     <body>
         
         <div style="padding: 20px; background-color: #fff">
+        
+            <!-- <div class="form__block">
+                <div class="form__select">
+                    <span class="form__select-placeholder"></span>
+                    <div class="form__select-options">
+                        <ul>
+                            <li data-option data-value="1" class="form__select-selected">Другое</li>
+                            <li data-option data-value="2">Автосалон</li>
+                            <li data-option data-value="3">Пункт 3</li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="select" value="">
+                </div>
+            </div> 
+            <br>
+            <br>-->
             <button id="bb" class="button button--save button-floppy-disk">
                 <span class="button__text">
                     Сохранить
@@ -77,6 +93,7 @@
             </button>
         </div>
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
             document.getElementById('bb').addEventListener('click', function(){
                 document.getElementById('bb').classList.remove('button-floppy-disk');

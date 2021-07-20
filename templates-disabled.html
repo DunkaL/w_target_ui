@@ -77,8 +77,8 @@
             <div class="sidebar">
                 <nav class="sidebar__content">
                     <ol class="sidebar__list">
-                        <li>
-                            <a href="/templates.html" class="sidebar__link sidebar__link--active">
+                        <li class="active">
+                            <a href="/templates.html" class="sidebar__link">
                                 <div class="sidebar__link-img">
                                     <img src="img/writing-hand.png" alt="Шаблоны">
                                 </div>
@@ -133,8 +133,7 @@
                                 <span class="sidebar__link-text">Аналитика</span>
                             </a>
                         </li>
-                    </ol>
-                    <ol class="sidebar__list sidebar__list--topline">
+                        <li class="sidebar__list--topline"></li>
                         <li>
                             <a href="#Настройки" class="sidebar__link">
                                 <div class="sidebar__link-img">
@@ -158,7 +157,7 @@
                                 </div>
                                 <span class="sidebar__link-text">Оплата</span>
                             </a>
-                        </li>
+                        </li>           
                     </ol>
                 </nav>
             </div>            <main class="main">
@@ -171,14 +170,14 @@
                     </h2>
                     
                     <ul class="tabs">
-                        <li class="tabs__item">
-                            <button class="tabs__link" data-tabs="#Pre-templates">Пре-шаблоны</button>
+                        <li class="tabs__item" data-tabs="#Pre-templates">
+                            Пре-шаблоны
                         </li>
-                        <li class="tabs__item">
-                            <button class="tabs__link tabs__link--active" data-tabs="#AmoCRM-templates">Шаблоны amoCRM</button>
+                        <li class="tabs__item tabs__item--active" data-tabs="#AmoCRM-templates">
+                            Шаблоны amoCRM
                         </li>
                     </ul>
-                    <div class="tabs__content">
+                    <div>
                         <div class="tabs__content-pane" id="Pre-templates">
                             <div class="main__grid main__grid--three">
                                 Pre-templates
