@@ -36,6 +36,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <!-- <link href="https://db.onlinewebfonts.com/c/3724259186746d86859fbb0fde0fa44a?family=Druk+Text+Wide+Web+Medium" rel="stylesheet" type="text/css"/> -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
         <title>w-target AP | state</title>    </head>
@@ -72,21 +73,35 @@
             </button>
             <br>
             <br>
-            <button class="button button--save button-loader">
+            <button id='sh' type="button" class="button button--save button-folded-hands">
+                <span class="button__text">
+                    Отправить
+                </span>
+            </button>
+            <br>
+            <br>
+            <button type="button" class="button button--save button-folded-hands" disabled>
+                <span class="button__text">
+                    Отправить
+                </span>
+            </button>
+            <br>
+            <br>
+            <button class="button button--save button-loader" disabled>
                 <span class="button__text">
                     Сохранить
                 </span>
             </button>
             <br>
             <br>
-            <button class="button button--save button-check-mark">
+            <button class="button button--save button-check-mark" disabled>
                 <span class="button__text">
                     Сохранить
                 </span>
             </button>
             <br>
             <br>
-            <button class="button button--save button-cross">
+            <button class="button button--save button-cross" disabled>
                 <span class="button__text">
                     Сохранить
                 </span>
@@ -107,6 +122,25 @@
                     document.getElementById('bb').classList.remove('button-check-mark');
                     document.getElementById('bb').classList.add('button-floppy-disk');
                 }, 3000);
+            });
+            document.getElementById('sh').addEventListener('click', function(){
+                // document.getElementById('sh').classList.remove('button-folded-hands');
+                // document.getElementById('sh').classList.remove('button-check-mark');
+                // document.getElementById('sh').classList.add('button-loader');
+                // setTimeout(function(){
+                //     document.getElementById('sh').classList.remove('button-loader');
+                //     document.getElementById('sh').classList.add('button-cross');
+                //     document.getElementById('sh').classList.add('shake');
+                // }, 2000);
+                // setTimeout(function(){
+                //     document.getElementById('sh').classList.remove('button-cross');
+                //     document.getElementById('sh').classList.remove('shake');
+                //     document.getElementById('sh').classList.add('button-folded-hands');
+                // }, 3000);
+                document.getElementById('sh').classList.add('shake');
+                setTimeout(function(){
+                    document.getElementById('sh').classList.remove('shake');
+                }, 300);
             });
         </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

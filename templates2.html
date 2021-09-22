@@ -401,7 +401,7 @@
                                         <div class="form__block flex">
                                             <div class="form__block-col-left">
                                                 <label class="form__label">Категория</label>
-                                                <div class="form__select">
+                                                <div class="form__select form__select--disabled">
                                                     <span class="form__select-placeholder"></span>
                                                     <div class="form__select-options">
                                                         <ul>
@@ -416,7 +416,7 @@
                                             </div>
                                             <div class="form__block-col-right">
                                                 <label class="form__label">Язык</label>
-                                                <div class="form__select">
+                                                <div class="form__select form__select--disabled">
                                                     <span class="form__select-placeholder"></span>
                                                     <div class="form__select-options">
                                                         <ul>
@@ -477,43 +477,17 @@
                                         
                                         <div class="form__block">
                                             <label class="form__label" for="cap">Шапка</label>
-                                        
-                                            <div class="form__select mb8">
-                                                <span class="form__select-placeholder"></span>
-                                                <div class="form__select-options">
-                                                    <ul>
-                                                        <li data-option data-value="Текст" class="form__select-selected">Текст</li>
-                                                        <li data-option data-value="Текст1">Текст1</li>
-                                                        <li data-option data-value="Текст2">Текст2</li>
-                                                        <li data-option data-value="Текст3">Текст3</li>
-                                                    </ul>
-                                                </div>
-                                                <input type="hidden" name="cap-select" value="">
-                                            </div>
-                                        
-                                            <div class="form__group">
-                                                <input class="form__input" type="text" id="cap" value="Для перемещения вас и еды." placeholder="">
-                                                <div class="form__group-div">
-                                                    <button type="button" class="button">&lbrace;&lbrace;2&rbrace;&rbrace;</button>
-                                                </div>
-                                            </div>
+                                            <span class="wb-ba">Здравствуйте, это &lbrace;&lbrace;1&rbrace;&rbrace;</span>
                                         </div>
                                         
                                         <div class="form__block">
                                             <label class="form__label" for="message">Сообщение</label>
-                                            <div class="form__group">
-                                                <div class="form__textarea form__textarea--three_line">
-                                                    <textarea id="message" data-autoresize>Здравствуйте, &lbrace;&lbrace;2&rbrace;&rbrace;. Ждём вас в офисе по адресу Рабочая ул., 33. Не забудьте надеть маску и перчатки!</textarea>
-                                                    <button type="button" class="button form__group-div__textarea">+ Параметр &lbrace;&lbrace;2&rbrace;&rbrace;</button>
-                                                </div>
-                                            </div>
+                                            <span class="ws-pw wb-ba">Если вы хотите &lbrace;&lbrace;1&rbrace;&rbrace;, тогда вам нужно сделать &lbrace;&lbrace;2&rbrace;&rbrace; и мы сможем &lbrace;&lbrace;3&rbrace;&rbrace; А вот так через энетер если будет.</span>
                                         </div>
                                         
                                         <div class="form__block">
                                             <label class="form__label" for="signature">Подпись</label>
-                                            <div class="form__group">
-                                                <input class="form__input" type="text" id="signature" value="Для перемещения вас и еды." placeholder="">
-                                            </div>
+                                            <span class="wb-ba">Просто умная подпись</span>
                                         </div>
                                         
                                         <div class="form__block">
@@ -522,100 +496,14 @@
                                                 <div class="form__tags form__tags--bg">
                                                     <div class="form__tags-item form__tags-item--active">
                                                         <span>Ссылка</span>
-                                                        <button type="button" class="button form__tags-button">
-                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.91667 1.91675V1.33341C8.91667 1.024 8.79375 0.727249 8.57496 0.508457C8.35616 0.289664 8.05942 0.166748 7.75 0.166748H4.25C3.94058 0.166748 3.64383 0.289664 3.42504 0.508457C3.20625 0.727249 3.08333 1.024 3.08333 1.33341V1.91675H1.33333C1.17862 1.91675 1.03025 1.97821 0.920854 2.0876C0.811458 2.197 0.75 2.34537 0.75 2.50008C0.75 2.65479 0.811458 2.80316 0.920854 2.91256C1.03025 3.02196 1.17862 3.08341 1.33333 3.08341H1.91667V9.50008C1.91667 9.96421 2.10104 10.4093 2.42923 10.7375C2.75742 11.0657 3.20254 11.2501 3.66667 11.2501H8.33333C8.79746 11.2501 9.24258 11.0657 9.57077 10.7375C9.89896 10.4093 10.0833 9.96421 10.0833 9.50008V3.08341H10.6667C10.8214 3.08341 10.9697 3.02196 11.0791 2.91256C11.1885 2.80316 11.25 2.65479 11.25 2.50008C11.25 2.34537 11.1885 2.197 11.0791 2.0876C10.9697 1.97821 10.8214 1.91675 10.6667 1.91675H8.91667ZM7.75 1.33341H4.25V1.91675H7.75V1.33341ZM8.91667 3.08341H3.08333V9.50008C3.08333 9.65479 3.14479 9.80316 3.25419 9.91256C3.36358 10.022 3.51196 10.0834 3.66667 10.0834H8.33333C8.48804 10.0834 8.63642 10.022 8.74581 9.91256C8.85521 9.80316 8.91667 9.65479 8.91667 9.50008V3.08341Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                <path d="M4.25 4.25H5.41667V8.91667H4.25V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                <path d="M6.58334 4.25H7.75V8.91667H6.58334V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                    <button type="button" class="button form__tags-add">+ Добавить</button>
-                                                </div>
-                                            </div>
-                                            <div class="mb8">
-                                                <div class="form__group">
-                                                    <input class="form__input" type="text" value="Оплатить онлайн" placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="mb8">
-                                                <div class="form__group">
-                                                    <input class="form__input" type="text" value="https://go.yandex" placeholder="">
-                                                    <div class="form__group-div">
-                                                        <button type="button" class="button">&lbrace;&lbrace;1&rbrace;&rbrace;</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form__block">
-                                            <label class="form__label">Кнопки</label>
-                                            <div>
-                                                <div class="form__tags form__tags--bg">
-                                                    <div class="form__tags-item form__tags-item--active">
-                                                        <span>Ссылка</span>
-                                                        <button type="button" class="button form__tags-button">
-                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.91667 1.91675V1.33341C8.91667 1.024 8.79375 0.727249 8.57496 0.508457C8.35616 0.289664 8.05942 0.166748 7.75 0.166748H4.25C3.94058 0.166748 3.64383 0.289664 3.42504 0.508457C3.20625 0.727249 3.08333 1.024 3.08333 1.33341V1.91675H1.33333C1.17862 1.91675 1.03025 1.97821 0.920854 2.0876C0.811458 2.197 0.75 2.34537 0.75 2.50008C0.75 2.65479 0.811458 2.80316 0.920854 2.91256C1.03025 3.02196 1.17862 3.08341 1.33333 3.08341H1.91667V9.50008C1.91667 9.96421 2.10104 10.4093 2.42923 10.7375C2.75742 11.0657 3.20254 11.2501 3.66667 11.2501H8.33333C8.79746 11.2501 9.24258 11.0657 9.57077 10.7375C9.89896 10.4093 10.0833 9.96421 10.0833 9.50008V3.08341H10.6667C10.8214 3.08341 10.9697 3.02196 11.0791 2.91256C11.1885 2.80316 11.25 2.65479 11.25 2.50008C11.25 2.34537 11.1885 2.197 11.0791 2.0876C10.9697 1.97821 10.8214 1.91675 10.6667 1.91675H8.91667ZM7.75 1.33341H4.25V1.91675H7.75V1.33341ZM8.91667 3.08341H3.08333V9.50008C3.08333 9.65479 3.14479 9.80316 3.25419 9.91256C3.36358 10.022 3.51196 10.0834 3.66667 10.0834H8.33333C8.48804 10.0834 8.63642 10.022 8.74581 9.91256C8.85521 9.80316 8.91667 9.65479 8.91667 9.50008V3.08341Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                <path d="M4.25 4.25H5.41667V8.91667H4.25V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                <path d="M6.58334 4.25H7.75V8.91667H6.58334V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                    <div class="form__tags-item">
-                                                        <span>Телефон</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="mb8">
-                                                <div class="form__group">
-                                                    <input class="form__input" type="text" value="Оплатить онлайн" placeholder="">
-                                                </div>
+                                                <span class="wb-ba">https://ya.ru/?utm_term=&lbrace;&lbrace;1&rbrace;&rbrace;</span>
                                             </div>
                                             <div class="mb8">
-                                                <div class="form__group">
-                                                    <input class="form__input" type="text" value="https://go.yandex" placeholder="">
-                                                    <div class="form__group-div">
-                                                        <button type="button" class="button">&lbrace;&lbrace;3&rbrace;&rbrace;</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form__block">
-                                            <label class="form__label">Кнопки</label>
-                                            <div>
-                                                <div class="form__tags form__tags--bg">
-                                                    <div class="form__tags-item form__tags-item--active">
-                                                        <span>#1</span>
-                                                        <button type="button" class="button form__tags-button">
-                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.91667 1.91675V1.33341C8.91667 1.024 8.79375 0.727249 8.57496 0.508457C8.35616 0.289664 8.05942 0.166748 7.75 0.166748H4.25C3.94058 0.166748 3.64383 0.289664 3.42504 0.508457C3.20625 0.727249 3.08333 1.024 3.08333 1.33341V1.91675H1.33333C1.17862 1.91675 1.03025 1.97821 0.920854 2.0876C0.811458 2.197 0.75 2.34537 0.75 2.50008C0.75 2.65479 0.811458 2.80316 0.920854 2.91256C1.03025 3.02196 1.17862 3.08341 1.33333 3.08341H1.91667V9.50008C1.91667 9.96421 2.10104 10.4093 2.42923 10.7375C2.75742 11.0657 3.20254 11.2501 3.66667 11.2501H8.33333C8.79746 11.2501 9.24258 11.0657 9.57077 10.7375C9.89896 10.4093 10.0833 9.96421 10.0833 9.50008V3.08341H10.6667C10.8214 3.08341 10.9697 3.02196 11.0791 2.91256C11.1885 2.80316 11.25 2.65479 11.25 2.50008C11.25 2.34537 11.1885 2.197 11.0791 2.0876C10.9697 1.97821 10.8214 1.91675 10.6667 1.91675H8.91667ZM7.75 1.33341H4.25V1.91675H7.75V1.33341ZM8.91667 3.08341H3.08333V9.50008C3.08333 9.65479 3.14479 9.80316 3.25419 9.91256C3.36358 10.022 3.51196 10.0834 3.66667 10.0834H8.33333C8.48804 10.0834 8.63642 10.022 8.74581 9.91256C8.85521 9.80316 8.91667 9.65479 8.91667 9.50008V3.08341Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                <path d="M4.25 4.25H5.41667V8.91667H4.25V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                                <path d="M6.58334 4.25H7.75V8.91667H6.58334V4.25Z" fill="rgba(14, 14, 14, 0.35)"/>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                    <div class="form__tags-item">
-                                                        <span>#2</span>
-                                                    </div>
-                                                    <button type="button" class="button form__tags-add">+ Добавить</button>
-                                                </div>
-                                            </div>
-                                            <div class="mb8">
-                                                <div class="form__group">
-                                                    <input class="form__input" type="text" value="Оплатить онлайн" placeholder="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form__block">
-                                            <label class="form__label">Кнопки</label>
-                                            <div>
-                                                <div class="form__tags">
-                                                    <button type="button" class="button form__tags-add">+ Ответ</button>
-                                                    <button type="button" class="button form__tags-add">+ Телефон</button>
-                                                    <button type="button" class="button form__tags-add">+ Ссылка</button>
-                                                </div>
+                                                <span class="wb-ba">Открыть предложение</span>
                                             </div>
                                         </div>
                                         
@@ -625,19 +513,15 @@
                                         
                                         <div class="form__block">
                                             <label class="form__label" for="heading1">Шапка: &lbrace;&lbrace;1&rbrace;&rbrace;</label>
-                                            <div class="form__group">
-                                                <input class="form__input" type="text" id="heading1" value="отличный вопрос," placeholder="">
-                                            </div>
+                                            <span class="wb-ba">отличный вопрос,</span>
                                         </div>
                                         
                                         <div class="form__block">
                                             <label class="form__label" for="message1">Cообщение: &lbrace;&lbrace;1&rbrace;&rbrace;</label>
-                                            <div class="form__group">
-                                                <input class="form__input" type="text" id="message1" value="отличный вопрос," placeholder="">
-                                            </div>
+                                            <span class="wb-ba">отличный вопрос,</span>
                                         </div>
                                         
-                                        <div class="form__block">
+                                        <!-- <div class="form__block">
                                             <div class="flex">
                                                 <button type="button" class="button button--save button-folded-hands">
                                                     <span class="button__text">
@@ -647,17 +531,17 @@
                                                 <button type="button" class="button button--cancellation ml14">Отмена</button>
                                             </div>
                                             <div class="form__block-subtext">
-                                                Шаблоны проходят обязательную модерацию в <br/> Facebook длительностью от 1 часа до 2 дней.
+                                                Шаблоны проходят обязательную модерацию в Facebook длительностью от 1 часа до 2 дней.
                                             </div>
-                                        </div>
-                                        <!-- <div class="form__block flex">
+                                        </div> -->
+                                        <div class="form__block flex">
                                             <button type="button" class="button button--save button-floppy-disk">
                                                 <span class="button__text">
                                                     Сохранить
                                                 </span>
                                             </button>
                                             <button type="button" class="button button--cancellation ml14">Отмена</button>
-                                        </div> -->
+                                        </div>
                                         <!-- <div class="form__block">
                                             <button type="button" class="button button--cancellation">
                                                 <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">

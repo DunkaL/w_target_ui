@@ -59,17 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
     url: 'https://qr.wtrg.introvert.bz/generate.php',
     data: {
         text: "https://wa.me/74996478531&text=Регистрация",
-        size: 176,
+        size: 197,
         margin: 0,
-        fg_color: '#000000',
-        bg_color: '#ffffff',
-        bg_opacity: 127,
-        corner_squares_color: '#000000',
-        corner_frames_color: '#000000',
         logo_url: 'https://qr.wtrg.introvert.bz/example/logos/wa1.svg',
         logo_width: 58,
         logo_height: 58,
-        logo_color: '#000000',
         export: 'svg'
     },
     success: function (svg) {
@@ -95,30 +89,18 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     $(value).find('.form__select-placeholder').click(function(){
-      $(value).addClass('form__select--active');
+      if(!$(value).hasClass('form__select--disabled')){
+        $(value).addClass('form__select--active');
+      }
     });
     $(value).find('.form__select-options li').click(function(){
-      $(value).find('.form__select-options li.form__select-selected').removeClass('form__select-selected');
-      $(this).addClass('form__select-selected');
-      $(value).find('.form__select-placeholder').html($(this).html());
-      $(value).find('input').val($(this).data('value'));
-      $(value).removeClass('form__select--active');
+      if(!$(value).hasClass('form__select--disabled')){
+        $(value).find('.form__select-options li.form__select-selected').removeClass('form__select-selected');
+        $(this).addClass('form__select-selected');
+        $(value).find('.form__select-placeholder').html($(this).html());
+        $(value).find('input').val($(this).data('value'));
+        $(value).removeClass('form__select--active');
+      }
     });
   });
-
-
-  // $('.form__select .form__select-placeholder').click(function(){
-  //     $('.form__select').addClass('form__select--active');
-  // });
-
-  // $('.form__select-options li').click(function(){
-  //     $('.form__select-options li.form__select-selected').removeClass('form__select-selected');
-  //     $(this).addClass('form__select-selected');
-
-  //     $('.form__select-placeholder').html($(this).html());
-  //     $('.form__select input').val($(this).data('value'));
-
-  //     $('.form__select').removeClass('form__select--active');
-  // });
-
 });

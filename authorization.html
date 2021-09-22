@@ -36,91 +36,96 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <!-- <link href="https://db.onlinewebfonts.com/c/3724259186746d86859fbb0fde0fa44a?family=Druk+Text+Wide+Web+Medium" rel="stylesheet" type="text/css"/> -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
         <title>w-target AP | Authorization</title>    </head>
-    <body class="auth-body">
-
-        
-        <div class="auth">
-            <img class="auth__img" src="img/Logo.svg" alt="logo">
-            <div class="auth__block">
-                <h2 class="main__title main__header--small_indent">
-                    <div class="main__title-text">
-                        Авторизация
-                    </div>
-                </h2>
-                <ul class="tabs tabs--mini tabs--small_indent">
-                    <li class="tabs__item tabs__item--active" data-tabs="#Via-WhatsApp">
-                        Через WhatsApp
-                    </li>
-                    <li class="tabs__item" data-tabs="#By-password">
-                        По паролю
-                    </li>
-                </ul>        <div>
-                    <div class="tabs__content-pane active" id="Via-WhatsApp">
-        
-                        <div class="qr-code">
-                            <div class="qr-code__content">
-                                <div class="qr-code__wrapper js-qcode"></div>
-                                <div>
-                                    <div class="qr-code__step">
-                                        <span class="qr-code__step-index">Шаг 1</span>
-                                        <p class="qr-code__step-text">Откройте WhatsApp</p>
-                                    </div>
-                                    <div class="qr-code__step">
-                                        <span class="qr-code__step-index">Шаг 2</span>
-                                        <p class="qr-code__step-text">Перейдите во <br>вкладку “Камера”</p>
-                                    </div>
-                                    <div class="qr-code__step">
-                                        <span class="qr-code__step-index">Шаг 3</span>
-                                        <p class="qr-code__step-text">Наведите на код слева</p>
-                                    </div>
-                                </div>
+    <body>
+        <div id="root">
+            <div class="auth">
+                <div class="auth__cont">
+                    <img class="auth__img" src="img/Logo.svg" alt="logo">
+                    <div class="auth__block">
+                        <h2 class="main__title main__header--small_indent">
+                            <div class="main__title-text">
+                                Авторизация
                             </div>
-                            <div class="qr-code__footer">
-                                <p class="qr-code__footer-question">Хотите войти через ПК?</p>
-                                <div class="flex flex--ai-center flex--space-between">
-                                    <button class="button button--save">Открыть WhatsApp Web</button>
-                                    <a href="#" class="auth__link">Как это работает?</a>
+                        </h2>
+                        <ul class="tabs tabs--mini tabs--small_indent">
+                            <li class="tabs__item tabs__item--active" data-tabs="#Via-WhatsApp">
+                                Через WhatsApp
+                            </li>
+                            <li class="tabs__item" data-tabs="#By-password">
+                                По паролю
+                            </li>
+                        </ul>            <div>
+                            <div class="tabs__content-pane active" id="Via-WhatsApp">
+                
+                                <div class="qr-code">
+                                    <div class="qr-code__content">
+                                        <div class="qr-code__wrapper js-qcode"></div>
+                                        <div>
+                                            <div class="qr-code__step">
+                                                <span class="qr-code__step-index">Шаг 1</span>
+                                                <p class="qr-code__step-text">Откройте WhatsApp</p>
+                                            </div>
+                                            <div class="qr-code__step">
+                                                <span class="qr-code__step-index">Шаг 2</span>
+                                                <p class="qr-code__step-text">Перейдите во <br>вкладку “Камера”</p>
+                                            </div>
+                                            <div class="qr-code__step">
+                                                <span class="qr-code__step-index">Шаг 3</span>
+                                                <p class="qr-code__step-text">Наведите на код слева</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="qr-code__footer">
+                                        <p class="qr-code__footer-question">Хотите войти через ПК?</p>
+                                        <div class="flex flex--ai-center flex--space-between">
+                                            <button class="button button--save">Открыть WhatsApp Web</button>
+                                            <a href="#" class="auth__link">Как это работает?</a>
+                                        </div>
+                                    </div>
                                 </div>
+                
+                            </div>
+                            <div class="tabs__content-pane" id="By-password">
+                                <form action="/" method="post">
+                
+                                    <div class="form__block">
+                                        <label class="form__label" for="login">Логин</label>
+                                        <div class="form__group">
+                                            <input class="form__input" type="email" name="login" id="login" value="go@yandex.ru" placeholder="">
+                                        </div>
+                                    </div>
+                
+                                    <div class="form__block">
+                                        <label class="form__label" for="login">Пароль</label>
+                                        <div class="form__group valid-error">
+                                            <input class="form__input js-password-input" type="password" name="password" id="password" value="password" placeholder="">
+                                            <span class="form__group-div">
+                                                <button type="button" class="button js-password-visibility">
+                                                    <img src="img/password-eye.svg" alt="icon">  
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="valid-feedback">Неверный пароль</div>
+                                    </div>
+                
+                                    <div class="form__block flex flex--ai-center flex--space-between">
+                                        <button type="button" class="button button--save button-waving-hand">Войти</button>
+                                        <a href="#" class="auth__link">Забыли пароль?</a>
+                                    </div>
+                
+                                </form>
                             </div>
                         </div>
-        
-                    </div>
-                    <div class="tabs__content-pane" id="By-password">
-                        <form action="/" method="post">
-        
-                            <div class="form__block">
-                                <label class="form__label" for="login">Логин</label>
-                                <input class="form__input" type="email" name="login" id="login" value="go@yandex.ru" placeholder="">
-                            </div>
-        
-                            <div class="form__block form__validation--error">
-                                <label class="form__label" for="login">Пароль</label>
-                                <div class="form__group">
-                                    <input class="form__input js-password-input" type="password" name="password" id="password" value="password" placeholder="">
-                                    <span class="form__group__icon">
-                                        <button type="button" class="button js-password-visibility">
-                                            <img src="img/password-eye.svg" alt="icon">  
-                                        </button>
-                                    </span>
-                                </div>
-                                <div class="form__feedback">Неверный пароль</div>
-                            </div>
-        
-                            <div class="form__block flex flex--ai-center flex--space-between">
-                                <button type="button" class="button button--save button-waving-hand">Войти</button>
-                                <a href="#" class="auth__link">Забыли пароль?</a>
-                            </div>
-        
-                        </form>
                     </div>
                 </div>
             </div>
+            
         </div>
-        
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js" defer></script>
     </body>
