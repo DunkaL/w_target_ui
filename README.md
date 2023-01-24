@@ -1,4 +1,4 @@
-# w-targer-ap
+# w_target_ui
 https://dunkal.github.io/w-targer-ap/authorization.html
 
 https://dunkal.github.io/w-targer-ap/numbers.html
