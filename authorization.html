@@ -36,7 +36,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-        <!-- <link href="https://db.onlinewebfonts.com/c/3724259186746d86859fbb0fde0fa44a?family=Druk+Text+Wide+Web+Medium" rel="stylesheet" type="text/css"/> -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
         <title>w-target AP | Authorization</title>    </head>
@@ -58,9 +57,8 @@
                             <li class="tabs__item" data-tabs="#By-password">
                                 По паролю
                             </li>
-                        </ul>            <div>
+                        </ul>            <div class="tabs__content">
                             <div class="tabs__content-pane active" id="Via-WhatsApp">
-                
                                 <div class="qr-code">
                                     <div class="qr-code__content">
                                         <div class="qr-code__wrapper js-qcode"></div>
@@ -87,18 +85,15 @@
                                         </div>
                                     </div>
                                 </div>
-                
                             </div>
                             <div class="tabs__content-pane" id="By-password">
-                                <form action="/" method="post">
-                
+                                <form>
                                     <div class="form__block">
                                         <label class="form__label" for="login">Логин</label>
                                         <div class="form__group">
                                             <input class="form__input" type="email" name="login" id="login" value="go@yandex.ru" placeholder="">
                                         </div>
                                     </div>
-                
                                     <div class="form__block">
                                         <label class="form__label" for="login">Пароль</label>
                                         <div class="form__group valid-error">
@@ -111,12 +106,10 @@
                                         </div>
                                         <div class="valid-feedback">Неверный пароль</div>
                                     </div>
-                
                                     <div class="form__block flex flex--ai-center flex--space-between">
                                         <button type="button" class="button button--save button-waving-hand">Войти</button>
                                         <a href="#" class="auth__link">Забыли пароль?</a>
                                     </div>
-                
                                 </form>
                             </div>
                         </div>
