@@ -13,4 +13,6 @@ https://dunkal.github.io/w_target_ui/campaigns-open.html
 
 https://dunkal.github.io/w_target_ui/components-phone.html
 
+https://dunkal.github.io/w_target_ui/loading.html
+
 https://dunkal.github.io/w_target_ui/state.html
