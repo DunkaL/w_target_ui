@@ -1,4 +1,5 @@
 # w_target_ui
+Layout of w-target admin panel 
 https://dunkal.github.io/w_target_ui/authorization.html
 
 https://dunkal.github.io/w_target_ui/numbers.html
